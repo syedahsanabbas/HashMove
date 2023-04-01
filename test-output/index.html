@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Dell PC\AppData\Local\Temp\testng-eclipse-2113419526\testng-customsuite.xml</span>
+                    <span>C:\Users\Dell PC\AppData\Local\Temp\testng-eclipse--1193731019\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -130,15 +130,16 @@
                   <a name="verifyspotrateandbooking">
                   </a> <!-- verifyspotrateandbooking -->
                   <span class="method-name">verifyspotrateandbooking</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-register ng-star-inserted hvr-sweep-to-right&quot;&gt;...&lt;/button&gt; is not clickable at point (961, 452). Other element would receive the click: &lt;div style=&quot;z-index: 3; position: absolute; height: 100%; width: 100%; padding: 0px; border-width: 0px; margin: 0px; left: 0px; top: 0px; touch-action: pan-x pan-y;&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
   (Session info: chrome=111.0.5563.147)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [a49f7ffe157a4c2a508ca034527366f0, clickElement {id=91241465-1151-4580-a6bd-05fe3dd2d9c3}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49892}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49892/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (a49f7ffe157a4c2a508ca034527366f0)] -&gt; xpath: //button[normalize-space()=&apos;SAVE&apos;]]
-Session ID: a49f7ffe157a4c2a508ca034527366f0
+Command: [523e214321ebc55e66c613e346e52626, sendKeysToElement {id=f680a1f5-bd4c-4026-a2e4-10b2f0e84213, value=[Ljava.lang.CharSequence;@644947ee}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 111.0.5563.147, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57594}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57594/devtoo..., se:cdpVersion: 111.0.5563.147, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (523e214321ebc55e66c613e346e52626)] -&gt; xpath: //input[@id=&apos;typeahead-basic2&apos;]]
+Session ID: 523e214321ebc55e66c613e346e52626
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -152,14 +153,14 @@ Session ID: a49f7ffe157a4c2a508ca034527366f0
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:113)
+	at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at com.hashmove.pageobjects.BookingDetailPage.clicksaveconsigneeinfo(BookingDetailPage.java:176)
-	at com.hashmove.testcases.TestCase_SpotRateandBooking_001.verifyspotrateandbooking(TestCase_SpotRateandBooking_001.java:476)
+	at jdk.proxy2/jdk.proxy2.$Proxy33.sendKeys(Unknown Source)
+	at com.hashmove.pageobjects.BookingDetailPage.setconsigneename2(BookingDetailPage.java:141)
+	at com.hashmove.testcases.TestCase_SpotRateandBooking_001.verifyspotrateandbooking(TestCase_SpotRateandBooking_001.java:545)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,7 +198,7 @@ Session ID: a49f7ffe157a4c2a508ca034527366f0
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Dell PC\AppData\Local\Temp\testng-eclipse-2113419526\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Dell PC\AppData\Local\Temp\testng-eclipse--1193731019\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -250,7 +251,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyspotrateandbooking')
 data.setCell(0, 2, 'com.hashmove.testcases.TestCase_SpotRateandBooking_001')
-data.setCell(0, 3, 259549);
+data.setCell(0, 3, 259218);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -290,11 +291,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyspotrateandbooking</span>
-                <span class="method-start">3878 ms</span>
+                <span class="method-start">3111 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">263503 ms</span>
+                <span class="method-start">262420 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

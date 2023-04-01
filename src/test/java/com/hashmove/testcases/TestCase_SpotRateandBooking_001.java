@@ -492,43 +492,43 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Consignee Name
-		bdp.setconsigneename2(getCellData(1, 17, "TestData2"));
+		bdp.setconsigneename2(getCellData(1, 22, "TestData2"));
 		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Person
-		bdp.setcontactperson2(getCellData(1, 18, "TestData2"));
+		bdp.setcontactperson2(getCellData(1, 23, "TestData2"));
 		logger.info("Contact Person = " + cell.getStringCellValue() + " has entered");
 
 		// Enter City
-		bdp.setcity(getCellData(1, 19, "TestData2"));
+		bdp.setcity2(getCellData(1, 24, "TestData2"));
 		logger.info("City = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Phone
-		bdp.setcontactphone(getCellData(1, 20, "TestData2"));
+		bdp.setcontactphone2(getCellData(1, 25, "TestData2"));
 		logger.info("Contact Phone = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Email
-		bdp.setcontactemail(getCellData(1, 21, "TestData2"));
+		bdp.setcontactemail2(getCellData(1, 26, "TestData2"));
 		logger.info("Contact Email = " + cell.getStringCellValue() + " has entered");
 
 		// Select and Enter Address
-		bdp.clickaddressicon();
+		bdp.clickaddressicon2();
 		Thread.sleep(1000);
 
-		bdp.setconsigneepinaddress(getCellData(1, 22, "TestData2"));
+		bdp.setconsigneepinaddress2(getCellData(1, 27, "TestData2"));
 		logger.info("Consignee Pin Address = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Click Submit
-		bdp.clicksubmitconsigneeaddress();
+		bdp.clicksubmitconsigneeaddress2();
 		Thread.sleep(2000);
 
 		// Enter Main Address
-		bdp.setconsigneemainaddress(getCellData(1, 22, "TestData2"));
+		bdp.setconsigneemainaddress2(getCellData(1, 27, "TestData2"));
 		logger.info("Consignee Main Address = " + cell.getStringCellValue() + " has entered");
 
 		// Click Save Consignee info
-		bdp.clicksaveconsigneeinfo();
+		bdp.clicksaveconsigneeinfo2();
 		Thread.sleep(2000);
 
 		// Object of Actions class to scroll down
@@ -542,13 +542,26 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Select Consignee Name
-		bdp.setconsigneename(getCellData(1, 17, "TestData2"));
-		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
+		//bdp.setconsigneename2(getCellData(1, 22, "TestData2"));
+		//logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Consignee Information
-		bdp.clicksaveshipperinfo();
+		//bdp.clicksaveshipperinfo();
+		//Thread.sleep(2000);
+		//logger.info("Consignee Information has added....");
+		
+		// Object of Actions class to scroll down
+
+				
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
-		logger.info("Consignee Information has added....");
+		
+		// Upload Shipment Documents
+
+		// Upload Packet List
+		bdp.clickpackagelist();
+		
+		
 
 	}
 
