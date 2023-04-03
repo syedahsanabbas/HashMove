@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.hashmove.testcases.TestCase_UserCreation_001">
+      <class name="com.hashmove.testcases.TestCase_SpotRateandBooking_001">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="verifycreatesuperadminuser"/>
+          <include name="verifyspotrateandbooking"/>
         </methods>
-      </class> <!-- com.hashmove.testcases.TestCase_UserCreation_001 -->
+      </class> <!-- com.hashmove.testcases.TestCase_SpotRateandBooking_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

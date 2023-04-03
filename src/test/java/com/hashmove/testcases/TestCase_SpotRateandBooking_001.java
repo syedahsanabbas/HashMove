@@ -560,6 +560,13 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 
 		// Upload Packet List
 		bdp.clickpackagelist();
+		Thread.sleep(1000);
+		bdp.clickselectafile();
+	
+		driver.switchTo().activeElement().sendKeys("C:\\Users\\Dell PC\\Desktop\\urls.txt");
+		
+		
+		
 		
 		
 
