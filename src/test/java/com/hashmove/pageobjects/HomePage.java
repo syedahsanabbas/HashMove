@@ -30,80 +30,97 @@ public class HomePage {
 	@FindBy(xpath = "//span[normalize-space()='Sea Shipment - FCL']")
 	@CacheLookup
 	WebElement btnseashipmentfcl;
-	
+
 	@FindBy(id = "hashDatepicker")
 	@CacheLookup
-	WebElement txtboxdatepicker;
-	
-	@FindBy(xpath = "//div[@class='btn-light ng-star-inserted'][normalize-space()='20']")
-	@CacheLookup
-	WebElement txtboxdatepicker2;
-	
+	WebElement datepickercargoreadiness;
+
 	@FindBy(id = "fcl_cargo_ddl")
 	@CacheLookup
 	WebElement ddcargotype;
-	
+
 	@FindBy(id = "commTypeAhead")
 	@CacheLookup
 	WebElement txtboxhscode;
-	
+
 	@FindBy(xpath = "//input[@placeholder='Cargo Description']")
 	@CacheLookup
 	WebElement txtboxcargodescription;
-	
+
 	@FindBy(id = "typeahead-basic")
 	@CacheLookup
 	WebElement ddpickuplocation;
-	
+
 	@FindBy(xpath = "//input[@id='typeahead-basic' and @placeholder= 'Search for port of pickup']")
 	@CacheLookup
 	WebElement txtboxportofpickup;
-	
+
 	@FindBy(id = "typeahead-basic2")
 	@CacheLookup
 	WebElement dddeliverylocation;
-	
+
 	@FindBy(xpath = "//p[contains(text(),'Deliver to port would mean you are responsible to get your cargo delivered to your warehouse.')]")
 	@CacheLookup
 	WebElement dddeliverylocation2;
-	
+
 	@FindBy(xpath = "//input[@id='typeahead-basic2' and @placeholder= 'Search for port of deliver']")
 	@CacheLookup
 	WebElement txtboxportofdelivery;
-	
+
 	@FindBy(xpath = "//div[@id='fcl_cont_ddl']")
 	@CacheLookup
 	WebElement ddcontainersize;
-	
-	@FindBy(xpath = "//div[@class='form-group ng-tns-c209-0 mb-0']//input[@name='counter']")
+
+	@FindBy(xpath = "//div[@class='card-body section-body pt-0']//input[@name='counter']")
 	@CacheLookup
 	WebElement txtboxquantity;
-	
+
 	@FindBy(xpath = "//input[@placeholder='Weight ']")
 	@CacheLookup
 	WebElement txtboxweight;
+	
+	@FindBy(xpath = "(//span[contains(text(),'Payment Terms')])[6]")
+	@CacheLookup
+	WebElement lnktextpaymentterms;
+	
+	@FindBy(xpath = "(//div[@class='form-group d-flex flex-column pr-2 ml-3']//span[@class='switch switch-small'])[1]")
+	@CacheLookup
+	WebElement tglbtnadvancepayment;
+	
+	@FindBy(xpath = "(//div[@class='form-group d-flex flex-column pr-2 ml-3']//span[@class='switch switch-small'])[2]")
+	@CacheLookup
+	WebElement tglbtndaysaftertheissuanceofbl;
+	
+	@FindBy(xpath = "(//label[@class='pt-0 d-flex flex-row align-items-center']//input[@type = 'text'])[1]")
+	@CacheLookup
+	WebElement txtboxpaymenttermsdays;
 	
 	@FindBy(xpath = "//button[@type='submit']")
 	@CacheLookup
 	WebElement btnrequestspotrate;
 	
-	
+	@FindBy(xpath = "//button[@type='button' and normalize-space()='Save']")
+	@CacheLookup
+	WebElement btnsavepaymentterms;
+
 	@FindBy(xpath = "(//div[@class='row']//div[@class='pr-0 col-12'])[1]")
 	@CacheLookup
 	public WebElement labelrequest;
-	
+
 	@FindBy(id = "dropdownBasic1")
 	@CacheLookup
 	WebElement ddoptions;
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Users']")
 	@CacheLookup
 	WebElement lnktextusers;
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Spot Rates']")
 	@CacheLookup
 	WebElement lnktextspotrates;
 	
+	
+
 	// Identify Action on all Web Elements
 
 	public void clickseashipmentfcl() {
@@ -111,18 +128,42 @@ public class HomePage {
 
 	}
 	
-
-	
-	public void setdate() {
-		txtboxdatepicker.click();
-		txtboxdatepicker2.click();
-		
+	public void clickcargoreadiness() {
+		datepickercargoreadiness.click();
 
 	}
-	
-	
-	
-	
+
+	public void setcargoreadinessmonthyear(String cargoreadinessmonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			System.out.println(monthyear);
+			if (monthyear.equals(cargoreadinessmonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setcargoreadinessday(String cargoreadinessday) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath(
+				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(cargoreadinessday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
 	public void clickcargotypedropdown() {
 		ddcargotype.click();
 
@@ -141,26 +182,25 @@ public class HomePage {
 
 		}
 	}
-	
+
 	public void sethscode(String hscode) {
 		txtboxhscode.clear();
 		txtboxhscode.sendKeys(hscode);
 		txtboxhscode.sendKeys(Keys.TAB);
 
 	}
-	
+
 	public void setcargodescription(String cargodescription) {
 		txtboxcargodescription.clear();
 		txtboxcargodescription.sendKeys(cargodescription);
 
 	}
-		
+
 	public void clickpickuplocationdropdown() {
 		ddpickuplocation.click();
 
 	}
-	
-	
+
 	public void setpickuplocation(String pickuplocation) {
 		List<WebElement> allOptions = ldriver
 				.findElements(By.xpath("//div[@aria-labelledby='dropdownMenuButton']//ul//li/p"));
@@ -174,7 +214,7 @@ public class HomePage {
 
 		}
 	}
-	
+
 	public void setportofpickup(String portofpickup) throws InterruptedException {
 		txtboxportofpickup.clear();
 		txtboxportofpickup.sendKeys(portofpickup);
@@ -182,31 +222,29 @@ public class HomePage {
 		txtboxportofpickup.sendKeys(Keys.ENTER);
 
 	}
-	
+
 	public void clickdeliverylocationdropdown() {
 		dddeliverylocation.click();
 
 	}
-	
+
 	public void setdeliverylocation() {
 		dddeliverylocation2.click();
 	}
-	
-	/*
-	public void setdeliverylocation(String deliverylocation) {
-		List<WebElement> allOptions = ldriver
-				.findElements(By.xpath("//div[@aria-labelledby='dropdownMenuButton']//ul/li"));
-		for (int i = 0; i < allOptions.size(); i++) {
-			if (allOptions.get(i).getText().toString().contains(deliverylocation)) {
-				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
-				allOptions.get(i).click();
-				break;
-				
-			}
 
-		}
-	}
-	*/
+	/*
+	 * public void setdeliverylocation(String deliverylocation) { List<WebElement>
+	 * allOptions = ldriver
+	 * .findElements(By.xpath("//div[@aria-labelledby='dropdownMenuButton']//ul/li")
+	 * ); for (int i = 0; i < allOptions.size(); i++) { if
+	 * (allOptions.get(i).getText().toString().contains(deliverylocation)) {
+	 * System.out.println("Compare equal with: " +
+	 * allOptions.get(i).getText().toString()); allOptions.get(i).click(); break;
+	 * 
+	 * }
+	 * 
+	 * } }
+	 */
 	public void setportofdelivery(String portofdelivery) throws InterruptedException {
 		txtboxportofdelivery.clear();
 		txtboxportofdelivery.sendKeys(portofdelivery);
@@ -214,16 +252,15 @@ public class HomePage {
 		txtboxportofdelivery.sendKeys(Keys.ENTER);
 
 	}
-	
+
 	public void clickcontainersizedropdown() {
 		ddcontainersize.click();
 
 	}
-	
-	
+
 	public void setcontainersize(String containersize) {
-		List<WebElement> allOptions = ldriver
-				.findElements(By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div[@class='row ng-tns-c209-0']//div//span"));
+		List<WebElement> allOptions = ldriver.findElements(
+				By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div[@class='row ng-tns-c209-0']//div//span"));
 
 		for (int i = 0; i < allOptions.size(); i++) {
 			if (allOptions.get(i).getText().toString().contains(containersize)) {
@@ -234,38 +271,62 @@ public class HomePage {
 
 		}
 	}
-	
-	
+
 	public void setquantity(String quantity) {
 		txtboxquantity.sendKeys(quantity);
 
 	}
-	
-	
+
 	public void setweight(String weight) {
 		txtboxweight.clear();
 		txtboxweight.sendKeys(weight);
 
 	}
 	
+	public void clickpaymentterms() {
+		lnktextpaymentterms.click();
+
+	}
 	
+	public void setpaymenttermsdays(String paymenttermsdays) {
+		txtboxpaymenttermsdays.clear();
+		txtboxpaymenttermsdays.sendKeys(paymenttermsdays);
+
+	}
+	
+	public void clicksavepaymentterms() {
+		btnsavepaymentterms.click();
+
+	}
+
 	public void clickrequestspotrate() {
 		btnrequestspotrate.click();
 
 	}
-	
+
 	public void clickoptionsdropdown() {
 		ddoptions.click();
 
 	}
-	
+
 	public void clickusers() {
 		lnktextusers.click();
 
 	}
-	
+
 	public void clickspotrates() {
 		lnktextspotrates.click();
 
 	}
+	
+	public void selectadvancepayment() {
+		tglbtnadvancepayment.click();
+
+	}
+	
+	public void selectdaysaftertheissuanceofbl() {
+		tglbtndaysaftertheissuanceofbl.click();
+
+	}
+	
 }

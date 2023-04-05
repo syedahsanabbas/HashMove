@@ -31,6 +31,10 @@ public class RateRequestsPage {
 	@FindBy(xpath = "//span[@class='pull-left']")
 	@CacheLookup
 	WebElement lnktextfilteryourrequest2;
+	
+	@FindBy(xpath = "//span[@class='pull-left']")
+	@CacheLookup
+	WebElement lnktextfilteryourrequest3;
 
 	@FindBy(xpath = "//input[@placeholder='eg. HM-401230123912']")
 	@CacheLookup
@@ -40,6 +44,10 @@ public class RateRequestsPage {
 	@CacheLookup
 	WebElement txboxrequestnumber2;
 
+	@FindBy(xpath = "//input[@placeholder='eg. HM-401230123912']")
+	@CacheLookup
+	WebElement txboxrequestnumber3;
+	
 	@FindBy(xpath = "//button[@class='btn btn-primary w-100 btn-lg']")
 	@CacheLookup
 	WebElement btnfilterrecords;
@@ -47,6 +55,10 @@ public class RateRequestsPage {
 	@FindBy(xpath = "//button[@class='btn btn-primary w-100 btn-lg']")
 	@CacheLookup
 	WebElement btnfilterrecords2;
+	
+	@FindBy(xpath = "//button[@class='btn btn-primary w-100 btn-lg']")
+	@CacheLookup
+	WebElement btnfilterrecords3;
 	
 	@FindBy(xpath = "//a[normalize-space()='Accept']")
 	@CacheLookup
@@ -135,6 +147,12 @@ public class RateRequestsPage {
 		lnktextfilteryourrequest2.click();
 
 	}
+	
+	public void clickfilteryourrequest3() {
+		lnktextfilteryourrequest3.click();
+
+	}
+	
 	public void setrequestnumber(String requestnumber) {
 		txboxrequestnumber.clear();
 		txboxrequestnumber.sendKeys(requestnumber);
@@ -146,6 +164,12 @@ public class RateRequestsPage {
 		txboxrequestnumber2.sendKeys(requestnumber);
 
 	}
+	
+	public void setrequestnumber3(String requestnumber) {
+		txboxrequestnumber3.clear();
+		txboxrequestnumber3.sendKeys(requestnumber);
+
+	}
 
 	public void clickfilterrecords() {
 		btnfilterrecords.click();
@@ -154,6 +178,11 @@ public class RateRequestsPage {
 	
 	public void clickfilterrecords2() {
 		btnfilterrecords2.click();
+
+	}
+	
+	public void clickfilterrecords3() {
+		btnfilterrecords3.click();
 
 	}
 

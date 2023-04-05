@@ -1,11 +1,15 @@
 package com.hashmove.pageobjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class BookingDetailPage {
 
@@ -23,6 +27,10 @@ public class BookingDetailPage {
 	}
 
 	// Identify All Web Elements on Booking Detail Page
+	
+	@FindBy(xpath = "//div[@class='d-flex flex-column info ml-5 pl-2 pointer']")
+	@CacheLookup
+	WebElement lnktextbookingrequest;
 
 	@FindBy(xpath = "//span[@ngbtooltip='Add Shipper']//img[@alt='edit']")
 	@CacheLookup
@@ -104,13 +112,17 @@ public class BookingDetailPage {
 	@CacheLookup
 	WebElement btnsaveconsigneeinfo;
 	
-	@FindBy(xpath = "//button[normalize-space()='SAVE']")
+	@FindBy(xpath = "//button[normalize-space()='Save']")
 	@CacheLookup
 	WebElement btnsaveconsigneeinfo2;
 	
 	@FindBy(xpath = "//input[@placeholder='Select Shipper']")
 	@CacheLookup
 	WebElement txtboxshippername;
+	
+	@FindBy(xpath = "//input[@placeholder='Select Consignee']")
+	@CacheLookup
+	WebElement txtboxmainconsigneename;
 	
 	@FindBy(xpath = "//button[normalize-space()='Save']")
 	@CacheLookup
@@ -128,8 +140,117 @@ public class BookingDetailPage {
 	@CacheLookup
 	WebElement lnktextselectafile;
 	
+	@FindBy(xpath = "//p[@class='uploader-btn font-italic pb-0 mb-1']")
+	@CacheLookup
+	WebElement lnktextselectafile2;
+	
+	@FindBy(xpath = "//p[@class='uploader-btn font-italic pb-0 mb-1']")
+	@CacheLookup
+	WebElement lnktextselectafile3;
+	
+	@FindBy(xpath = "//button[normalize-space()='Upload']")
+	@CacheLookup
+	WebElement btnupload;
+	
+	@FindBy(xpath = "//button[normalize-space()='Upload']")
+	@CacheLookup
+	WebElement btnupload2;
+	
+	@FindBy(xpath = "//button[normalize-space()='Upload']")
+	@CacheLookup
+	WebElement btnupload3;
+	
+	@FindBy(xpath = "//span[@class='menu-text'][normalize-space()='Bookings']")
+	@CacheLookup
+	WebElement lnktextbookings;
+	
+	@FindBy(xpath = "//span[normalize-space()='Booking Confirmation Document (CRO/BC/SC)']")
+	@CacheLookup
+	WebElement lnktextbookingconfirmationdocument;
+	
+	@FindBy(xpath = "//button[normalize-space()='Yes']")
+	@CacheLookup
+	WebElement btnconfirmbookingyes;
+	
+	@FindBy(xpath = "//button[normalize-space()='Yes']")
+	@CacheLookup
+	WebElement btnintransityes;
+	
+	@FindBy(xpath = "//textarea[@placeholder='Details']")
+	@CacheLookup
+	WebElement txtboxshipmentdetails;
+	
+	@FindBy(xpath = "//textarea[@placeholder='Details']")
+	@CacheLookup
+	WebElement txtboxintransitshipmentdetails;
+	
+	@FindBy(xpath = "//button[normalize-space()='SUBMIT']")
+	@CacheLookup
+	WebElement btnconfirmbookingsubmit;
+	
+	@FindBy(xpath = "//button[normalize-space()='SUBMIT']")
+	@CacheLookup
+	WebElement	btnintransitsubmit;
+	
+	@FindBy(xpath = "//button[normalize-space()='I accept the terms & conditions']")
+	@CacheLookup
+	WebElement btniacceptthetermsandconditions;
+	
+	@FindBy(xpath = "//button[normalize-space()='Add Schedule']")
+	@CacheLookup
+	WebElement btnaddschedule;
+	
+	@FindBy(xpath = "//input[@placeholder= 'From ' and @class='form-control departure-date ng-untouched ng-pristine ng-valid']")
+	@CacheLookup
+	WebElement datepickerdeparturefrom;
+	
+	@FindBy(xpath = "(//input[@placeholder= 'To' and @class='form-control departure-date ng-untouched ng-pristine ng-valid'])[1]")
+	@CacheLookup
+	WebElement datepickerarrivalto;
+	
+	@FindBy(xpath = "//div[@class='row animated fadeIn']//input[@placeholder='Vessel Name']")
+	@CacheLookup
+	WebElement txtboxvesselname;
+	
+	@FindBy(xpath = "//input[@placeholder='Voyage Name']")
+	@CacheLookup
+	WebElement txtboxvoyagenumber;
+	
+	@FindBy(xpath = "//button[normalize-space()='Update Schedule']")
+	@CacheLookup
+	WebElement btnupdateschedule;
+	
+	@FindBy(xpath = "//span[normalize-space()='Bill Of Lading']")
+	@CacheLookup
+	WebElement lnktextbilloflading;
+	
+	@FindBy(xpath = "//input[@placeholder='BL No']")
+	@CacheLookup
+	WebElement txtboxbillnumber;
+	
+	@FindBy(xpath = "//input[@placeholder='BL Date']")
+	@CacheLookup
+	WebElement datepickerbldate;
+	
+	@FindBy(xpath = "//span[normalize-space()='Update Status']")
+	@CacheLookup
+	WebElement lnktextupdatestatus;
+	
+	@FindBy(id = "bkStatus")
+	@CacheLookup
+	WebElement ddshipmentstatus;
+	
+	@FindBy(xpath = "//button[normalize-space()='SUBMIT']")
+	@CacheLookup
+	WebElement btnsubmitshipmentstatus;
+	
 	// Identify Action on all Web Elements
 
+	public void clickbookings() {
+		lnktextbookings.click();
+		
+	}
+	
 	public void clickaddshipper() {
 		btnaddshipper.click();
 		
@@ -162,14 +283,14 @@ public class BookingDetailPage {
 	
 	public void setcity(String city) throws InterruptedException {
 		txtboxcity.sendKeys(city);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		txtboxcity.sendKeys(Keys.ENTER);
 
 	}
 	
 	public void setcity2(String city) throws InterruptedException {
 		txtboxcity2.sendKeys(city);
-		Thread.sleep(3000);
+		Thread.sleep(5000);
 		txtboxcity2.sendKeys(Keys.ENTER);
 
 	}
@@ -259,6 +380,13 @@ public class BookingDetailPage {
 
 	}
 	
+	public void setmainconsigneename(String mainconsigneename) throws InterruptedException {
+		txtboxmainconsigneename.sendKeys(mainconsigneename);
+		Thread.sleep(2000);
+		txtboxmainconsigneename.sendKeys(Keys.ENTER);
+
+	}
+	
 	public void clicksaveshipperinfo() {
 		btnsaveshipperinfo.click();
 		
@@ -273,5 +401,240 @@ public class BookingDetailPage {
 		lnktextselectafile.click();
 		
 	}
+	
+	public void clickselectafile2() {
+		lnktextselectafile2.click();
+		
+	}
+	
+	public void clickselectafile3() {
+		lnktextselectafile3.click();
+		
+	}
+	
+	public void clickupload() {
+		btnupload.click();
+		
+	}
+	
+	public void clickupload2() {
+		btnupload2.click();
+		
+	}
+	
+	public void clickupload3() {
+		btnupload3.click();
+		
+	}
+	
+	public void clickbookingrequestlink() {
+		lnktextbookingrequest.click();
+		
+	}
+	
+	public void clickbookingconfirmationdocument() {
+		lnktextbookingconfirmationdocument.click();
+		
+	}
+	
+	public void clickconfirmbookingyes() {
+		btnconfirmbookingyes.click();
+		
+	}
+	
+	public void clickintransityes() {
+		btnintransityes.click();
+		
+	}
+	
+	public void setshipmentdetails(String shipmentdetails)  {
+		txtboxshipmentdetails.sendKeys(shipmentdetails);
+		
+	}
+	
+	public void setshipmentdetailsintransit(String shipmentdetailsintransit)  {
+		txtboxintransitshipmentdetails.sendKeys(shipmentdetailsintransit);
+		
+	}
+	
+	public void clicksubmit() {
+		btnconfirmbookingsubmit.click();
+		
+	}
+	
+	public void clicksubmitintransit() {
+		btnintransitsubmit.click();
+		
+	}
+	
+	public void clickiacceptthetermsandconditions() {
+		btniacceptthetermsandconditions.click();
+		
+	}
+	
+	public void clickaddschedule() {
+		btnaddschedule.click();
+		
+	}
+	
+	public void clickdeparturefrom() {
+		datepickerdeparturefrom.click();
+
+	}
+	
+	public void clickarrivalto() {
+		datepickerarrivalto.click();
+
+	}
+	
+	
+	public void setdeparturedatemonthyear(String departuredatemonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			System.out.println(monthyear);
+			if (monthyear.equals(departuredatemonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setdeparturedateday(String departuredateday) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath(
+				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(departuredateday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	
+	public void setarrivaldatemonthyear(String arrivaldatemonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			System.out.println(monthyear);
+			if (monthyear.equals(arrivaldatemonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setarrivaldateday(String arrivaldateday) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath(
+				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(arrivaldateday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	public void setvesselname(String vesselname) throws InterruptedException  {
+		txtboxvesselname.sendKeys(vesselname);
+		Thread.sleep(2000);
+		txtboxvesselname.sendKeys(Keys.ENTER);
+		
+		
+	}
+	
+	public void setvoyagenumber(String voyagenumber)  {
+		txtboxvoyagenumber.sendKeys(voyagenumber);
+		
+	}
+	
+	public void clickupdateschedule() {
+		btnupdateschedule.click();
+		
+	}
+	
+	public void clickbilloflading() {
+		lnktextbilloflading.click();
+		
+	}
+	
+	public void setbillnumber(String billnumber)  {
+		txtboxbillnumber.sendKeys(billnumber);
+		
+	}
+	
+	public void clickbldate() {
+		datepickerbldate.click();
+
+	}
+	
+	public void setbldatemonthyear(String bldatemonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			System.out.println(monthyear);
+			if (monthyear.equals(bldatemonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setbldateday(String bldateday) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath(
+				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(bldateday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	public void clickupdatestatus() {
+		lnktextupdatestatus.click();
+		
+	}
+	
+	public void clickshipmentstatusdropdown() {
+		ddshipmentstatus.click();
+		
+	}
+	
+	public  void setshipmentstatus(String shipmentstatus) {
+	      WebElement ddshipmentstatus = ldriver.findElement(By.id("bkStatus"));
+	      Select drop = new Select(ddshipmentstatus);
+	      drop.selectByVisibleText(shipmentstatus); 
+	}
+	
+	public void clicksubmitshipmentstatus() {
+		btnsubmitshipmentstatus.click();
+		
+	}
+	
 	
 }

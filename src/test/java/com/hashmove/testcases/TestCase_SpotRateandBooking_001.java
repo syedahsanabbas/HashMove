@@ -1,14 +1,22 @@
 package com.hashmove.testcases;
 
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
+
+import java.awt.AWTException;
+import java.awt.datatransfer.StringSelection;
+
+import java.awt.Robot;
 
 import org.openqa.selenium.Keys;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang.StringUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.openqa.selenium.interactions.Actions;
@@ -28,7 +36,7 @@ import com.hashmove.pageobjects.ThankyouBookingPage;
 public class TestCase_SpotRateandBooking_001 extends BaseClass {
 
 	@Test(priority = 0)
-	public void verifyspotrateandbooking() throws InterruptedException, IOException
+	public void verifyspotrateandbooking() throws InterruptedException, IOException, AWTException
 
 	{
 		System.out.println("***************TestCase_SpotRateandBooking_001*******************");
@@ -72,7 +80,7 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		String FileName = "screenshot" + d.toString().replace(" ", "_").replace(":", "") + ".png";
 		System.out.println(FileName);
 		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(f, new File("C:\\Users\\Dell PC\\eclipse-workspace\\HashMove\\ScreenShots\\" + FileName));
+		FileUtils.copyFile(f, new File(System.getProperty("user.dir") + "\\ScreenShots\\" + FileName));
 
 		// screenshot copied from buffer is saved at the mentioned path.
 
@@ -126,35 +134,39 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 
 		// Select Cargo Readiness Date
 		Thread.sleep(8000);
-		hp.setdate();
-		logger.info("Cargo Readiness Date has selected");
+		hp.clickcargoreadiness();
+		hp.setcargoreadinessmonthyear(getCellData(1, 4, "TestData2"));
+		logger.info("Cargo Readiness Month Year has selected");
+
+		hp.setcargoreadinessday(getCellData(1, 5, "TestData2"));
+		logger.info("Cargo Readiness Day has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
 		Thread.sleep(1000);
-		hp.setcargotype(getCellData(1, 4, "TestData2"));
+		hp.setcargotype(getCellData(1, 6, "TestData2"));
 		logger.info("Cargo Type = " + cell.getStringCellValue() + " has selected");
 		Thread.sleep(1000);
 
 		// Enter HS Code
-		hp.sethscode(getCellData(1, 5, "TestData2"));
+		hp.sethscode(getCellData(1, 7, "TestData2"));
 		logger.info("HS Code = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Cargo Description
-		hp.setcargodescription(getCellData(1, 6, "TestData2"));
+		hp.setcargodescription(getCellData(1, 8, "TestData2"));
 		logger.info("Cargo Description = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Select Pickup Location
 		hp.clickpickuplocationdropdown();
 		Thread.sleep(2000);
-		hp.setpickuplocation(getCellData(1, 7, "TestData2"));
+		hp.setpickuplocation(getCellData(1, 9, "TestData2"));
 		logger.info("Pickup Location = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Port of Pickup
-		hp.setportofpickup(getCellData(1, 8, "TestData2"));
+		hp.setportofpickup(getCellData(1, 10, "TestData2"));
 		logger.info("Port of Pickup = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -173,23 +185,23 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Port of Delivery
-		hp.setportofdelivery(getCellData(1, 10, "TestData2"));
+		hp.setportofdelivery(getCellData(1, 12, "TestData2"));
 		logger.info("Port of Delivery = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Select Container Size
 		hp.clickcontainersizedropdown();
 		Thread.sleep(2000);
-		hp.setcontainersize(getCellData(1, 11, "TestData2"));
+		hp.setcontainersize(getCellData(1, 13, "TestData2"));
 		logger.info("Container Size = " + cell.getStringCellValue() + " has selected");
 
 		// Enter Quantity
-		hp.setquantity(getCellData(1, 12, "TestData2"));
+		hp.setquantity(getCellData(1, 14, "TestData2"));
 		logger.info("Quantity = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Weight
-		hp.setweight(getCellData(1, 13, "TestData2"));
+		hp.setweight(getCellData(1, 15, "TestData2"));
 		logger.info("Weight = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -388,11 +400,11 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Reference Number (optional)
-		bpp.setreferencenumber(getCellData(1, 14, "TestData2"));
+		bpp.setreferencenumber(getCellData(1, 16, "TestData2"));
 		logger.info("Reference Number = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Shipping Instructions
-		bpp.setshippinginstructions(getCellData(1, 15, "TestData2"));
+		bpp.setshippinginstructions(getCellData(1, 17, "TestData2"));
 		logger.info("Shipping Instructions = " + cell.getStringCellValue() + " has entered");
 
 		// Check Disclaimer
@@ -437,30 +449,30 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Consignee Name
-		bdp.setconsigneename(getCellData(1, 16, "TestData2"));
+		bdp.setconsigneename(getCellData(1, 18, "TestData2"));
 		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Person
-		bdp.setcontactperson(getCellData(1, 17, "TestData2"));
+		bdp.setcontactperson(getCellData(1, 19, "TestData2"));
 		logger.info("Contact Person = " + cell.getStringCellValue() + " has entered");
 
 		// Enter City
-		bdp.setcity(getCellData(1, 18, "TestData2"));
+		bdp.setcity(getCellData(1, 20, "TestData2"));
 		logger.info("City = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Phone
-		bdp.setcontactphone(getCellData(1, 19, "TestData2"));
+		bdp.setcontactphone(getCellData(1, 21, "TestData2"));
 		logger.info("Contact Phone = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Email
-		bdp.setcontactemail(getCellData(1, 20, "TestData2"));
+		bdp.setcontactemail(getCellData(1, 22, "TestData2"));
 		logger.info("Contact Email = " + cell.getStringCellValue() + " has entered");
 
 		// Select and Enter Address
 		bdp.clickaddressicon();
 		Thread.sleep(1000);
 
-		bdp.setconsigneepinaddress(getCellData(1, 21, "TestData2"));
+		bdp.setconsigneepinaddress(getCellData(1, 23, "TestData2"));
 		logger.info("Consignee Pin Address = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -469,7 +481,7 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Main Address
-		bdp.setconsigneemainaddress(getCellData(1, 21, "TestData2"));
+		bdp.setconsigneemainaddress(getCellData(1, 23, "TestData2"));
 		logger.info("Consignee Main Address = " + cell.getStringCellValue() + " has entered");
 
 		// Click Save Consignee info
@@ -477,7 +489,7 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Select SHIPPER NAME
-		bdp.setshippername(getCellData(1, 16, "TestData2"));
+		bdp.setshippername(getCellData(1, 18, "TestData2"));
 		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Shipper Information
@@ -492,30 +504,30 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Consignee Name
-		bdp.setconsigneename2(getCellData(1, 22, "TestData2"));
+		bdp.setconsigneename2(getCellData(1, 24, "TestData2"));
 		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Person
-		bdp.setcontactperson2(getCellData(1, 23, "TestData2"));
+		bdp.setcontactperson2(getCellData(1, 25, "TestData2"));
 		logger.info("Contact Person = " + cell.getStringCellValue() + " has entered");
 
 		// Enter City
-		bdp.setcity2(getCellData(1, 24, "TestData2"));
+		bdp.setcity2(getCellData(1, 26, "TestData2"));
 		logger.info("City = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Phone
-		bdp.setcontactphone2(getCellData(1, 25, "TestData2"));
+		bdp.setcontactphone2(getCellData(1, 27, "TestData2"));
 		logger.info("Contact Phone = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Contact Email
-		bdp.setcontactemail2(getCellData(1, 26, "TestData2"));
+		bdp.setcontactemail2(getCellData(1, 28, "TestData2"));
 		logger.info("Contact Email = " + cell.getStringCellValue() + " has entered");
 
 		// Select and Enter Address
 		bdp.clickaddressicon2();
 		Thread.sleep(1000);
 
-		bdp.setconsigneepinaddress2(getCellData(1, 27, "TestData2"));
+		bdp.setconsigneepinaddress2(getCellData(1, 29, "TestData2"));
 		logger.info("Consignee Pin Address = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -524,7 +536,7 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Main Address
-		bdp.setconsigneemainaddress2(getCellData(1, 27, "TestData2"));
+		bdp.setconsigneemainaddress2(getCellData(1, 29, "TestData2"));
 		logger.info("Consignee Main Address = " + cell.getStringCellValue() + " has entered");
 
 		// Click Save Consignee info
@@ -542,34 +554,162 @@ public class TestCase_SpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Select Consignee Name
-		//bdp.setconsigneename2(getCellData(1, 22, "TestData2"));
-		//logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
+		// bdp.setconsigneename2(getCellData(1, 22, "TestData2"));
+		// logger.info("Consignee Name = " + cell.getStringCellValue() + " has
+		// entered");
 
 		// Save Consignee Information
-		//bdp.clicksaveshipperinfo();
-		//Thread.sleep(2000);
-		//logger.info("Consignee Information has added....");
-		
+		// bdp.clicksaveshipperinfo();
+		// Thread.sleep(2000);
+		// logger.info("Consignee Information has added....");
+
 		// Object of Actions class to scroll down
 
-				
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
-		
+
 		// Upload Shipment Documents
 
 		// Upload Packet List
 		bdp.clickpackagelist();
+		logger.info("Package List has clicked.");
 		Thread.sleep(1000);
-		bdp.clickselectafile();
-	
-		driver.switchTo().activeElement().sendKeys("C:\\Users\\Dell PC\\Desktop\\urls.txt");
-		
-		
-		
-		
-		
 
+		bdp.clickselectafile();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(1000);
+
+		// creating object of Robot class
+		Robot rb = new Robot();
+
+		// copying File path to Clipboard
+		StringSelection str = new StringSelection(System.getProperty("user.dir") + "\\UploadFiles\\Document.txt");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Contol+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+
+		// release Contol+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Upload button
+		bdp.clickupload();
+		logger.info("Document has uploaded successfully!!!");
+		Thread.sleep(2000);
+
+		// Open Hash Move Provider Portal URL
+		driver.get("https://qahubpartner.hashmove.com/login");
+		Thread.sleep(10000);
+
+		// Click Booking Link
+		bdp.clickbookings();
+		Thread.sleep(5000);
+
+		// Search Booking Request Number
+		rrp.clickfilteryourrequest3();
+		logger.info("Click filter request link has clicked!!!");
+		Thread.sleep(1000);
+
+		// Enter Booking Request Number
+		rrp.setrequestnumber3(bookingnumber2);
+		logger.info("Booking Request Number has entered!!!");
+		Thread.sleep(1000);
+
+		// Object of Actions class to scroll down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Filter Records button
+		rrp.clickfilterrecords3();
+		logger.info("Filter Records button has clicked!!!");
+		Thread.sleep(2000);
+
+		// Click Booking request link
+		bdp.clickbookingrequestlink();
+		Thread.sleep(2000);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Upload Booking Confirmation Document (CRO/BC/SC)
+		bdp.clickbookingconfirmationdocument();
+		logger.info("Booking Confirmation Document (CRO/BC/SC) has clicked.");
+		Thread.sleep(1000);
+
+		bdp.clickselectafile2();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(1000);
+
+		// copying File path to Clipboard
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Contol+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+
+		// release Contol+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+		
+		//Click Update Booking Status
+		bdp.clickconfirmbookingyes();
+		logger.info("Booking Status has confirmed.");
+		
+		// Enter Shipment Details
+		bdp.setshipmentdetails(getCellData(1, 10, "TestData3"));
+		logger.info("Shipment Details = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+		
+		// Click Submit
+		bdp.clicksubmit();
+		logger.info("Submit button has clicked.");
+		Thread.sleep(2000);
+		
+		// Click  I accept the terms & conditions
+		bdp.clickiacceptthetermsandconditions();
+		logger.info("I accept the terms & conditions button has clicked.");
+		Thread.sleep(2000);
+		
+		// Add Add Schedule
+		bdp.clickaddschedule();
+		logger.info("Add Schedule button has clicked.");
+		Thread.sleep(2000);
+		
+		// Set Departure Date
+		bdp.clickdeparturefrom();
+		
+		// Set Arrival Date
+		
+		// Enter Vessel Name
+		
+		
+		
+		// Enter Voyage Number
+		
+		// Click  Update Schedule
+		
+		
 	}
 
 }
