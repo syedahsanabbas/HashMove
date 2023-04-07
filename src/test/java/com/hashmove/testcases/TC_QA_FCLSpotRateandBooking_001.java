@@ -28,20 +28,20 @@ import com.hashmove.pageobjects.RateRequestsPage;
 import com.hashmove.pageobjects.ThankyouBookingPage;
 import com.hashmove.utilities.ScreenRecorderUtil;
 
-//						********* TestCase_SpotRateandBooking_003 *********
-//		Description: Verify that Customer should request LCL Spot Rate and Book the Shipment
+//						********* TestCase_SpotRateandBooking_001 *********
+//		Description: Verify that Customer should request FCL Spot Rate with [shipper & consignee information] and Book the Shipment
 
-public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
+public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 
 	@Test(priority = 0)
-	public void verifylclspotrateandbooking() throws Exception
+	public void verifyfclspotrateandbookingwithoutaddingshipperinfo() throws Exception
 
 	{
-		System.out.println("***************TestCase_SpotRateandBooking_003*******************");
+		System.out.println("***************TC_QA_FCLSpotRateandBooking_001*******************");
 
 		// Start Recording
-		ScreenRecorderUtil.startRecord("verifylclspotrateandbooking()");
-
+		ScreenRecorderUtil.startRecord("verifyfclspotrateandbookingwithoutaddingshipperinfo()");
+		
 		// Open Hash Move Customer Portal URL
 		driver.get(qacustomerportalurl);
 
@@ -66,23 +66,24 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 
 		// Click Accept cookies button
 		rrp.clickaccept();
-
+		
 		// Enter User ID
-		clp.setuserid(getCellData(1, 1, "QACustomerLCLTestData"));
+		clp.setuserid(getCellData(1, 1, "QAFCLCustomerTestData"));
 		logger.info("User ID = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Password
-		clp.setpassword(getCellData(1, 2, "QACustomerLCLTestData"));
+		clp.setpassword(getCellData(1, 2, "QAFCLCustomerTestData"));
 		logger.info("Password = " + cell.getStringCellValue() + " has entered");
 
 		// Click Login Now button
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
+		
 
-		Thread.sleep(12000);
+		Thread.sleep(5000);
 
-		// Select Sea Shipment - LCL
-		String searchcategory = getCellData(1, 3, "QACustomerLCLTestData");
+		// Select Sea Shipment - FCL
+		String searchcategory = getCellData(1, 3, "QAFCLCustomerTestData");
 		System.out.println("Search Category: " + searchcategory);
 
 		if (searchcategory.equals("Sea Shipment - FCL")) {
@@ -92,9 +93,9 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 			Thread.sleep(2000);
 
 		} else if (searchcategory.equals("Sea Shipment - LCL")) {
-			hp.clickseashipmentlcl();
+
 			logger.info("Sea Shipment - LCL has selected");
-			Thread.sleep(2000);
+
 		}
 
 		else if (searchcategory.equals("Air Shipment"))
@@ -128,38 +129,38 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		// Select Cargo Readiness Date
 		Thread.sleep(8000);
 		hp.clickcargoreadiness();
-		hp.setcargoreadinessmonthyear(getCellData(1, 4, "QACustomerLCLTestData"));
-		logger.info("Cargo Readiness Month Year has selected");
+		hp.setcargoreadinessmonthyear(getCellData(1, 4, "QAFCLCustomerTestData"));
+		logger.info("Cargo Readiness Month Year" + cell.getStringCellValue()  +  " has selected");
 
-		hp.setcargoreadinessday(getCellData(1, 5, "QACustomerLCLTestData"));
-		logger.info("Cargo Readiness Day has selected");
+		hp.setcargoreadinessday(getCellData(1, 5, "QAFCLCustomerTestData"));
+		logger.info("Cargo Readiness Day" +  cell.getStringCellValue()  + " has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
 		Thread.sleep(1000);
-		hp.setcargotype(getCellData(1, 6, "QACustomerLCLTestData"));
+		hp.setcargotype(getCellData(1, 6, "QAFCLCustomerTestData"));
 		logger.info("Cargo Type = " + cell.getStringCellValue() + " has selected");
 		Thread.sleep(1000);
 
 		// Enter HS Code
-		hp.sethscode(getCellData(1, 7, "QACustomerLCLTestData"));
+		hp.sethscode(getCellData(1, 7, "QAFCLCustomerTestData"));
 		logger.info("HS Code = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Cargo Description
-		hp.setcargodescription(getCellData(1, 8, "QACustomerLCLTestData"));
+		hp.setcargodescription(getCellData(1, 8, "QAFCLCustomerTestData"));
 		logger.info("Cargo Description = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Select Pickup Location
 		hp.clickpickuplocationdropdown();
 		Thread.sleep(2000);
-		hp.setpickuplocation(getCellData(1, 9, "QACustomerLCLTestData"));
+		hp.setpickuplocation(getCellData(1, 9, "QAFCLCustomerTestData"));
 		logger.info("Pickup Location = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Port of Pickup
-		hp.setportofpickup(getCellData(1, 10, "QACustomerLCLTestData"));
+		hp.setportofpickup(getCellData(1, 10, "QAFCLCustomerTestData"));
 		logger.info("Port of Pickup = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -168,9 +169,10 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		/*
-		 * Comment out for stale element issue hp.setdeliverylocation(getCellData(1, 9,
-		 * "TestData2")); logger.info("Delivery Location = " + cell.getStringCellValue()
-		 * + " has entered"); Thread.sleep(2000);
+		 * Comment out for stale element issue
+		 *  hp.setdeliverylocation(getCellData(1, 9, "QAFCLCustomerTestData")); 
+		 *  logger.info("Delivery Location = " + cell.getStringCellValue() + " has entered"); 
+		 *  Thread.sleep(2000);
 		 */
 
 		// use this temp function
@@ -178,53 +180,33 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Port of Delivery
-		hp.setportofdelivery(getCellData(1, 12, "QACustomerLCLTestData"));
+		hp.setportofdelivery(getCellData(1, 12, "QAFCLCustomerTestData"));
 		logger.info("Port of Delivery = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 
-		// Select Package Type
-		hp.clickpackagetypedropdown();
+		// Select Container Size
+		hp.clickcontainersizedropdown();
 		Thread.sleep(2000);
-		hp.setpackagetype(getCellData(1, 13, "QACustomerLCLTestData"));
-		logger.info("Package Type = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(2000);
+		hp.setcontainersize(getCellData(1, 13, "QAFCLCustomerTestData"));
+		logger.info("Container Size = " + cell.getStringCellValue() + " has selected");
 
-		// Select Quantity
-		hp.setlclquantity(getCellData(1, 17, "QACustomerLCLTestData"));
+		// Enter Quantity
+		hp.setquantity(getCellData(1, 14, "QAFCLCustomerTestData"));
 		logger.info("Quantity = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
-		// Enter Length
-		hp.setlength(getCellData(1, 18, "QACustomerLCLTestData"));
-		logger.info("Length = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(2000);
-
-		// Enter Width
-		hp.setwidth(getCellData(1, 19, "QACustomerLCLTestData"));
-		logger.info("Width = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(2000);
-
-		// Enter Height
-		hp.setheight(getCellData(1, 20, "QACustomerLCLTestData"));
-		logger.info("Height = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(2000);
-		
-		// Select Unit Value
-		hp.clickunitdropdown();
-		Thread.sleep(2000);
-		hp.setunit(getCellData(1, 21, "QACustomerLCLTestData"));
-		Thread.sleep(2000);
-		
 		// Enter Weight
-		hp.setlclweight(getCellData(1, 22, "QACustomerLCLTestData"));
-
+		hp.setweight(getCellData(1, 15, "QAFCLCustomerTestData"));
+		logger.info("Weight = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+		
 		// Click Payment Terms
 		hp.clickpaymentterms();
 		logger.info("Payment Terms link has clicked");
 		Thread.sleep(5000);
-
+		
 		// Select Payment Terms & Conditions
-		String paymentterms = getCellData(1, 23, "QACustomerLCLTestData");
+		String paymentterms = getCellData(1, 16, "QAFCLCustomerTestData");
 		System.out.println("Payment Terms : " + paymentterms);
 
 		if (paymentterms.equals("Advance Payment at the time of Booking Confirmation")) {
@@ -235,13 +217,15 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 			hp.clicksavepaymentterms();
 
 		} else if (paymentterms.equals("Days after the issuance of BL")) {
-
+			
+		
 			hp.selectdaysaftertheissuanceofbl();
 			logger.info("Days after the issuance of BL has selected");
-			hp.setpaymenttermsdays(getCellData(1, 24, "QACustomerLCLTestData"));
+			hp.setpaymenttermsdays(getCellData(1, 17, "QAFCLCustomerTestData"));
 			Thread.sleep(2000);
 			hp.clicksavepaymentterms();
 			Thread.sleep(2000);
+			
 		}
 
 		else if (paymentterms.equals("Days from the issuance of Invoice"))
@@ -256,11 +240,14 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 
 		}
 
-		else {
+		 else {
 
 			System.out.println("Statement outside if...else block");
 
 		}
+	
+		
+		
 
 		// Click Request Spot Rate
 		hp.clickrequestspotrate();
@@ -280,11 +267,11 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(10000);
 
 		// Enter User ID
-		plp.setuserid(getCellData(1, 1, "QAProviderLCLTestData"));
+		plp.setuserid(getCellData(1, 1, "QAFCLProviderTestData"));
 		logger.info("User ID = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Password
-		plp.setpassword(getCellData(1, 2, "QAProviderLCLTestData"));
+		plp.setpassword(getCellData(1, 2, "QAFCLProviderTestData"));
 		logger.info("Password = " + cell.getStringCellValue() + " has entered");
 
 		// Click Login Now button
@@ -326,34 +313,34 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(5000);
 
 		// Enter Shipping Line
-		rrp.setshipingline(getCellData(1, 3, "QAProviderLCLTestData"));
+		rrp.setshipingline(getCellData(1, 3, "QAFCLProviderTestData"));
 		logger.info("Shipping Line = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(3000);
 
-		// Enter Rate Per CBM
-		rrp.setratepercbm(getCellData(1, 4, "QAProviderLCLTestData"));
-		logger.info("Rate Per CBM = " + cell.getStringCellValue() + " has entered");
+		// Enter Rate Per Container
+		rrp.setratepercontainer(getCellData(1, 4, "QAFCLProviderTestData"));
+		logger.info("Rate Per Container = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Bill of Lading
-		rrp.setbillofloading(getCellData(1, 5, "QAProviderLCLTestData"));
+		rrp.setbillofloading(getCellData(1, 5, "QAFCLProviderTestData"));
 		logger.info("Bill of Lading = " + cell.getStringCellValue() + " has entered");
 
 		// Enter LOLO
-		rrp.setlolo(getCellData(1, 6, "QAProviderLCLTestData"));
+		rrp.setlolo(getCellData(1, 6, "QAFCLProviderTestData"));
 		logger.info("LOLO = " + cell.getStringCellValue() + " has entered");
 
 		// Enter SEAL Charges
-		rrp.setsealcharges(getCellData(1, 7, "QAProviderLCLTestData"));
+		rrp.setsealcharges(getCellData(1, 7, "QAFCLProviderTestData"));
 		logger.info("SEAL Charges = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Terminal Handling Charge - Origin
-		rrp.setterminalhandlingcharge(getCellData(1, 8, "QAProviderLCLTestData"));
+		rrp.setterminalhandlingcharge(getCellData(1, 8, "QAFCLProviderTestData"));
 		logger.info("Terminal Handling Charge - Origin = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-
+		
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(3000);
@@ -370,7 +357,7 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 
 		// Select Customer Payment Terms
 
-		String customerpaymentterms = getCellData(1, 9, "QAProviderLCLTestData");
+		String customerpaymentterms = getCellData(1, 9, "QAFCLProviderTestData");
 		System.out.println("Customer Payment Terms : " + customerpaymentterms);
 
 		if (customerpaymentterms.equals("I ACCEPT CUSTOMER PAYMENT TERMS")) {
@@ -422,8 +409,8 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 
 		// Search the Spot Request
 		rrp.clickfilteryourrequest2();
-		logger.info("Click filter request link has clicked!!!");
-		Thread.sleep(1000);
+		logger.info("Filter request link has clicked!!!");
+		Thread.sleep(3000);
 
 		// Enter Spot Request Number
 		rrp.setrequestnumber2(spotraterequestnumber);
@@ -459,11 +446,11 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Reference Number (optional)
-		bpp.setreferencenumber(getCellData(1, 25, "QACustomerLCLTestData"));
+		bpp.setreferencenumber(getCellData(1, 18, "QAFCLCustomerTestData"));
 		logger.info("Reference Number = " + cell.getStringCellValue() + " has entered");
 
 		// Enter Shipping Instructions
-		bpp.setshippinginstructions(getCellData(1, 26, "QACustomerLCLTestData"));
+		bpp.setshippinginstructions(getCellData(1, 19, "QAFCLCustomerTestData"));
 		logger.info("Shipping Instructions = " + cell.getStringCellValue() + " has entered");
 
 		// Check Disclaimer
@@ -500,7 +487,7 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		// Add Shipping Information //
 
 		// Select SHIPPER NAME
-		bdp.setshippername(getCellData(2, 27, "QACustomerLCLTestData"));
+		bdp.setshippername(getCellData(2, 20, "QAFCLCustomerTestData"));
 		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Shipper Information
@@ -521,7 +508,7 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		// Add Consignee Information //
 
 		// Select Consignee Name
-		bdp.setmainconsigneename(getCellData(2, 28, "QACustomerLCLTestData"));
+		bdp.setmainconsigneename(getCellData(2, 26, "QAFCLCustomerTestData"));
 		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Consignee Information
@@ -563,7 +550,7 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-
+		
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
@@ -574,7 +561,7 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Open Hash Move Provider Portal URL
-		driver.get("https://prehubpartner.hashmove.com/login");
+		driver.get(qaproviderportalurl);
 		Thread.sleep(10000);
 
 		// Click Booking Link
@@ -627,19 +614,19 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		// press Contol+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
-
+		
 		Thread.sleep(2000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
-
+		
 		Thread.sleep(2000);
 
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-
+		
 		Thread.sleep(2000);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -657,7 +644,7 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(1000);
 
 		// Enter Shipment Details
-		bdp.setshipmentdetails(getCellData(1, 10, "QACustomerLCLTestData"));
+		bdp.setshipmentdetails(getCellData(1, 10, "QAFCLCustomerTestData"));
 		logger.info("Shipment Details = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -675,31 +662,32 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		bdp.clickaddschedule();
 		logger.info("Add Schedule button has clicked.");
 		Thread.sleep(2000);
+		
 
 		// Set Departure Date
 		bdp.clickdeparturefrom();
-		bdp.setdeparturedatemonthyear(getCellData(2, 11, "TestData3"));
+		bdp.setdeparturedatemonthyear(getCellData(2, 11, "QAFCLProviderTestData"));
 		logger.info("Departure Date Month Year " + cell.getRawValue() + " has selected");
 
-		bdp.setdeparturedateday(getCellData(2, 12, "TestData3"));
-		logger.info("Departure Date Day " + cell.getRawValue() + " has selected");
+		bdp.setdeparturedateday(getCellData(2, 12, "QAFCLProviderTestData"));
+		logger.info("Departure Date Day " + cell.getRawValue()  + " has selected");
 
 		// Set Arrival Date
 		bdp.clickarrivalto();
-		bdp.setarrivaldatemonthyear(getCellData(2, 13, "TestData3"));
+		bdp.setarrivaldatemonthyear(getCellData(2, 13, "QAFCLProviderTestData"));
 		logger.info("Arrival Date Month Year has selected");
 
-		bdp.setarrivaldateday(getCellData(2, 14, "TestData3"));
+		bdp.setarrivaldateday(getCellData(2, 14, "QAFCLProviderTestData"));
 		logger.info("Arrival Date Day has selected");
 		Thread.sleep(2000);
 
 		// Enter Vessel Name
-		bdp.setvesselname(getCellData(2, 15, "TestData3"));
+		bdp.setvesselname(getCellData(2, 15, "QAFCLProviderTestData"));
 		logger.info("Vessel Name = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Voyage Number
-		bdp.setvoyagenumber(getCellData(2, 16, "TestData3"));
+		bdp.setvoyagenumber(getCellData(2, 16, "QAFCLProviderTestData"));
 		logger.info("Voyage Number = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -714,20 +702,21 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(1000);
 
 		// Enter Bill Number
-		bdp.setbillnumber(getCellData(2, 18, "TestData3"));
+		bdp.setbillnumber(getCellData(2, 18, "QAFCLProviderTestData"));
 		logger.info("Bill Number = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-
+		
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
-
+		
 		// Set BL Date
 		bdp.clickbldate();
-		bdp.setbldatemonthyear(getCellData(2, 19, "TestData3"));
+		bdp.setbldatemonthyear(getCellData(2, 19, "QAFCLProviderTestData"));
 		logger.info("BL Date Month Year has selected");
+		
 
-		bdp.setbldateday(getCellData(2, 20, "TestData3"));
+		bdp.setbldateday(getCellData(2, 20, "QAFCLProviderTestData"));
 		logger.info("BL Date Day has selected");
 		Thread.sleep(1000);
 
@@ -741,13 +730,13 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		// press Contol+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
-
+		
 		Thread.sleep(2000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
-
+		
 		Thread.sleep(2000);
 
 		// for pressing and releasing Enter
@@ -768,33 +757,35 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(1000);
 
 		// Enter Shipment Details In-Transit
-		bdp.setshipmentdetailsintransit(getCellData(2, 21, "TestData3"));
+		bdp.setshipmentdetailsintransit(getCellData(2, 21, "QAFCLProviderTestData"));
 		logger.info("Shipment Details In-Transit = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-
+		
 		// Click Submit
 		bdp.clicksubmitintransit();
 		logger.info("Submit button for In-Transit has clicked.");
 		Thread.sleep(2000);
-
+		
+		
 		driver.navigate().refresh();
 		Thread.sleep(3000);
-
+		
 		// Update Booking Status from In-Transit to Complete
 		// Click Update Status
 		bdp.clickupdatestatus();
 		logger.info("Update Status link has clicked.");
 		Thread.sleep(3000);
-
+		
 		// Select Shipment Status
 		bdp.clickshipmentstatusdropdown();
-		bdp.setshipmentstatus(getCellData(2, 22, "TestData3"));
-
+		bdp.setshipmentstatus(getCellData(2, 22, "QAFCLProviderTestData"));
+		
 		// Enter Details
-
+		
 		// Click Submit
 		bdp.clicksubmitshipmentstatus();
 		logger.info("Submit button has clicked.");
+		
 
 		// Capturing the screenshot
 		Date d = new Date();
@@ -807,9 +798,10 @@ public class TestCase_LCLSpotRateandBooking_001 extends BaseClass {
 
 		System.out.println("The Screenshot is captured.");
 
+
 		// Stop Recording
 		ScreenRecorderUtil.stopRecord();
-
+		
 	}
 
 }
