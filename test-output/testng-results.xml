@@ -2,24 +2,61 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-06T16:39:53 PKT" name="Default suite" finished-at="2023-04-06T16:43:51 PKT" duration-ms="237914">
+  <suite started-at="2023-04-07T16:56:40 PKT" name="Default suite" finished-at="2023-04-07T17:03:12 PKT" duration-ms="392186">
     <groups>
     </groups>
-    <test started-at="2023-04-06T16:39:53 PKT" name="Default test" finished-at="2023-04-06T16:43:51 PKT" duration-ms="237914">
-      <class name="com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001@36cda2c2]" started-at="2023-04-06T16:39:53 PKT" name="setup" finished-at="2023-04-06T16:39:56 PKT" duration-ms="2870" status="PASS">
+    <test started-at="2023-04-07T16:56:40 PKT" name="Default test" finished-at="2023-04-07T17:03:12 PKT" duration-ms="392186">
+      <class name="com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002@3697186]" started-at="2023-04-07T16:56:40 PKT" name="setup" finished-at="2023-04-07T16:56:43 PKT" duration-ms="3124" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifylclspotrateandbooking()[pri:0, instance:com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001@36cda2c2]" started-at="2023-04-06T16:39:56 PKT" name="verifylclspotrateandbooking" finished-at="2023-04-06T16:43:50 PKT" duration-ms="234429" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="verifylclspotrateandbookingwithaddingshipperinfo()[pri:0, instance:com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002@3697186]" started-at="2023-04-07T16:56:43 PKT" name="verifylclspotrateandbookingwithaddingshipperinfo" finished-at="2023-04-07T17:03:12 PKT" duration-ms="388890" status="FAIL">
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
             <message>
-              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "com.hashmove.testcases.BaseClass.sheet" is null]]>
+              <![CDATA[stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [116822a47180344e245a1fb4738abf48, clickElement {id=45b8c55b-9058-42ff-a7be-faba084555b2}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64612/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (116822a47180344e245a1fb4738abf48)] -> xpath: //span[normalize-space()='Update Status']]
+Session ID: 116822a47180344e245a1fb4738abf48]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "com.hashmove.testcases.BaseClass.sheet" is null
-at com.hashmove.testcases.BaseClass.getCellData(BaseClass.java:46)
-at com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001.verifylclspotrateandbooking(TestCase_LCLSpotRateandBooking_001.java:462)
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=112.0.5615.49)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [116822a47180344e245a1fb4738abf48, clickElement {id=45b8c55b-9058-42ff-a7be-faba084555b2}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64612}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64612/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (116822a47180344e245a1fb4738abf48)] -> xpath: //span[normalize-space()='Update Status']]
+Session ID: 116822a47180344e245a1fb4738abf48
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
+at com.hashmove.pageobjects.BookingDetailPage.clickupdatestatus(BookingDetailPage.java:640)
+at com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002.verifylclspotrateandbookingwithaddingshipperinfo(TC_QA_LCLSpotRateandBooking_002.java:789)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,15 +87,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifylclspotrateandbooking -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001@36cda2c2]" started-at="2023-04-06T16:43:50 PKT" name="teardown" finished-at="2023-04-06T16:43:51 PKT" duration-ms="454" status="PASS">
+        </test-method> <!-- verifylclspotrateandbookingwithaddingshipperinfo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002@3697186]" started-at="2023-04-07T17:03:12 PKT" name="teardown" finished-at="2023-04-07T17:03:12 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001 -->
+      </class> <!-- com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

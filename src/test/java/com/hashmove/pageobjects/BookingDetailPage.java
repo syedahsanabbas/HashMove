@@ -1,6 +1,7 @@
 package com.hashmove.pageobjects;
 
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -112,9 +113,13 @@ public class BookingDetailPage {
 	@CacheLookup
 	WebElement btnsaveconsigneeinfo;
 	
-	@FindBy(xpath = "//button[normalize-space()='Save']")
+	@FindBy(xpath = "//button[normalize-space()='SAVE']")
 	@CacheLookup
 	WebElement btnsaveconsigneeinfo2;
+	
+	@FindBy(xpath = "//button[normalize-space()='Save']")
+	@CacheLookup
+	WebElement btnsavemainconsigneeinfo;
 	
 	@FindBy(xpath = "//input[@placeholder='Select Shipper']")
 	@CacheLookup
@@ -167,6 +172,10 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//span[normalize-space()='Booking Confirmation Document (CRO/BC/SC)']")
 	@CacheLookup
 	WebElement lnktextbookingconfirmationdocument;
+	
+	@FindBy(xpath = "//span[normalize-space()='Loading Plan']")
+	@CacheLookup
+	WebElement lnktextloadingplan;
 	
 	@FindBy(xpath = "//button[normalize-space()='Yes']")
 	@CacheLookup
@@ -261,13 +270,15 @@ public class BookingDetailPage {
 		
 	}
 	
-	public void setconsigneename(String consigneename) {
+	public String setconsigneename(String consigneename) {
 		txtboxconsigneename.sendKeys(consigneename);
+		return consigneename;
 
 	}
 	
-	public void setconsigneename2(String consigneename) {
+	public String setconsigneename2(String consigneename) {
 		txtboxconsigneename2.sendKeys(consigneename);
+		return consigneename;
 
 	}
 	
@@ -373,6 +384,11 @@ public class BookingDetailPage {
 		
 	}
 	
+	public void clicksavemainconsigneeinfo() {
+		btnsavemainconsigneeinfo.click();
+		
+	}
+	
 	public void setshippername(String shippername) throws InterruptedException {
 		txtboxshippername.sendKeys(shippername);
 		Thread.sleep(2000);
@@ -434,6 +450,11 @@ public class BookingDetailPage {
 	
 	public void clickbookingconfirmationdocument() {
 		lnktextbookingconfirmationdocument.click();
+		
+	}
+	
+	public void clickloadingplan() {
+		lnktextloadingplan.click();
 		
 	}
 	
@@ -635,6 +656,19 @@ public class BookingDetailPage {
 		btnsubmitshipmentstatus.click();
 		
 	}
+	
+	public String getSaltString() {
+        String SALTCHARS = "1234567890";
+        StringBuilder salt = new StringBuilder();
+        Random rnd = new Random();
+        while (salt.length() < 4) { // length of the random string.
+            int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+            salt.append(SALTCHARS.charAt(index));
+        }
+        String saltStr = salt.toString();
+        return saltStr;
+
+    }
 	
 	
 }

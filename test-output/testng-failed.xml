@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001">
+      <class name="com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002">
         <methods>
           <include name="teardown"/>
+          <include name="verifylclspotrateandbookingwithaddingshipperinfo"/>
           <include name="setup"/>
-          <include name="verifylclspotrateandbooking"/>
         </methods>
-      </class> <!-- com.hashmove.testcases.TestCase_LCLSpotRateandBooking_001 -->
+      </class> <!-- com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

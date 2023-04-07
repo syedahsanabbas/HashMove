@@ -130,10 +130,10 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(2, 4, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Month Year has selected");
+		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue()  +  " has selected");
 
 		hp.setcargoreadinessday(getCellData(2, 5, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Day has selected");
+		logger.info("Cargo Readiness Day " +  cell.getStringCellValue()  + " has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();

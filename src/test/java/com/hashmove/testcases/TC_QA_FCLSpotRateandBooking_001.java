@@ -80,7 +80,7 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		logger.info("Login Now button has clicked!!!");
 		
 
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 
 		// Select Sea Shipment - FCL
 		String searchcategory = getCellData(1, 3, "QAFCLCustomerTestData");
@@ -644,7 +644,7 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(1000);
 
 		// Enter Shipment Details
-		bdp.setshipmentdetails(getCellData(1, 10, "QAFCLCustomerTestData"));
+		bdp.setshipmentdetails(getCellData(1, 10, "QAFCLProviderTestData"));
 		logger.info("Shipment Details = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 

@@ -124,7 +124,7 @@ public class BaseClass {
 	public void teardown()
 
 	{
-		driver.quit();
+		//driver.quit();
 
 	}
 

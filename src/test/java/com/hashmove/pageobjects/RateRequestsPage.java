@@ -83,10 +83,18 @@ public class RateRequestsPage {
 	@FindBy(xpath = "(//div[@class='form-group combine-filed-popup-right']//input)[2]")
 	@CacheLookup
 	WebElement txboxratepercbm;
+	
+	@FindBy(xpath = "(//div[@class='form-group combine-filed-popup-right']//input)[3]")
+	@CacheLookup
+	WebElement txboxchargeablecbm;
 
 	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
 	WebElement txboxbillofloading;
+	
+	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
+	@CacheLookup
+	WebElement txboxlcldestuffing;
 
 	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
@@ -95,6 +103,10 @@ public class RateRequestsPage {
 	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
 	WebElement txboxsealcharges;
+	
+	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
+	@CacheLookup
+	WebElement txboxporthandling;
 
 	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
@@ -223,13 +235,29 @@ public class RateRequestsPage {
 
 	}
 
+	public void setchargeablecbm(String chargeablecbm) {
+		txboxchargeablecbm.clear();
+		txboxchargeablecbm.sendKeys(chargeablecbm);
+
+	}
+	
 	public void setbillofloading(String billofloading) {
 		txboxbillofloading.sendKeys(billofloading);
+
+	}
+	
+	public void setlcldestuffing(String lcldestuffing) {
+		txboxlcldestuffing.sendKeys(lcldestuffing);
 
 	}
 
 	public void setlolo(String lolo) {
 		txboxlolo.sendKeys(lolo);
+
+	}
+
+	public void setporthandling(String porthandling) {
+		txboxporthandling.sendKeys(porthandling);
 
 	}
 

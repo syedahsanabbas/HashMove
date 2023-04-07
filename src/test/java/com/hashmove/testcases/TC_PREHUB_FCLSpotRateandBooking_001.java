@@ -130,10 +130,10 @@ public class TC_PREHUB_FCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(1, 4, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Month Year" + cell.getStringCellValue()  +  " has selected");
+		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue()  +  " has selected");
 
 		hp.setcargoreadinessday(getCellData(1, 5, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Day" +  cell.getStringCellValue()  + " has selected");
+		logger.info("Cargo Readiness Day " +  cell.getStringCellValue()  + " has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
@@ -542,14 +542,17 @@ public class TC_PREHUB_FCLSpotRateandBooking_001 extends BaseClass {
 		// press Contol+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
-
+		Thread.sleep(1000);
+		
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
-
+		Thread.sleep(1000);
+		
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
 		
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -644,7 +647,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(1000);
 
 		// Enter Shipment Details
-		bdp.setshipmentdetails(getCellData(1, 10, "PreHubFCLCustomerTestData"));
+		bdp.setshipmentdetails(getCellData(1, 10, "PreHubFCLProviderTestData"));
 		logger.info("Shipment Details = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
@@ -666,19 +669,19 @@ public class TC_PREHUB_FCLSpotRateandBooking_001 extends BaseClass {
 
 		// Set Departure Date
 		bdp.clickdeparturefrom();
-		bdp.setdeparturedatemonthyear(getCellData(2, 11, "PreHubFCLProviderTestData"));
-		logger.info("Departure Date Month Year " + cell.getRawValue() + " has selected");
+		bdp.setdeparturedatemonthyear(getCellData(1, 11, "PreHubFCLProviderTestData"));
+		logger.info("Departure Date Month Year " + cell.getStringCellValue() + " has selected");
 
-		bdp.setdeparturedateday(getCellData(2, 12, "PreHubFCLProviderTestData"));
-		logger.info("Departure Date Day " + cell.getRawValue()  + " has selected");
+		bdp.setdeparturedateday(getCellData(1, 12, "PreHubFCLProviderTestData"));
+		logger.info("Departure Date Day " + cell.getStringCellValue()  + " has selected");
 
 		// Set Arrival Date
 		bdp.clickarrivalto();
 		bdp.setarrivaldatemonthyear(getCellData(2, 13, "PreHubFCLProviderTestData"));
-		logger.info("Arrival Date Month Year has selected");
+		logger.info("Arrival Date Month Year " + cell.getStringCellValue() + " has selected");
 
 		bdp.setarrivaldateday(getCellData(2, 14, "PreHubFCLProviderTestData"));
-		logger.info("Arrival Date Day has selected");
+		logger.info("Arrival Date Day " + cell.getStringCellValue() + " has selected");
 		Thread.sleep(2000);
 
 		// Enter Vessel Name
@@ -713,11 +716,11 @@ public class TC_PREHUB_FCLSpotRateandBooking_001 extends BaseClass {
 		// Set BL Date
 		bdp.clickbldate();
 		bdp.setbldatemonthyear(getCellData(2, 19, "PreHubFCLProviderTestData"));
-		logger.info("BL Date Month Year has selected");
+		logger.info("BL Date Month Year " + cell.getStringCellValue() + " has selected");
 		
 
 		bdp.setbldateday(getCellData(2, 20, "PreHubFCLProviderTestData"));
-		logger.info("BL Date Day has selected");
+		logger.info("BL Date Day " + cell.getStringCellValue() + " has selected");
 		Thread.sleep(1000);
 
 		bdp.clickselectafile3();
@@ -731,20 +734,20 @@ public class TC_PREHUB_FCLSpotRateandBooking_001 extends BaseClass {
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// Click Upload button
 		bdp.clickupload3();
