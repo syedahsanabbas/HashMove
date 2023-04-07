@@ -27,7 +27,7 @@ public class TestCase_UserCreation_001 extends BaseClass {
 		System.out.println("***************TestCase_UserCreation_001*******************");
 
 		// Open Hash Move URL
-		driver.get(baseUrl);
+		driver.get(qacustomerportalurl);
 		
 		String ActualTitle = driver.getTitle();
 		String ExpectedTitle = "HashMove – Connecting World Logistics";

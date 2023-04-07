@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.Select;
 
 public class HomePage {
 
@@ -30,6 +31,10 @@ public class HomePage {
 	@FindBy(xpath = "//span[normalize-space()='Sea Shipment - FCL']")
 	@CacheLookup
 	WebElement btnseashipmentfcl;
+	
+	@FindBy(xpath = "//span[normalize-space()='Sea Shipment - LCL']")
+	@CacheLookup
+	WebElement btnseashipmentlcl;
 
 	@FindBy(id = "hashDatepicker")
 	@CacheLookup
@@ -70,14 +75,42 @@ public class HomePage {
 	@FindBy(xpath = "//div[@id='fcl_cont_ddl']")
 	@CacheLookup
 	WebElement ddcontainersize;
+	
+	@FindBy(xpath = "//div[@id='fcl_cont_ddl']")
+	@CacheLookup
+	WebElement ddpackagetype;
 
 	@FindBy(xpath = "//div[@class='card-body section-body pt-0']//input[@name='counter']")
 	@CacheLookup
 	WebElement txtboxquantity;
+	
+	@FindBy(xpath = "//div[@class='card-body section-body pt-2']//input[@placeholder='Quantity']")
+	@CacheLookup
+	WebElement txtboxlclquantity;
+	
+	@FindBy(xpath = "//input[@placeholder='Length']")
+	@CacheLookup
+	WebElement txtboxlength;
+	
+	@FindBy(xpath = "//input[@placeholder='Width']")
+	@CacheLookup
+	WebElement txtboxwidth;
 
+	@FindBy(xpath = "//input[@placeholder='Height']")
+	@CacheLookup
+	WebElement txtboxheight;
+	
 	@FindBy(xpath = "//input[@placeholder='Weight ']")
 	@CacheLookup
-	WebElement txtboxweight;
+	WebElement txtboxfclweight;
+	
+	@FindBy(xpath = "//input[@placeholder='Weight']")
+	@CacheLookup
+	WebElement txtboxlclweight;
+	
+	@FindBy(xpath = "//div[@class='card-body section-body pt-2']//div//select")
+	@CacheLookup
+	WebElement ddunit;
 	
 	@FindBy(xpath = "(//span[contains(text(),'Payment Terms')])[6]")
 	@CacheLookup
@@ -89,7 +122,7 @@ public class HomePage {
 	
 	@FindBy(xpath = "(//div[@class='form-group d-flex flex-column pr-2 ml-3']//span[@class='switch switch-small'])[2]")
 	@CacheLookup
-	WebElement tglbtndaysaftertheissuanceofbl;
+	public WebElement tglbtndaysaftertheissuanceofbl;
 	
 	@FindBy(xpath = "(//label[@class='pt-0 d-flex flex-row align-items-center']//input[@type = 'text'])[1]")
 	@CacheLookup
@@ -102,6 +135,10 @@ public class HomePage {
 	@FindBy(xpath = "//button[@type='button' and normalize-space()='Save']")
 	@CacheLookup
 	WebElement btnsavepaymentterms;
+	
+	@FindBy(xpath = "//img[@alt='close']")
+	@CacheLookup
+	WebElement btnclosepaymentterms;
 
 	@FindBy(xpath = "(//div[@class='row']//div[@class='pr-0 col-12'])[1]")
 	@CacheLookup
@@ -125,6 +162,11 @@ public class HomePage {
 
 	public void clickseashipmentfcl() {
 		btnseashipmentfcl.click();
+
+	}
+	
+	public void clickseashipmentlcl() {
+		btnseashipmentlcl.click();
 
 	}
 	
@@ -156,6 +198,7 @@ public class HomePage {
 				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
 		for (int i = 0; i < allOptions.size(); i++) {
 			if (allOptions.get(i).getText().toString().contains(cargoreadinessday)) {
+				
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;
@@ -231,20 +274,7 @@ public class HomePage {
 	public void setdeliverylocation() {
 		dddeliverylocation2.click();
 	}
-
-	/*
-	 * public void setdeliverylocation(String deliverylocation) { List<WebElement>
-	 * allOptions = ldriver
-	 * .findElements(By.xpath("//div[@aria-labelledby='dropdownMenuButton']//ul/li")
-	 * ); for (int i = 0; i < allOptions.size(); i++) { if
-	 * (allOptions.get(i).getText().toString().contains(deliverylocation)) {
-	 * System.out.println("Compare equal with: " +
-	 * allOptions.get(i).getText().toString()); allOptions.get(i).click(); break;
-	 * 
-	 * }
-	 * 
-	 * } }
-	 */
+	 
 	public void setportofdelivery(String portofdelivery) throws InterruptedException {
 		txtboxportofdelivery.clear();
 		txtboxportofdelivery.sendKeys(portofdelivery);
@@ -260,10 +290,29 @@ public class HomePage {
 
 	public void setcontainersize(String containersize) {
 		List<WebElement> allOptions = ldriver.findElements(
-				By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div[@class='row ng-tns-c209-0']//div//span"));
+				By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div//span"));
 
 		for (int i = 0; i < allOptions.size(); i++) {
 			if (allOptions.get(i).getText().toString().contains(containersize)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	public void clickpackagetypedropdown() {
+		ddpackagetype.click();
+
+	}
+	
+	public void setpackagetype(String packagetype) {
+		List<WebElement> allOptions = ldriver.findElements(
+				By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(packagetype)) {
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;
@@ -276,11 +325,50 @@ public class HomePage {
 		txtboxquantity.sendKeys(quantity);
 
 	}
+	
+	public void setlclquantity(String lclquantity) {
+		txtboxlclquantity.clear();
+		txtboxlclquantity.sendKeys(lclquantity);
+
+	}
+	
+	public void setlength(String length) {
+		txtboxlength.sendKeys(length);
+
+	}
+
+	public void setwidth(String width) {
+		txtboxwidth.sendKeys(width);
+
+	}
+
+	public void setheight(String width) {
+		txtboxheight.sendKeys(width);
+
+	}
 
 	public void setweight(String weight) {
-		txtboxweight.clear();
-		txtboxweight.sendKeys(weight);
+		txtboxfclweight.clear();
+		txtboxfclweight.sendKeys(weight);
 
+	}
+	
+	public void setlclweight(String weight) {
+		txtboxlclweight.clear();
+		txtboxlclweight.sendKeys(weight);
+
+	}
+	
+	public void clickunitdropdown() {
+		ddunit.click();
+
+	}
+	
+	
+	public  void setunit(String unit) {
+	      WebElement ddunit = ldriver.findElement(By.xpath("//div[@class='card-body section-body pt-2']//div//select"));
+	      Select drop = new Select(ddunit);
+	      drop.selectByVisibleText(unit); 
 	}
 	
 	public void clickpaymentterms() {
@@ -296,6 +384,11 @@ public class HomePage {
 	
 	public void clicksavepaymentterms() {
 		btnsavepaymentterms.click();
+
+	}
+	
+	public void clickclosepaymentterms() {
+		btnclosepaymentterms.click();
 
 	}
 

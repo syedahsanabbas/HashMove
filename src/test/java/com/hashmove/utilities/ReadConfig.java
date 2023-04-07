@@ -25,17 +25,54 @@ public class ReadConfig {
 
 	}
 
-	public String getBaseUrl()
+	public String getqacustomerportalurl()
 
 	{
-		String value = properties.getProperty("baseUrl");
+		String value = properties.getProperty("qacustomerportalurl");
 		if (value != null)
 			return value;
 
 		else
-			throw new RuntimeException("URL is not Specfied in Config file.");
+			throw new RuntimeException("QA Customer Portal url is not Specfied in Config file.");
 
 	}
+	
+	public String getprehubcustomerportalurl()
+
+	{
+		String value = properties.getProperty("prehubcustomerportalurl");
+		if (value != null)
+			return value;
+
+		else
+			throw new RuntimeException("Pre Hub Customer Portal url is not Specfied in Config file.");
+
+	}
+	
+	public String getqaproviderportalurl()
+
+	{
+	String value = properties.getProperty("qaproviderportalurl");
+	if (value != null)
+	return value;
+
+	else
+	throw new RuntimeException("QA Provider Portal url is not Specfied in Config file.");
+
+	}
+	
+	public String getprehubproviderportalurl()
+
+	{
+	String value = properties.getProperty("prehubproviderportalurl");
+	if (value != null)
+	return value;
+
+	else
+	throw new RuntimeException("Pre Hub Provider Portal url is not Specfied in Config file.");
+
+	}
+
 
 	public String getBrowser()
 

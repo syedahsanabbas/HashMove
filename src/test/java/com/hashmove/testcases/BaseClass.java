@@ -24,7 +24,10 @@ public class BaseClass {
 
 	ReadConfig readConfig = new ReadConfig();
 
-	String baseUrl = readConfig.getBaseUrl();
+	String qacustomerportalurl = readConfig.getqacustomerportalurl();
+	String qaproviderportalurl = readConfig.getqaproviderportalurl();
+	String prehubcustomerportalurl = readConfig.getprehubcustomerportalurl();
+	String prehubproviderportalurl = readConfig.getprehubproviderportalurl();
 	String browser = readConfig.getBrowser();
 
 	public static WebDriver driver;
@@ -121,7 +124,7 @@ public class BaseClass {
 	public void teardown()
 
 	{
-		//driver.quit();
+		driver.quit();
 
 	}
 

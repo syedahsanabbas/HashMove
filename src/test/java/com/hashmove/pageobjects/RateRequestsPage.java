@@ -76,9 +76,13 @@ public class RateRequestsPage {
 	@CacheLookup
 	WebElement txboxshipingline;
 
-	@FindBy(xpath = "//div[@class='form-group combine-filed-popup-right']//input[@class='form-control ng-untouched ng-pristine ng-valid']")
+	@FindBy(xpath = "(//div[@class='form-group combine-filed-popup-right']//input)[2]")
 	@CacheLookup
 	WebElement txboxratepercontainer;
+	
+	@FindBy(xpath = "(//div[@class='form-group combine-filed-popup-right']//input)[2]")
+	@CacheLookup
+	WebElement txboxratepercbm;
 
 	@FindBy(xpath = "(//input[@class='form-control pr-0 pl-2 ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
@@ -211,6 +215,11 @@ public class RateRequestsPage {
 
 	public void setratepercontainer(String ratepercontainer) {
 		txboxratepercontainer.sendKeys(ratepercontainer);
+
+	}
+	
+	public void setratepercbm(String ratepercbm) {
+		txboxratepercbm.sendKeys(ratepercbm);
 
 	}
 
