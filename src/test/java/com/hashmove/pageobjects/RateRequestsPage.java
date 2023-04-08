@@ -114,7 +114,7 @@ public class RateRequestsPage {
 
 	@FindBy(xpath = " (//input[@id='dpicker'])[2]")
 	@CacheLookup
-	WebElement txtboxratevaliditystartdatepicker;
+	public WebElement txtboxratevaliditystartdatepicker;
 
 	@FindBy(xpath = "//div[@class='btn-light ng-star-inserted'][normalize-space()='1']")
 	@CacheLookup

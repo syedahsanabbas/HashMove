@@ -32,6 +32,10 @@ public class HomePage {
 	@CacheLookup
 	WebElement btnseashipmentfcl;
 	
+	@FindBy(xpath = "//img[@alt='user_icon']")
+	@CacheLookup
+	public WebElement imageicon;
+	
 	@FindBy(xpath = "//span[normalize-space()='Sea Shipment - LCL']")
 	@CacheLookup
 	WebElement btnseashipmentlcl;
@@ -419,6 +423,11 @@ public class HomePage {
 	
 	public void selectdaysaftertheissuanceofbl() {
 		tglbtndaysaftertheissuanceofbl.click();
+
+	}
+	
+	public Boolean verifyuserlogin() {
+		return imageicon.isDisplayed();
 
 	}
 	

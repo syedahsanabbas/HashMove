@@ -491,17 +491,11 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		// Click View Booking
 		tybp.clickviewbooking();
 		logger.info("View Booking has clicked!!!");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 
 		// Object of Actions class to scroll down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
 
 		// Add Shipping Information //
@@ -558,16 +552,6 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		bdp.clicksaveshipperinfo();
 		Thread.sleep(2000);
 		logger.info("Shipper Information has added....");
-
-		// Object of Actions class to scroll down
-
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
 
 		// Add Consignee Information //
 
@@ -753,6 +737,46 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("Loading Plan Document has uploaded successfully!!!");
 		Thread.sleep(5000);
 
+		// Upload Goods Declaration
+		bdp.clickgoodsdeclaration();
+		logger.info("Goods Declaration  has clicked.");
+		Thread.sleep(1000);
+
+		bdp.clickselectafile3();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(1000);
+
+		// copying File path to Clipboard
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Contol+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+
+		Thread.sleep(2000);
+
+		// release Contol+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+
+		Thread.sleep(2000);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		Thread.sleep(2000);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Upload button
+		bdp.clickupload2();
+		logger.info("Goods Declaration Document has uploaded successfully!!!");
+		Thread.sleep(5000);
+
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 
@@ -765,11 +789,11 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		// Select Shipment Status
 		bdp.clickshipmentstatusdropdown();
 		bdp.setshipmentstatus(getCellData(2, 11, "QAProviderLCLTestData"));
-		logger.info("Shipment Status has updated to Confirmed.");
+		logger.info("Shipment Status : " + cell.getStringCellValue() + " has entered.");
 
 		// Enter Details
 		bdp.setshipmentdetails(getCellData(2, 12, "QAProviderLCLTestData"));
-		logger.info("Shipment Details Confrimed has entered.");
+		logger.info("Shipment Details " + cell.getStringCellValue() + " has entered.");
 		Thread.sleep(2000);
 
 		// Click Submit
@@ -782,8 +806,25 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("I accept the terms & conditions button has clicked.");
 		Thread.sleep(5000);
 
-		driver.navigate().refresh();
+		// Click Update Status
+		bdp.clickupdatestatus();
+		logger.info("Update Status link has clicked again.");
 		Thread.sleep(3000);
+
+		// Select Shipment Status
+		bdp.clickshipmentstatusdropdown2();
+		bdp.setshipmentstatus2(getCellData(2, 13, "QAProviderLCLTestData"));
+		logger.info("Shipment Status has updated to In Transit.");
+
+		// Enter Details
+		bdp.setshipmentdetails2(getCellData(2, 14, "QAProviderLCLTestData"));
+		logger.info("Shipment Details: " + cell.getStringCellValue() + " has entered.");
+		Thread.sleep(2000);
+
+		// Click Submit
+		bdp.clicksubmitshipmentstatus2();
+		logger.info("Submit button has clicked.");
+		Thread.sleep(5000);
 
 		// Click Update Status
 		bdp.clickupdatestatus();
@@ -791,17 +832,17 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(3000);
 
 		// Select Shipment Status
-		bdp.clickshipmentstatusdropdown();
-		bdp.setshipmentstatus(getCellData(2, 13, "QAProviderLCLTestData"));
-		logger.info("Shipment Status has updated to Confirmed.");
+		bdp.clickshipmentstatusdropdown2();
+		bdp.setshipmentstatus2(getCellData(2, 15, "QAProviderLCLTestData"));
+		logger.info("Shipment Status has updated to Completed.");
 
 		// Enter Details
-		bdp.setshipmentdetails(getCellData(2, 14, "QAProviderLCLTestData"));
+		bdp.setshipmentdetails2(getCellData(2, 16, "QAProviderLCLTestData"));
 		logger.info("Shipment Details Completed has entered.");
 		Thread.sleep(2000);
 
 		// Click Submit
-		bdp.clicksubmitshipmentstatus();
+		bdp.clicksubmitshipmentstatus2();
 		logger.info("Submit button has clicked.");
 		Thread.sleep(5000);
 
@@ -818,6 +859,7 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 
 		// Stop Recording
 		ScreenRecorderUtil.stopRecord();
+		System.out.println("Test Case for LCL Spot Request has passed!!!!!!");
 
 	}
 

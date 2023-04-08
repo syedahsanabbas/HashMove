@@ -359,6 +359,7 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		rrp.setterminalhandlingcharge(getCellData(1, 9, "QAProviderLCLTestData"));
 		logger.info("Terminal Handling Charge - Origin = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
+		
 
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -491,23 +492,17 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		// Click View Booking
 		tybp.clickviewbooking();
 		logger.info("View Booking has clicked!!!");
-		Thread.sleep(5000);
+		Thread.sleep(8000);
 
 		// Object of Actions class to scroll down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
 
 		// Add Shipping Information //
 
 		// Select SHIPPER NAME
-		bdp.setshippername(getCellData(1, 27, "QACustomerLCLTestData"));
+		bdp.setshippername(getCellData(1, 28, "QACustomerLCLTestData"));
 		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Shipper Information
@@ -515,31 +510,22 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 		logger.info("Shipper Information has added....");
 
-		// Object of Actions class to scroll down
-
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-
 		// Add Consignee Information //
 
 		// Select Consignee Name
-		bdp.setmainconsigneename(getCellData(1, 33, "QACustomerLCLTestData"));
+		bdp.setmainconsigneename(getCellData(1, 34, "QACustomerLCLTestData"));
 		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Consignee Information
-		bdp.clicksaveconsigneeinfo2();
-		Thread.sleep(2000);
+		bdp.clicksavemainconsigneeinfo();
+		Thread.sleep(5000);
 		logger.info("Consignee Information has added....");
 
 		// Object of Actions class to scroll down
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(3000);
 
 		// Upload Shipment Documents
 
@@ -674,46 +660,62 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		// Select Shipment Status
 		bdp.clickshipmentstatusdropdown();
 		bdp.setshipmentstatus(getCellData(1, 11, "QAProviderLCLTestData"));
-		logger.info("Shipment Status has updated to Confirmed.");
-		
+		logger.info("Shipment Status : " + cell.getStringCellValue() + " has entered.");
+
 		// Enter Details
 		bdp.setshipmentdetails(getCellData(1, 12, "QAProviderLCLTestData"));
-		logger.info("Shipment Details Confrimed has entered.");
+		logger.info("Shipment Details " + cell.getStringCellValue() + " has entered.");
 		Thread.sleep(2000);
-		
+
 		// Click Submit
 		bdp.clicksubmitshipmentstatus();
 		logger.info("Submit button has clicked.");
 		Thread.sleep(2000);
-		
+
 		// Click I accept the terms & conditions
 		bdp.clickiacceptthetermsandconditions();
 		logger.info("I accept the terms & conditions button has clicked.");
 		Thread.sleep(5000);
-		
-		driver.navigate().refresh();
-		Thread.sleep(3000);
-		
+
 		// Click Update Status
 		bdp.clickupdatestatus();
 		logger.info("Update Status link has clicked again.");
 		Thread.sleep(3000);
 
 		// Select Shipment Status
-		bdp.clickshipmentstatusdropdown();
-		bdp.setshipmentstatus(getCellData(1, 13, "QAProviderLCLTestData"));
-		logger.info("Shipment Status has updated to Confirmed.");
-		
+		bdp.clickshipmentstatusdropdown2();
+		bdp.setshipmentstatus2(getCellData(1, 13, "QAProviderLCLTestData"));
+		logger.info("Shipment Status has updated to In Transit.");
+
 		// Enter Details
-		bdp.setshipmentdetails(getCellData(1, 14, "QAProviderLCLTestData"));
-		logger.info("Shipment Details Completed has entered.");
+		bdp.setshipmentdetails2(getCellData(1, 14, "QAProviderLCLTestData"));
+		logger.info("Shipment Details: " + cell.getStringCellValue() + " has entered.");
 		Thread.sleep(2000);
-		
+
 		// Click Submit
-		bdp.clicksubmitshipmentstatus();
+		bdp.clicksubmitshipmentstatus2();
 		logger.info("Submit button has clicked.");
 		Thread.sleep(5000);
-		
+
+		// Click Update Status
+		bdp.clickupdatestatus();
+		logger.info("Update Status link has clicked again.");
+		Thread.sleep(3000);
+
+		// Select Shipment Status
+		bdp.clickshipmentstatusdropdown2();
+		bdp.setshipmentstatus2(getCellData(1, 15, "QAProviderLCLTestData"));
+		logger.info("Shipment Status has updated to Completed.");
+
+		// Enter Details
+		bdp.setshipmentdetails2(getCellData(1, 16, "QAProviderLCLTestData"));
+		logger.info("Shipment Details Completed has entered.");
+		Thread.sleep(2000);
+
+		// Click Submit
+		bdp.clicksubmitshipmentstatus2();
+		logger.info("Submit button has clicked.");
+		Thread.sleep(5000);
 
 		// Capturing the screenshot
 		Date d = new Date();
@@ -727,7 +729,8 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		System.out.println("The Screenshot is captured.");
 
 		// Stop Recording
-		ScreenRecorderUtil.stopRecord();
+		// ScreenRecorderUtil.stopRecord();
+		System.out.println("Test Case for LCL Spot Request has passed!!!!!!");
 
 	}
 
