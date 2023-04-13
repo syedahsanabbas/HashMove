@@ -39,11 +39,11 @@ public class BookingDetailPage {
 
 	@FindBy(xpath = "//input[@id='typeahead-basic2']")
 	@CacheLookup
-	WebElement txtboxconsigneename;
+	WebElement txtboxshipperename;
 
 	@FindBy(xpath = "//input[@id='typeahead-basic2']")
 	@CacheLookup
-	WebElement txtboxconsigneename2;
+	WebElement txtboxconsigneename;
 
 	@FindBy(xpath = "//input[@placeholder='eg: John Doe']")
 	@CacheLookup
@@ -129,9 +129,13 @@ public class BookingDetailPage {
 	@CacheLookup
 	WebElement txtboxmainconsigneename;
 
-	@FindBy(xpath = "//button[normalize-space()='Save']")
+	@FindBy(xpath = "//button[normalize-space()='SAVE']")
 	@CacheLookup
 	WebElement btnsaveshipperinfo;
+	
+	@FindBy(xpath = "//button[normalize-space()='Save']")
+	@CacheLookup
+	WebElement btnsavemainshipperinfo;
 
 	@FindBy(xpath = "//span[@ngbtooltip='Add Consignee']//img[@alt='edit']")
 	@CacheLookup
@@ -286,14 +290,14 @@ public class BookingDetailPage {
 
 	}
 
-	public String setconsigneename(String consigneename) {
-		txtboxconsigneename.sendKeys(consigneename);
-		return consigneename;
+	public String setshipperename(String shipperename) {
+		txtboxshipperename.sendKeys(shipperename);
+		return shipperename;
 
 	}
 
-	public String setconsigneename2(String consigneename) {
-		txtboxconsigneename2.sendKeys(consigneename);
+	public String setconsigneename(String consigneename) {
+		txtboxconsigneename.sendKeys(consigneename);
 		return consigneename;
 
 	}
@@ -423,6 +427,11 @@ public class BookingDetailPage {
 		btnsaveshipperinfo.click();
 
 	}
+	
+	public void clicksavemainshipperinfo() {
+		btnsavemainshipperinfo.click();
+
+	}
 
 	public void clickpackagelist() {
 		lnktextpackagelist.click();
@@ -540,6 +549,7 @@ public class BookingDetailPage {
 					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
 			String monthyear = monthyeartext.getText();
 			System.out.println(monthyear);
+			System.out.println(departuredatemonthyear);
 			if (monthyear.equals(departuredatemonthyear)) {
 				break;
 
@@ -556,7 +566,7 @@ public class BookingDetailPage {
 		List<WebElement> allOptions = ldriver.findElements(By.xpath(
 				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
 		for (int i = 0; i < allOptions.size(); i++) {
-			if (allOptions.get(i).getText().toString().contains(departuredateday)) {
+			if (allOptions.get(i).getText().toString().equals(departuredateday)) {
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;
@@ -587,7 +597,7 @@ public class BookingDetailPage {
 		List<WebElement> allOptions = ldriver.findElements(By.xpath(
 				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
 		for (int i = 0; i < allOptions.size(); i++) {
-			if (allOptions.get(i).getText().toString().contains(arrivaldateday)) {
+			if (allOptions.get(i).getText().toString().equals(arrivaldateday)) {
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;

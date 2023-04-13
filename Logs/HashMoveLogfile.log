@@ -1,1217 +1,609 @@
-[INFO ] 2023-04-07 15:30:20.523 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 15:30:31.987 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 15:30:32.463 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 15:30:32.536 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 15:30:52.055 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 15:31:02.408 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 15:31:02.760 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 15:31:04.158 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 15:31:05.658 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 15:31:08.794 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 15:31:13.196 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 15:31:16.897 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 15:31:25.009 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 15:31:29.307 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 15:31:31.601 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 15:31:33.899 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 15:31:36.097 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 15:31:38.362 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 15:31:45.029 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 15:31:48.182 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 15:31:50.621 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 15:32:24.728 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 15:32:35.046 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 15:32:35.261 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 15:32:35.356 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 15:32:40.525 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 15:32:50.670 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 15:32:51.912 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 15:32:54.992 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 15:32:57.049 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 15:33:03.480 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 15:33:08.726 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 15:33:08.893 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 15:33:09.066 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 15:33:09.295 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 15:33:09.425 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 15:33:09.552 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 15:33:14.792 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 15:33:17.978 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 15:33:20.161 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 15:33:25.332 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 15:33:27.402 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 15:33:34.070 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 15:33:44.305 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 15:33:46.742 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 15:33:54.838 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 15:33:56.026 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 15:33:59.121 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 15:34:01.218 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 15:34:03.296 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 15:34:08.387 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 15:34:12.534 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 15:34:13.609 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
+[INFO ] 2023-04-13 11:24:33.764 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 11:24:44.882 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 11:24:45.261 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 11:24:45.346 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 11:24:56.344 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 11:25:06.641 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 11:25:06.859 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 11:25:08.238 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 11:25:09.630 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 11:25:12.623 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 11:25:16.946 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 11:25:20.550 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 11:25:28.434 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 11:25:33.740 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 11:25:34.046 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 11:25:36.245 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 11:25:38.398 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 11:25:43.556 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 11:25:45.979 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 11:26:31.308 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 11:26:31.484 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 11:26:31.541 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 11:26:36.673 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 11:26:46.851 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 11:26:48.004 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 11:26:51.121 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 11:26:53.203 [main] HashMove - Provide Your Quote button has clicked!!!
+[INFO ] 2023-04-13 11:26:59.596 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
+[INFO ] 2023-04-13 11:27:04.820 [main] HashMove - Rate Per Container = 8500 has entered
+[INFO ] 2023-04-13 11:27:04.942 [main] HashMove - Bill of Lading = 200 has entered
+[INFO ] 2023-04-13 11:27:05.090 [main] HashMove - LOLO = 30 has entered
+[INFO ] 2023-04-13 11:27:05.214 [main] HashMove - SEAL Charges = 20 has entered
+[INFO ] 2023-04-13 11:27:05.331 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
+[INFO ] 2023-04-13 11:27:11.592 [main] HashMove - Rate Validity Start Date has entered
+[INFO ] 2023-04-13 11:27:14.756 [main] HashMove - Rate Validity End Date has entered
+[INFO ] 2023-04-13 11:27:16.871 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
+[INFO ] 2023-04-13 11:27:22.037 [main] HashMove - Save and Close button has clicked!!!
+[INFO ] 2023-04-13 11:27:24.138 [main] HashMove - Would you like to proceed? button has clicked!!!
+[INFO ] 2023-04-13 11:27:31.461 [main] HashMove - Hash Move Customer Portal has opened!!!
+[INFO ] 2023-04-13 11:27:41.610 [main] HashMove - Options Dropdown has clicked!!!
+[INFO ] 2023-04-13 11:27:43.987 [main] HashMove - Spot Rates option has clicked!!!
+[INFO ] 2023-04-13 11:27:52.105 [main] HashMove - Filter request link has clicked!!!
+[INFO ] 2023-04-13 11:27:55.273 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 11:27:58.378 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 11:28:00.497 [main] HashMove - View Quotes link has clicked!!!
+[INFO ] 2023-04-13 11:28:02.590 [main] HashMove - Book Now link has clicked!!!
+[INFO ] 2023-04-13 11:28:09.734 [main] HashMove - Next button has clicked!!!
+[INFO ] 2023-04-13 11:28:13.878 [main] HashMove - Reference Number = 5102055 has entered
+[INFO ] 2023-04-13 11:28:14.825 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
  has entered
-[INFO ] 2023-04-07 15:34:13.755 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 15:34:13.822 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 15:34:21.920 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 15:34:31.395 [main] HashMove - Consignee Name = Atco has entered
-[INFO ] 2023-04-07 15:34:31.800 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 15:34:37.104 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 15:34:37.277 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 15:34:37.468 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 15:34:41.060 [main] HashMove - Consignee Pin Address = Advance Payment at the time of Booking Confirmation has entered
-[INFO ] 2023-04-07 15:34:45.488 [main] HashMove - Consignee Main Address = Advance Payment at the time of Booking Confirmation has entered
-[INFO ] 2023-04-07 15:44:33.417 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 15:44:45.050 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 15:44:45.691 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 15:44:45.767 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 15:44:58.567 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 15:45:08.940 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 15:45:09.338 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 15:45:10.760 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 15:45:12.284 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 15:45:15.616 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 15:45:20.001 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 15:45:23.748 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 15:45:31.952 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 15:45:36.277 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 15:45:38.537 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 15:45:40.716 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 15:45:42.938 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 15:45:45.197 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 15:45:51.903 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 15:45:55.080 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 15:45:57.514 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 15:46:31.651 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 15:46:41.959 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 15:46:42.151 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 15:46:42.221 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 15:46:47.375 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 15:46:57.521 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 15:46:58.698 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 15:47:01.790 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 15:47:03.851 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 15:47:10.295 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 15:47:15.544 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 15:47:15.788 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 15:47:15.999 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 15:47:16.181 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 15:47:16.347 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 15:47:16.499 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 15:47:21.791 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 15:47:24.964 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 15:47:27.067 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 15:47:32.237 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 15:47:34.309 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 15:47:40.599 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 15:47:50.760 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 15:47:53.185 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 15:48:01.281 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 15:48:02.448 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 15:48:05.542 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 15:48:07.605 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 15:48:09.690 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 15:48:14.834 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 15:48:18.972 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 15:48:20.094 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
+[INFO ] 2023-04-13 11:28:14.892 [main] HashMove - Disclaimer has selected
+[INFO ] 2023-04-13 11:28:14.944 [main] HashMove - Confirm button has clicked!!!
+[INFO ] 2023-04-13 11:28:23.034 [main] HashMove - View Booking has clicked!!!
+[INFO ] 2023-04-13 11:28:32.256 [main] HashMove - Shipper Name = Atco has entered
+[INFO ] 2023-04-13 11:28:34.339 [main] HashMove - Shipper Information has added....
+[INFO ] 2023-04-13 11:28:38.557 [main] HashMove - Consignee Name = Super Star has entered
+[INFO ] 2023-04-13 11:28:40.627 [main] HashMove - Consignee Information has added....
+[INFO ] 2023-04-13 11:28:42.801 [main] HashMove - Package List has clicked.
+[INFO ] 2023-04-13 11:28:43.879 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 11:28:48.050 [main] HashMove - Package List Document has uploaded successfully!!!
+[INFO ] 2023-04-13 11:28:55.675 [main] HashMove - Hash Move Provider Portal has opened!!!
+[INFO ] 2023-04-13 11:29:14.222 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 11:29:15.716 [main] HashMove - Booking Request Number has entered!!!
+[INFO ] 2023-04-13 11:29:19.002 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 11:29:25.502 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) has clicked.
+[INFO ] 2023-04-13 11:29:26.614 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 11:29:35.817 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) Document has uploaded successfully!!!
+[INFO ] 2023-04-13 11:29:40.990 [main] HashMove - Confirm Booking Yes button has clicked
+[INFO ] 2023-04-13 11:29:42.177 [main] HashMove - Shipment Details = Shipment booking has confirmed  has entered
+[INFO ] 2023-04-13 11:29:44.277 [main] HashMove - Submit button has clicked.
+[INFO ] 2023-04-13 11:29:49.421 [main] HashMove - I accept the terms & conditions button has clicked.
+[INFO ] 2023-04-13 11:29:51.511 [main] HashMove - Add Schedule button has clicked.
+[INFO ] 2023-04-13 11:29:53.800 [main] HashMove - Departure Date Month Year April 2023 has selected
+[INFO ] 2023-04-13 11:29:54.240 [main] HashMove - Departure Date Day 20 has selected
+[INFO ] 2023-04-13 11:29:54.493 [main] HashMove - Arrival Date Month Year April 2023 has selected
+[INFO ] 2023-04-13 11:29:54.939 [main] HashMove - Arrival Date Day 25 has selected
+[INFO ] 2023-04-13 11:29:59.310 [main] HashMove - Vessel Name = CMA CGM OKAPI has entered
+[INFO ] 2023-04-13 11:30:01.568 [main] HashMove - Voyage Number = 25488 has entered
+[INFO ] 2023-04-13 11:30:03.693 [main] HashMove - Update Schedule button has clicked
+[INFO ] 2023-04-13 11:30:08.841 [main] HashMove - Bill of Lading has clicked.
+[INFO ] 2023-04-13 11:30:12.124 [main] HashMove - Bill Number = BL87882341012 has entered
+[INFO ] 2023-04-13 12:44:08.221 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 12:44:19.680 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 12:44:20.182 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 12:44:20.321 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 12:44:30.315 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 12:44:41.016 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 12:44:41.468 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 12:44:42.816 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 12:44:44.298 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 12:44:47.847 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 12:44:52.156 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 12:44:55.819 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 12:45:03.664 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 12:45:08.936 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 12:45:09.219 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 12:45:11.427 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 12:45:13.543 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 12:45:18.784 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 12:45:21.791 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 12:49:53.824 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 12:50:05.318 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 12:50:06.075 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 12:50:06.148 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 12:50:14.870 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 12:50:25.407 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 12:50:26.539 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 12:50:27.893 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 12:50:29.393 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 12:50:33.108 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 12:50:37.544 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 12:50:41.731 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 12:50:49.967 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 12:52:50.886 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 12:53:02.823 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 12:53:03.375 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 12:53:03.444 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 12:53:13.571 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 12:53:23.924 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 12:53:24.275 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 12:53:25.769 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 12:53:27.257 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 12:53:30.880 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 12:53:35.550 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 12:53:39.696 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 12:53:48.258 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 12:53:53.573 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 12:53:53.940 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 12:53:56.199 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 12:53:58.359 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 12:54:03.663 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 12:54:06.171 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 12:54:50.932 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 12:54:51.128 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 12:54:51.190 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 12:54:56.307 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 12:55:06.447 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 12:55:07.637 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 12:55:10.732 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 12:55:12.800 [main] HashMove - Provide Your Quote button has clicked!!!
+[INFO ] 2023-04-13 12:55:19.306 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
+[INFO ] 2023-04-13 12:55:24.528 [main] HashMove - Rate Per Container = 8500 has entered
+[INFO ] 2023-04-13 12:55:24.711 [main] HashMove - Bill of Lading = 200 has entered
+[INFO ] 2023-04-13 12:55:24.896 [main] HashMove - LOLO = 30 has entered
+[INFO ] 2023-04-13 12:55:25.056 [main] HashMove - SEAL Charges = 20 has entered
+[INFO ] 2023-04-13 12:55:25.240 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
+[INFO ] 2023-04-13 12:55:31.481 [main] HashMove - Rate Validity Start Date has entered
+[INFO ] 2023-04-13 12:55:34.657 [main] HashMove - Rate Validity End Date has entered
+[INFO ] 2023-04-13 12:55:36.782 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
+[INFO ] 2023-04-13 12:55:41.955 [main] HashMove - Save and Close button has clicked!!!
+[INFO ] 2023-04-13 12:55:44.035 [main] HashMove - Would you like to proceed? button has clicked!!!
+[INFO ] 2023-04-13 12:55:53.023 [main] HashMove - Hash Move Customer Portal has opened!!!
+[INFO ] 2023-04-13 12:56:03.172 [main] HashMove - Options Dropdown has clicked!!!
+[INFO ] 2023-04-13 12:56:05.615 [main] HashMove - Spot Rates option has clicked!!!
+[INFO ] 2023-04-13 12:56:13.716 [main] HashMove - Filter request link has clicked!!!
+[INFO ] 2023-04-13 12:56:16.881 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 12:56:19.981 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 12:56:22.051 [main] HashMove - View Quotes link has clicked!!!
+[INFO ] 2023-04-13 12:56:24.122 [main] HashMove - Book Now link has clicked!!!
+[INFO ] 2023-04-13 12:56:31.253 [main] HashMove - Next button has clicked!!!
+[INFO ] 2023-04-13 12:56:35.422 [main] HashMove - Reference Number = 5102055 has entered
+[INFO ] 2023-04-13 12:56:36.724 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
  has entered
-[INFO ] 2023-04-07 15:48:20.178 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 15:48:20.241 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 15:48:28.349 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 15:48:37.768 [main] HashMove - Consignee Name = Atco has entered
-[INFO ] 2023-04-07 15:48:38.733 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 15:48:44.090 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 15:48:44.275 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 15:48:44.462 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 15:48:48.029 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 15:48:52.404 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 15:48:56.705 [main] HashMove - Shipper Name = Atco has entered
-[INFO ] 2023-04-07 15:48:58.808 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 15:49:05.291 [main] HashMove - Consignee Name = Super Star has entered
-[INFO ] 2023-04-07 16:00:49.828 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:01:01.997 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 16:01:02.763 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 16:01:02.880 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:01:25.501 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 16:01:35.934 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 16:01:36.305 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 16:01:37.808 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 16:01:39.309 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 16:01:42.607 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 16:01:47.105 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 16:01:50.873 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 16:01:59.094 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 16:02:03.548 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 16:02:05.883 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 16:02:08.101 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 16:02:10.390 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 16:02:12.709 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 16:02:19.501 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 16:02:22.691 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 16:02:25.117 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 16:03:11.083 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 16:03:21.420 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 16:03:21.628 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 16:03:21.716 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:03:26.912 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 16:03:37.108 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:03:38.297 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:03:41.394 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:03:43.464 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 16:03:50.007 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 16:03:55.257 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 16:03:55.457 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 16:03:55.609 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 16:03:55.744 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 16:03:55.906 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 16:03:56.048 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 16:04:01.382 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 16:04:04.589 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 16:04:06.692 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 16:04:11.881 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 16:04:13.955 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 16:04:20.358 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 16:04:30.549 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 16:04:33.069 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 16:04:41.179 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:04:42.374 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:04:45.465 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:04:47.529 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 16:04:49.615 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 16:04:54.734 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 16:04:58.888 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 16:05:00.083 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
+[INFO ] 2023-04-13 12:56:36.815 [main] HashMove - Disclaimer has selected
+[INFO ] 2023-04-13 12:56:36.877 [main] HashMove - Confirm button has clicked!!!
+[INFO ] 2023-04-13 12:56:45.167 [main] HashMove - View Booking has clicked!!!
+[INFO ] 2023-04-13 12:56:54.437 [main] HashMove - Shipper Name = Atco has entered
+[INFO ] 2023-04-13 12:56:56.649 [main] HashMove - Shipper Information has added....
+[INFO ] 2023-04-13 12:57:00.902 [main] HashMove - Consignee Name = Super Star has entered
+[INFO ] 2023-04-13 12:57:02.987 [main] HashMove - Consignee Information has added....
+[INFO ] 2023-04-13 12:57:05.102 [main] HashMove - Package List has clicked.
+[INFO ] 2023-04-13 12:57:06.175 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 12:57:10.353 [main] HashMove - Package List Document has uploaded successfully!!!
+[INFO ] 2023-04-13 12:57:19.420 [main] HashMove - Hash Move Provider Portal has opened!!!
+[INFO ] 2023-04-13 12:57:38.204 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 12:57:39.876 [main] HashMove - Booking Request Number has entered!!!
+[INFO ] 2023-04-13 12:57:43.212 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 12:57:50.108 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) has clicked.
+[INFO ] 2023-04-13 12:57:51.290 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 12:58:00.678 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) Document has uploaded successfully!!!
+[INFO ] 2023-04-13 13:45:54.848 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 13:46:06.430 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 13:46:07.326 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 13:46:07.390 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 13:46:32.484 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 13:46:43.462 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 13:46:44.139 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 13:46:45.922 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 13:46:47.468 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 13:46:50.869 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 13:46:55.224 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 13:46:58.927 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 13:47:07.094 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 13:47:12.449 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 13:47:12.802 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 13:47:15.080 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 13:47:17.425 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 13:47:22.653 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 13:47:25.134 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 13:48:09.575 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 13:48:09.754 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 13:48:09.826 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 13:48:14.931 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 13:52:17.110 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 13:52:28.709 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 13:52:29.119 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 13:52:29.232 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 13:52:43.060 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 13:52:53.576 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 13:52:53.868 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 13:52:55.084 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 13:52:56.499 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 13:58:50.593 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 13:59:03.480 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 13:59:03.919 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 13:59:04.007 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 13:59:15.276 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 13:59:25.847 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 13:59:26.360 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 13:59:27.794 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 13:59:29.201 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 13:59:32.467 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 13:59:36.786 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 13:59:40.536 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 13:59:48.716 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 13:59:54.029 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 13:59:54.446 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 13:59:56.652 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 13:59:58.827 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 14:00:04.107 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 14:00:06.558 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 14:00:51.034 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 14:00:51.211 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 14:00:51.276 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 14:00:56.444 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 14:01:06.594 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 14:01:07.856 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 14:01:10.948 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 14:01:13.009 [main] HashMove - Provide Your Quote button has clicked!!!
+[INFO ] 2023-04-13 14:01:19.546 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
+[INFO ] 2023-04-13 14:01:24.787 [main] HashMove - Rate Per Container = 8500 has entered
+[INFO ] 2023-04-13 14:01:24.916 [main] HashMove - Bill of Lading = 200 has entered
+[INFO ] 2023-04-13 14:01:25.051 [main] HashMove - LOLO = 30 has entered
+[INFO ] 2023-04-13 14:01:25.283 [main] HashMove - SEAL Charges = 20 has entered
+[INFO ] 2023-04-13 14:01:25.440 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
+[INFO ] 2023-04-13 14:01:31.673 [main] HashMove - Rate Validity Start Date has entered
+[INFO ] 2023-04-13 14:01:34.862 [main] HashMove - Rate Validity End Date has entered
+[INFO ] 2023-04-13 14:01:36.988 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
+[INFO ] 2023-04-13 14:01:42.235 [main] HashMove - Save and Close button has clicked!!!
+[INFO ] 2023-04-13 14:01:44.617 [main] HashMove - Would you like to proceed? button has clicked!!!
+[INFO ] 2023-04-13 14:01:51.110 [main] HashMove - Hash Move Customer Portal has opened!!!
+[INFO ] 2023-04-13 14:02:01.302 [main] HashMove - Options Dropdown has clicked!!!
+[INFO ] 2023-04-13 14:02:03.847 [main] HashMove - Spot Rates option has clicked!!!
+[INFO ] 2023-04-13 14:02:11.941 [main] HashMove - Filter request link has clicked!!!
+[INFO ] 2023-04-13 14:02:15.107 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 14:02:18.200 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 14:02:20.275 [main] HashMove - View Quotes link has clicked!!!
+[INFO ] 2023-04-13 14:02:22.361 [main] HashMove - Book Now link has clicked!!!
+[INFO ] 2023-04-13 14:02:29.474 [main] HashMove - Next button has clicked!!!
+[INFO ] 2023-04-13 14:02:33.705 [main] HashMove - Reference Number = 5102055 has entered
+[INFO ] 2023-04-13 14:02:34.968 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
  has entered
-[INFO ] 2023-04-07 16:05:00.238 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 16:05:00.305 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 16:05:08.505 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 16:05:18.804 [main] HashMove - Consignee Name = Atco has entered
-[INFO ] 2023-04-07 16:05:19.029 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 16:05:24.522 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:05:24.728 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 16:05:24.930 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:05:28.666 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:05:33.066 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:05:37.501 [main] HashMove - Shipper Name = Atco has entered
-[INFO ] 2023-04-07 16:05:39.613 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 16:05:46.035 [main] HashMove - Consignee Name = Dell has entered
-[INFO ] 2023-04-07 16:15:45.936 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:16:57.415 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:17:09.338 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 16:17:09.983 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 16:17:10.072 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:17:30.344 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 16:17:40.696 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 16:17:41.108 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 16:17:42.600 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 16:17:44.095 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 16:17:47.410 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 16:17:51.853 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 16:17:55.656 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 16:18:03.803 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 16:18:08.150 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 16:18:10.506 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 16:18:12.820 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 16:18:15.082 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 16:18:17.396 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 16:18:24.256 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 16:18:27.463 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 16:18:29.910 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 16:19:04.132 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 16:19:14.588 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 16:19:14.821 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 16:19:14.899 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:19:20.102 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 16:19:30.278 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:19:31.460 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:19:34.581 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:19:36.655 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 16:19:43.059 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 16:19:48.306 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 16:19:48.510 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 16:19:48.642 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 16:19:48.795 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 16:19:48.946 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 16:19:49.086 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 16:19:54.476 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 16:19:57.695 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 16:19:59.796 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 16:20:04.988 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 16:20:07.076 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 16:20:13.968 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 16:20:24.179 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 16:20:26.678 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 16:20:34.781 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:20:35.985 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:20:39.084 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:20:41.170 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 16:20:43.336 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 16:20:48.450 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 16:20:52.614 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 16:20:53.882 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
+[INFO ] 2023-04-13 14:02:35.056 [main] HashMove - Disclaimer has selected
+[INFO ] 2023-04-13 14:02:35.119 [main] HashMove - Confirm button has clicked!!!
+[INFO ] 2023-04-13 14:02:43.232 [main] HashMove - View Booking has clicked!!!
+[INFO ] 2023-04-13 14:02:52.517 [main] HashMove - Shipper Name = Atco has entered
+[INFO ] 2023-04-13 14:02:54.614 [main] HashMove - Shipper Information has added....
+[INFO ] 2023-04-13 14:02:58.855 [main] HashMove - Consignee Name = Super Star has entered
+[INFO ] 2023-04-13 14:03:00.931 [main] HashMove - Consignee Information has added....
+[INFO ] 2023-04-13 14:03:03.047 [main] HashMove - Package List has clicked.
+[INFO ] 2023-04-13 14:03:04.120 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 14:03:08.279 [main] HashMove - Package List Document has uploaded successfully!!!
+[INFO ] 2023-04-13 14:03:18.105 [main] HashMove - Hash Move Provider Portal has opened!!!
+[INFO ] 2023-04-13 14:03:37.136 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 14:03:38.720 [main] HashMove - Booking Request Number has entered!!!
+[INFO ] 2023-04-13 14:03:42.092 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 14:03:48.703 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) has clicked.
+[INFO ] 2023-04-13 14:03:49.821 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 14:03:59.083 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) Document has uploaded successfully!!!
+[INFO ] 2023-04-13 14:04:56.131 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 14:05:08.166 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 14:05:08.803 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 14:05:08.887 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 14:05:29.398 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 14:05:39.754 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 14:05:40.080 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 14:05:41.465 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 14:05:42.865 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 14:05:46.445 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 14:05:51.048 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 14:05:54.804 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 14:06:02.918 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 14:06:08.230 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 14:06:08.652 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 14:06:10.901 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 14:06:13.050 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 14:06:18.401 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 14:06:20.838 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 14:07:05.604 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 14:07:05.786 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 14:07:05.855 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 14:07:11.045 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 14:07:21.192 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 14:07:22.366 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 14:07:25.471 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 14:07:27.535 [main] HashMove - Provide Your Quote button has clicked!!!
+[INFO ] 2023-04-13 14:07:34.162 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
+[INFO ] 2023-04-13 14:07:39.431 [main] HashMove - Rate Per Container = 8500 has entered
+[INFO ] 2023-04-13 14:07:39.571 [main] HashMove - Bill of Lading = 200 has entered
+[INFO ] 2023-04-13 14:07:39.709 [main] HashMove - LOLO = 30 has entered
+[INFO ] 2023-04-13 14:07:39.897 [main] HashMove - SEAL Charges = 20 has entered
+[INFO ] 2023-04-13 14:07:40.071 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
+[INFO ] 2023-04-13 14:07:46.372 [main] HashMove - Rate Validity Start Date has entered
+[INFO ] 2023-04-13 14:07:49.744 [main] HashMove - Rate Validity End Date has entered
+[INFO ] 2023-04-13 14:07:51.881 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
+[INFO ] 2023-04-13 14:07:57.050 [main] HashMove - Save and Close button has clicked!!!
+[INFO ] 2023-04-13 14:07:59.137 [main] HashMove - Would you like to proceed? button has clicked!!!
+[INFO ] 2023-04-13 14:08:08.873 [main] HashMove - Hash Move Customer Portal has opened!!!
+[INFO ] 2023-04-13 14:08:19.040 [main] HashMove - Options Dropdown has clicked!!!
+[INFO ] 2023-04-13 14:08:21.525 [main] HashMove - Spot Rates option has clicked!!!
+[INFO ] 2023-04-13 14:08:29.624 [main] HashMove - Filter request link has clicked!!!
+[INFO ] 2023-04-13 14:08:32.785 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 14:08:35.875 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 14:08:38.055 [main] HashMove - View Quotes link has clicked!!!
+[INFO ] 2023-04-13 14:08:40.133 [main] HashMove - Book Now link has clicked!!!
+[INFO ] 2023-04-13 14:08:47.243 [main] HashMove - Next button has clicked!!!
+[INFO ] 2023-04-13 14:08:51.422 [main] HashMove - Reference Number = 5102055 has entered
+[INFO ] 2023-04-13 14:08:52.730 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
  has entered
-[INFO ] 2023-04-07 16:20:53.983 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 16:20:54.050 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 16:21:02.171 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 16:21:12.366 [main] HashMove - Consignee Name = Atco7480 has entered
-[INFO ] 2023-04-07 16:21:12.611 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 16:21:17.982 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:21:18.186 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 16:21:18.451 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:21:22.227 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:21:26.637 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:21:31.020 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:21:33.148 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 16:30:08.149 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:30:19.985 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 16:30:20.779 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 16:30:20.862 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:30:34.542 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 16:30:44.905 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 16:30:45.254 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 16:30:46.652 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 16:30:48.153 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 16:30:51.565 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 16:30:55.984 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 16:30:59.952 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 16:31:08.150 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 16:31:12.563 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 16:31:14.827 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 16:31:17.132 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 16:31:19.599 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 16:31:21.893 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 16:31:28.643 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 16:31:31.870 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 16:31:34.339 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 16:32:08.368 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 16:32:18.813 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 16:32:19.084 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 16:32:19.178 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:32:24.300 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 16:32:34.465 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:32:35.646 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:32:38.757 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:32:40.828 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 16:32:47.272 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 16:32:52.553 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 16:32:52.755 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 16:32:52.909 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 16:32:53.055 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 16:32:53.242 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 16:32:53.425 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 16:32:58.722 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 16:33:01.913 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 16:33:04.022 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 16:33:09.219 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 16:33:11.337 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 16:33:17.739 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 16:33:27.898 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 16:33:30.498 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 16:33:38.632 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:33:39.824 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:33:42.930 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:33:44.999 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 16:33:47.184 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 16:33:52.293 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 16:33:56.455 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 16:33:57.776 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
+[INFO ] 2023-04-13 14:08:52.816 [main] HashMove - Disclaimer has selected
+[INFO ] 2023-04-13 14:08:52.882 [main] HashMove - Confirm button has clicked!!!
+[INFO ] 2023-04-13 14:09:00.986 [main] HashMove - View Booking has clicked!!!
+[INFO ] 2023-04-13 14:09:10.206 [main] HashMove - Shipper Name = Atco has entered
+[INFO ] 2023-04-13 14:09:12.306 [main] HashMove - Shipper Information has added....
+[INFO ] 2023-04-13 14:09:16.557 [main] HashMove - Consignee Name = Super Star has entered
+[INFO ] 2023-04-13 14:09:18.631 [main] HashMove - Consignee Information has added....
+[INFO ] 2023-04-13 14:09:20.742 [main] HashMove - Package List has clicked.
+[INFO ] 2023-04-13 14:09:21.806 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 14:09:25.958 [main] HashMove - Package List Document has uploaded successfully!!!
+[INFO ] 2023-04-13 14:09:36.218 [main] HashMove - Hash Move Provider Portal has opened!!!
+[INFO ] 2023-04-13 14:09:54.624 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 14:09:55.793 [main] HashMove - Booking Request Number has entered!!!
+[INFO ] 2023-04-13 14:09:58.933 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 14:10:06.971 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) has clicked.
+[INFO ] 2023-04-13 14:10:08.029 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 14:10:17.262 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) Document has uploaded successfully!!!
+[INFO ] 2023-04-13 14:34:12.842 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 14:34:24.250 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 14:34:24.757 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 14:34:24.873 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 14:34:34.627 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 14:34:45.102 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 14:34:45.337 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 14:34:46.880 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 14:34:48.292 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 14:34:51.552 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 14:34:56.023 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 14:34:59.789 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 14:35:07.832 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 14:35:13.110 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 14:35:13.541 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 14:35:15.806 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 14:35:17.966 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 14:35:23.282 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 14:35:25.717 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 14:36:10.218 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 14:36:10.411 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 14:36:10.488 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 14:36:15.593 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:08:43.320 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:08:55.296 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:08:55.867 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:08:55.956 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:09:05.173 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:09:15.786 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:09:16.113 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:10:00.975 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:10:13.135 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:10:13.807 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:10:13.932 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:10:38.996 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:10:49.480 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:10:49.983 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:11:09.928 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:11:25.236 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:11:36.632 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:11:37.348 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:11:37.442 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:11:45.936 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:11:56.321 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:11:56.646 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:12:27.975 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:12:29.465 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:12:33.295 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:13:41.070 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:13:52.645 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:13:53.426 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:13:53.522 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:14:18.468 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:14:28.821 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:14:29.122 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:14:30.512 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:14:31.939 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:14:35.167 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:14:39.494 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:14:43.333 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:14:51.278 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:14:56.517 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:14:56.777 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:14:58.955 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 16:15:01.155 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 16:15:06.352 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 16:15:08.801 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 16:15:53.072 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 16:15:53.226 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 16:15:53.285 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:15:58.374 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:17:34.691 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:17:46.230 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:17:46.898 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:17:46.999 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:17:56.704 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:18:07.009 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:18:07.288 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:18:08.691 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:18:10.198 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:18:13.379 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:18:17.811 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:18:21.551 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:18:29.596 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:18:34.902 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:18:35.309 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:18:37.532 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 16:18:39.676 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 16:18:44.867 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 16:18:47.265 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 16:19:32.004 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 16:19:32.304 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 16:19:32.384 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:19:37.496 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:21:27.254 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:21:38.823 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:21:39.342 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:21:39.417 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:21:51.434 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:22:01.785 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:22:02.097 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:22:03.507 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:22:04.919 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:22:08.102 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:22:12.412 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:22:16.127 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:22:24.116 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:22:29.394 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:22:29.812 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:22:32.059 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 16:22:34.214 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 16:22:39.412 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 16:22:41.823 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 16:23:26.927 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 16:23:27.085 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 16:23:27.150 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:23:32.267 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:25:54.523 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:26:06.213 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:26:06.942 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:26:07.061 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:26:17.910 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:26:28.390 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:26:28.768 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:26:30.326 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:26:31.840 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:26:35.460 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:26:39.887 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:26:44.024 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:26:52.364 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:26:57.925 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:26:58.460 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:27:35.215 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:27:46.960 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:27:47.789 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:27:47.895 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:28:05.648 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:28:16.093 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:28:16.407 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:28:17.833 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:28:19.308 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:28:22.829 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:28:27.219 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:28:30.945 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:28:39.116 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:28:44.475 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:28:44.690 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:28:46.895 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 16:28:49.047 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 16:28:54.239 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 16:28:56.876 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 16:29:41.096 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 16:29:41.253 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 16:29:41.308 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:29:46.490 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:29:54.586 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 16:29:55.878 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 16:29:58.985 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 16:33:20.667 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:33:32.326 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:33:32.852 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:33:32.935 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:33:43.401 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:33:53.778 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:33:54.080 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:33:55.617 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:33:57.074 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:34:00.303 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:34:04.709 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:34:08.425 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:34:16.359 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:34:21.808 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:34:22.368 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:34:24.587 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 16:34:26.737 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 16:34:32.037 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 16:34:34.452 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 16:35:18.691 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 16:35:18.877 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 16:35:18.945 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:35:24.122 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:37:58.783 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-04-13 16:38:10.995 [main] HashMove - User ID = atco@hashmove.com has entered
+[INFO ] 2023-04-13 16:38:11.799 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-04-13 16:38:11.881 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:38:21.571 [main] HashMove - Sea shipment FCL has selected....
+[INFO ] 2023-04-13 16:38:31.928 [main] HashMove - Cargo Readiness Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:38:32.214 [main] HashMove - Cargo Readiness Day 19 has selected
+[INFO ] 2023-04-13 16:38:33.667 [main] HashMove - Cargo Type = General Goods has selected
+[INFO ] 2023-04-13 16:38:35.080 [main] HashMove - HS Code = 7501.2000 has entered
+[INFO ] 2023-04-13 16:38:38.229 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
+[INFO ] 2023-04-13 16:38:42.595 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
+[INFO ] 2023-04-13 16:38:46.404 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
+[INFO ] 2023-04-13 16:38:54.420 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
+[INFO ] 2023-04-13 16:38:59.776 [main] HashMove - Container Size = Standard 20' has selected
+[INFO ] 2023-04-13 16:39:00.256 [main] HashMove - Quantity = 2 has entered
+[INFO ] 2023-04-13 16:39:02.488 [main] HashMove - Weight = 17 has entered
+[INFO ] 2023-04-13 16:39:04.652 [main] HashMove - Payment Terms link has clicked
+[INFO ] 2023-04-13 16:39:09.849 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
+[INFO ] 2023-04-13 16:39:12.337 [main] HashMove - Request Spot Rate button has clicked!!!
+[INFO ] 2023-04-13 16:39:46.111 [main] HashMove - Hash Move Provider Portal has opened
+[INFO ] 2023-04-13 16:39:56.504 [main] HashMove - User ID = costa@gmail.com has entered
+[INFO ] 2023-04-13 16:39:56.692 [main] HashMove - Password = 123456 has entered
+[INFO ] 2023-04-13 16:39:56.757 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-04-13 16:40:01.943 [main] HashMove - Spot Rate link has clicked!!!
+[INFO ] 2023-04-13 16:40:10.041 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 16:40:11.219 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 16:40:14.366 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 16:40:16.440 [main] HashMove - Provide Your Quote button has clicked!!!
+[INFO ] 2023-04-13 16:40:22.970 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
+[INFO ] 2023-04-13 16:40:28.221 [main] HashMove - Rate Per Container = 8500 has entered
+[INFO ] 2023-04-13 16:40:28.357 [main] HashMove - Bill of Lading = 200 has entered
+[INFO ] 2023-04-13 16:40:28.499 [main] HashMove - LOLO = 30 has entered
+[INFO ] 2023-04-13 16:40:28.639 [main] HashMove - SEAL Charges = 20 has entered
+[INFO ] 2023-04-13 16:40:28.784 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
+[INFO ] 2023-04-13 16:40:35.094 [main] HashMove - Rate Validity Start Date has entered
+[INFO ] 2023-04-13 16:40:38.290 [main] HashMove - Rate Validity End Date has entered
+[INFO ] 2023-04-13 16:40:40.498 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
+[INFO ] 2023-04-13 16:40:45.705 [main] HashMove - Save and Close button has clicked!!!
+[INFO ] 2023-04-13 16:40:47.812 [main] HashMove - Would you like to proceed? button has clicked!!!
+[INFO ] 2023-04-13 16:40:55.455 [main] HashMove - Hash Move Customer Portal has opened!!!
+[INFO ] 2023-04-13 16:41:05.621 [main] HashMove - Options Dropdown has clicked!!!
+[INFO ] 2023-04-13 16:41:08.059 [main] HashMove - Spot Rates option has clicked!!!
+[INFO ] 2023-04-13 16:41:16.185 [main] HashMove - Filter request link has clicked!!!
+[INFO ] 2023-04-13 16:41:19.394 [main] HashMove - Spot Request Number has entered!!!
+[INFO ] 2023-04-13 16:41:22.481 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 16:41:24.584 [main] HashMove - View Quotes link has clicked!!!
+[INFO ] 2023-04-13 16:41:26.677 [main] HashMove - Book Now link has clicked!!!
+[INFO ] 2023-04-13 16:41:33.781 [main] HashMove - Next button has clicked!!!
+[INFO ] 2023-04-13 16:41:38.038 [main] HashMove - Reference Number = 5102055 has entered
+[INFO ] 2023-04-13 16:41:39.271 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
  has entered
-[INFO ] 2023-04-07 16:33:57.870 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 16:33:57.938 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 16:34:06.053 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 16:34:15.614 [main] HashMove - Consignee Name = Atco1358 has entered
-[INFO ] 2023-04-07 16:34:15.852 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 16:34:21.192 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:34:21.365 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 16:34:21.580 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:34:25.176 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:34:29.679 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:34:33.971 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:34:36.103 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 16:34:40.397 [main] HashMove - Consignee Name = Dell8113 has entered
-[INFO ] 2023-04-07 16:34:40.629 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-07 16:34:45.983 [main] HashMove - City = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:34:46.209 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-07 16:34:46.421 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:34:49.842 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:34:54.122 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:37:29.655 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:37:41.489 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 16:37:42.299 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 16:37:42.392 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:38:07.868 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 16:38:18.410 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 16:38:18.882 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 16:38:20.365 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 16:38:21.900 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 16:38:25.231 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 16:38:29.670 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 16:38:33.520 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 16:38:41.758 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 16:38:46.129 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 16:38:48.464 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 16:38:50.681 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 16:38:52.919 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 16:38:55.314 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 16:39:02.117 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 16:39:05.317 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 16:39:07.784 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 16:39:42.405 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 16:39:52.744 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 16:39:52.919 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 16:39:52.999 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:39:58.171 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 16:40:08.345 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:40:09.541 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:40:12.697 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:40:14.773 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 16:40:21.231 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 16:40:26.469 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 16:40:26.667 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 16:40:26.847 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 16:40:27.079 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 16:40:27.240 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 16:40:27.451 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 16:40:32.747 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 16:40:35.937 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 16:40:38.074 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 16:40:43.302 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 16:40:45.381 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 16:40:51.973 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 16:41:02.141 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 16:41:04.770 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 16:41:12.873 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:41:14.065 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:41:17.171 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:41:19.250 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 16:41:21.334 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 16:41:26.449 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 16:41:30.629 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 16:41:31.894 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-07 16:41:31.980 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 16:41:32.054 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 16:41:40.181 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 16:41:49.571 [main] HashMove - Consignee Name = Atco3465 has entered
-[INFO ] 2023-04-07 16:41:49.780 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 16:41:55.194 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:41:55.389 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 16:41:55.631 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:41:59.213 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:42:03.713 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:42:08.073 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:42:10.200 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 16:42:14.535 [main] HashMove - Consignee Name = Dell5974 has entered
-[INFO ] 2023-04-07 16:42:14.884 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-07 16:42:20.307 [main] HashMove - City = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:42:20.475 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-07 16:42:20.767 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:42:24.381 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:42:28.709 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:42:35.000 [main] HashMove - Consignee Name = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:49:14.090 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:49:25.983 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 16:49:26.632 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 16:49:26.745 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:49:48.893 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 16:49:59.320 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 16:49:59.848 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 16:50:01.509 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 16:50:03.109 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 16:50:06.577 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 16:50:11.011 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 16:50:14.892 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 16:50:23.207 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 16:50:27.684 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 16:50:30.002 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 16:50:32.230 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 16:50:34.519 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 16:50:36.811 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 16:50:43.573 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 16:50:46.791 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 16:50:49.231 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 16:51:23.655 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 16:51:34.141 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 16:51:34.389 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 16:51:34.469 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:51:39.666 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 16:51:49.835 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:51:51.019 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:51:54.131 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:51:56.199 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 16:52:02.660 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 16:52:07.903 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 16:52:08.110 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 16:52:08.307 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 16:52:08.473 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 16:52:08.610 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 16:52:08.748 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 16:52:14.105 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 16:52:17.306 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 16:52:19.430 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 16:52:24.625 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 16:52:26.706 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 16:52:33.173 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 16:52:43.341 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 16:52:45.902 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 16:52:54.013 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:52:55.195 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:52:58.305 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:53:00.386 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 16:53:02.472 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 16:53:07.580 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 16:53:11.768 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 16:53:13.083 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-07 16:53:13.279 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 16:53:13.363 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 16:53:21.487 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 16:53:30.895 [main] HashMove - Consignee Name = Atco9433 has entered
-[INFO ] 2023-04-07 16:53:31.297 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 16:53:36.760 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:53:36.957 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 16:53:37.182 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:53:41.003 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:53:45.553 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:53:49.936 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 16:53:52.050 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 16:53:56.332 [main] HashMove - Consignee Name = Dell9812 has entered
-[INFO ] 2023-04-07 16:53:56.736 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-07 16:54:02.116 [main] HashMove - City = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:54:02.303 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-07 16:54:02.533 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 16:54:06.139 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:54:10.436 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 16:54:16.749 [main] HashMove - Consignee Name = Dell9812 has entered
-[INFO ] 2023-04-07 16:54:18.846 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-07 16:56:47.113 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 16:56:59.094 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 16:56:59.631 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 16:56:59.728 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:57:12.655 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 16:57:23.040 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 16:57:23.540 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 16:57:25.105 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 16:57:26.576 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 16:57:30.038 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 16:57:34.487 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 16:57:38.371 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 16:57:46.603 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 16:57:50.979 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 16:57:53.345 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 16:57:55.740 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 16:57:57.969 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 16:58:00.297 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 16:58:07.113 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 16:58:10.313 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 16:58:12.786 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 16:58:47.386 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 16:58:57.832 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 16:58:58.045 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 16:58:58.135 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 16:59:03.316 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 16:59:13.497 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 16:59:14.693 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 16:59:17.795 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 16:59:19.862 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 16:59:26.344 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 16:59:31.589 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 16:59:31.764 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 16:59:31.924 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 16:59:32.128 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 16:59:32.288 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 16:59:32.470 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 16:59:37.813 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 16:59:41.008 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 16:59:43.122 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 16:59:48.322 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 16:59:50.410 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 16:59:56.817 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 17:00:07.267 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 17:00:09.703 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 17:00:17.833 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 17:00:19.026 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 17:00:22.163 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 17:00:24.247 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 17:00:26.480 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 17:00:31.576 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 17:00:35.742 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 17:00:37.026 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-07 17:00:37.122 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 17:00:37.195 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 17:00:45.322 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 17:00:54.790 [main] HashMove - Consignee Name = Atco1343 has entered
-[INFO ] 2023-04-07 17:00:55.008 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 17:01:00.592 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:01:00.837 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 17:01:01.070 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 17:01:04.772 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:01:09.198 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:01:13.485 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:01:15.609 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 17:01:19.930 [main] HashMove - Consignee Name = Dell2038 has entered
-[INFO ] 2023-04-07 17:01:20.355 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-07 17:01:25.680 [main] HashMove - City = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 17:01:25.856 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-07 17:01:26.117 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 17:01:29.711 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 17:01:34.056 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 17:01:40.375 [main] HashMove - Consignee Name = Dell2038 has entered
-[INFO ] 2023-04-07 17:01:45.477 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-07 17:01:48.720 [main] HashMove - Package List has clicked.
-[INFO ] 2023-04-07 17:01:49.805 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-07 17:01:54.993 [main] HashMove - Packet List Document has uploaded successfully!!!
-[INFO ] 2023-04-07 17:02:04.868 [main] HashMove - Hash Move Provider Portal page has opened
-[INFO ] 2023-04-07 17:02:23.767 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 17:02:25.616 [main] HashMove - Booking Request Number has entered!!!
-[INFO ] 2023-04-07 17:02:29.173 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 17:02:36.346 [main] HashMove - Loading Plan has clicked.
-[INFO ] 2023-04-07 17:02:37.580 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-07 17:02:46.952 [main] HashMove - Loading Plan Document has uploaded successfully!!!
-[INFO ] 2023-04-07 17:02:56.074 [main] HashMove - Update Status link has clicked.
-[INFO ] 2023-04-07 17:02:59.407 [main] HashMove - Shipment Status has updated to Confirmed.
-[INFO ] 2023-04-07 17:02:59.775 [main] HashMove - Shipment Details Confrimed has entered.
-[INFO ] 2023-04-07 17:03:01.875 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-07 17:03:03.973 [main] HashMove - I accept the terms & conditions button has clicked.
-[INFO ] 2023-04-07 17:15:37.579 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-07 17:15:49.055 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-07 17:15:49.536 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-07 17:15:49.610 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 17:16:02.554 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-07 17:16:12.902 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-07 17:16:13.344 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-07 17:16:14.737 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-07 17:16:16.185 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-07 17:16:19.284 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-07 17:16:23.690 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-07 17:16:27.472 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-07 17:16:35.440 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-07 17:16:39.792 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-07 17:16:42.146 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-07 17:16:44.412 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-07 17:16:46.802 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-07 17:16:49.096 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-07 17:16:55.789 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-07 17:16:58.967 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-07 17:17:01.434 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-07 17:17:35.814 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-07 17:17:46.241 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-07 17:17:46.415 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-07 17:17:46.509 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-07 17:17:51.667 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-07 17:18:01.805 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 17:18:03.053 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 17:18:06.141 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 17:18:08.190 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-07 17:18:14.673 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-07 17:18:19.928 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-07 17:18:20.107 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-07 17:18:20.234 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-07 17:18:20.447 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-07 17:18:20.597 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-07 17:18:20.731 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-07 17:18:25.971 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-07 17:18:29.179 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-07 17:18:31.278 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-07 17:18:36.467 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-07 17:18:38.552 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-07 17:18:44.766 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-07 17:18:54.929 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-07 17:18:57.344 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-07 17:19:05.444 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 17:19:06.618 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-07 17:19:09.713 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 17:19:11.790 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-07 17:19:13.872 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-07 17:19:18.958 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-07 17:19:23.108 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-07 17:19:24.137 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-07 17:19:24.217 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-07 17:19:24.273 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-07 17:19:32.380 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-07 17:19:42.044 [main] HashMove - Consignee Name = Atco3457 has entered
-[INFO ] 2023-04-07 17:19:42.245 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-07 17:19:47.683 [main] HashMove - City = Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:19:47.850 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-07 17:19:48.042 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 17:19:51.548 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:19:55.997 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:20:00.268 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-07 17:20:02.357 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-07 17:20:06.612 [main] HashMove - Consignee Name = Dell5274 has entered
-[INFO ] 2023-04-07 17:20:06.935 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-07 17:20:12.277 [main] HashMove - City = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 17:20:12.417 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-07 17:20:12.600 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-07 17:20:15.939 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 17:20:20.223 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-07 17:20:26.453 [main] HashMove - Consignee Name = Dell5274 has entered
-[INFO ] 2023-04-07 17:20:31.538 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-07 17:20:34.665 [main] HashMove - Package List has clicked.
-[INFO ] 2023-04-07 17:20:35.718 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-07 17:20:40.917 [main] HashMove - Packet List Document has uploaded successfully!!!
-[INFO ] 2023-04-07 17:20:49.469 [main] HashMove - Hash Move Provider Portal page has opened
-[INFO ] 2023-04-07 17:21:08.282 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-07 17:21:09.912 [main] HashMove - Booking Request Number has entered!!!
-[INFO ] 2023-04-07 17:21:13.332 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-07 17:21:19.943 [main] HashMove - Loading Plan has clicked.
-[INFO ] 2023-04-07 17:21:21.094 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-07 17:21:30.389 [main] HashMove - Loading Plan Document has uploaded successfully!!!
-[INFO ] 2023-04-07 17:21:39.284 [main] HashMove - Update Status link has clicked.
-[INFO ] 2023-04-07 17:21:42.604 [main] HashMove - Shipment Status has updated to Confirmed.
-[INFO ] 2023-04-07 17:21:43.007 [main] HashMove - Shipment Details Confrimed has entered.
-[INFO ] 2023-04-07 17:21:45.107 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-07 17:21:47.189 [main] HashMove - I accept the terms & conditions button has clicked.
-[INFO ] 2023-04-07 17:21:52.335 [main] HashMove - Update Status link has clicked again.
-[INFO ] 2023-04-08 11:15:25.869 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:15:38.413 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:15:38.958 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:15:39.038 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:15:51.960 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 11:16:02.281 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 11:16:02.586 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 11:16:04.097 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 11:16:05.497 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 11:17:12.404 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:17:23.956 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:17:24.565 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:17:24.658 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:17:38.004 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 11:17:48.334 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 11:17:48.699 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 11:17:50.088 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 11:17:51.650 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 11:17:54.799 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 11:17:59.236 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 11:18:03.091 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 11:18:33.728 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:18:45.216 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:18:45.712 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:18:45.816 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:30:27.617 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:30:39.286 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:30:39.824 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:30:39.926 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:32:48.597 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:33:00.396 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:33:00.885 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:33:00.964 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:36:30.914 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:36:42.416 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:36:42.989 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:36:43.079 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:40:03.835 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:40:15.445 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:40:16.049 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:40:16.142 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:44:02.242 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:44:14.305 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:44:15.030 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:44:15.106 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:44:27.840 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 11:44:38.303 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 11:44:38.853 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 11:44:40.824 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 11:44:43.173 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 11:44:46.832 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 11:44:51.254 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 11:44:54.903 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 11:45:02.892 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 11:45:07.241 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 11:45:09.567 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 11:45:11.751 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 11:45:14.037 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 11:45:16.311 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 11:45:22.932 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 11:45:26.106 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 11:45:28.519 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 11:46:02.936 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 11:46:13.255 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 11:46:13.469 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 11:46:13.545 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:46:18.960 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 11:46:29.126 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 11:46:30.338 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 11:46:33.502 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 11:46:35.568 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 11:46:42.035 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 11:46:47.289 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 11:46:47.525 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 11:46:47.707 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 11:46:47.867 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 11:46:48.046 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 11:46:48.240 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 11:46:53.532 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 11:46:56.769 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 11:46:58.884 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 11:47:04.067 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 11:47:06.154 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 11:47:12.450 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 11:47:22.580 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 11:47:25.027 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 11:47:33.127 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 11:47:34.289 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 11:47:37.380 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 11:47:39.439 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 11:47:41.510 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 11:47:46.604 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 11:47:50.746 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 11:47:51.751 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 11:47:51.937 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 11:47:52.003 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 11:48:00.111 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 11:52:30.946 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 11:52:42.609 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 11:52:43.207 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 11:52:43.289 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:52:59.149 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 11:53:09.489 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 11:53:09.814 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 11:53:11.160 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 11:53:12.657 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 11:53:15.930 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 11:53:20.340 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 11:53:24.151 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 11:53:32.160 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 11:53:36.523 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 11:53:38.816 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 11:53:41.126 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 11:53:43.351 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 11:53:45.600 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 11:53:52.287 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 11:53:55.524 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 11:53:57.978 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 11:54:32.391 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 11:54:42.758 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 11:54:42.956 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 11:54:43.040 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 11:54:48.622 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 11:54:58.804 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 11:55:00.002 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 11:55:03.125 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 11:55:05.184 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 11:55:11.653 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 11:55:16.983 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 11:55:17.179 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 11:55:17.336 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 11:55:17.498 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 11:55:17.666 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 11:55:17.920 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 11:55:23.214 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 11:55:26.426 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 11:55:28.558 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 11:55:33.746 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 11:55:35.843 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 11:55:42.122 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 11:55:52.259 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 11:55:54.688 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 11:56:02.777 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 11:56:03.946 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 11:56:07.047 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 11:56:09.114 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 11:56:11.197 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 11:56:16.297 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 11:56:20.419 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 11:56:21.408 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 11:56:21.476 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 11:56:21.536 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 11:56:29.624 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 11:56:39.007 [main] HashMove - Consignee Name = Atco4161 has entered
-[INFO ] 2023-04-08 11:56:39.913 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-08 11:56:45.190 [main] HashMove - City = Karachi has entered
-[INFO ] 2023-04-08 11:56:45.365 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-08 11:56:45.569 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 11:56:49.310 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 11:56:53.643 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:00:55.776 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 12:01:07.663 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 12:01:08.145 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 12:01:08.625 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 12:01:22.093 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 12:01:32.459 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 12:01:32.851 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 12:01:34.326 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 12:01:35.830 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 12:01:39.106 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 12:01:43.486 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 12:01:47.169 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 12:01:55.178 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 12:01:59.507 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 12:02:01.770 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 12:02:04.132 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 12:02:06.420 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 12:02:08.663 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 12:02:15.361 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 12:02:18.510 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 12:02:20.957 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 12:02:55.348 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 12:03:05.791 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 12:03:05.969 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 12:03:06.055 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 12:03:11.162 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 12:03:21.299 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:03:22.467 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 12:03:25.564 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:03:27.626 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 12:03:34.192 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 12:03:39.449 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 12:03:39.645 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 12:03:39.774 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 12:03:39.903 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 12:03:40.053 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 12:03:40.178 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 12:03:45.440 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 12:03:48.627 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 12:03:50.727 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 12:03:55.888 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 12:03:57.953 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 12:04:06.418 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 12:04:16.566 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 12:04:19.007 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 12:04:27.130 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:04:28.271 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 12:04:31.348 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:04:33.410 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 12:04:35.496 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 12:04:40.592 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 12:04:44.888 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 12:04:45.970 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 12:04:46.041 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 12:04:46.105 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 12:04:54.295 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 12:05:03.726 [main] HashMove - Consignee Name = Atco02697 has entered
-[INFO ] 2023-04-08 12:05:03.956 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-08 12:05:09.389 [main] HashMove - City = Karachi has entered
-[INFO ] 2023-04-08 12:05:09.556 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-08 12:05:09.738 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 12:05:15.434 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:05:19.847 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:05:24.120 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:05:26.219 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-08 12:05:28.445 [main] HashMove - Consignee Name = Dell65750 has entered
-[INFO ] 2023-04-08 12:05:28.661 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-08 12:05:33.864 [main] HashMove - City = Jeddah has entered
-[INFO ] 2023-04-08 12:05:34.048 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-08 12:05:34.467 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 12:05:39.913 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-08 12:05:44.208 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-08 12:05:50.463 [main] HashMove - Consignee Name = Dell65750 has entered
-[INFO ] 2023-04-08 12:05:55.547 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-08 12:05:58.683 [main] HashMove - Package List has clicked.
-[INFO ] 2023-04-08 12:05:59.744 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-08 12:06:04.939 [main] HashMove - Packet List Document has uploaded successfully!!!
-[INFO ] 2023-04-08 12:06:13.604 [main] HashMove - Hash Move Provider Portal page has opened
-[INFO ] 2023-04-08 12:06:32.434 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:06:34.354 [main] HashMove - Booking Request Number has entered!!!
-[INFO ] 2023-04-08 12:06:37.787 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:06:44.583 [main] HashMove - Loading Plan has clicked.
-[INFO ] 2023-04-08 12:06:45.723 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-08 12:06:54.982 [main] HashMove - Loading Plan Document has uploaded successfully!!!
-[INFO ] 2023-04-08 12:07:03.944 [main] HashMove - Update Status link has clicked.
-[INFO ] 2023-04-08 12:07:07.216 [main] HashMove - Shipment Status has updated to Confirmed.
-[INFO ] 2023-04-08 12:07:07.505 [main] HashMove - Shipment Details Confrimed has entered.
-[INFO ] 2023-04-08 12:07:09.591 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-08 12:07:11.672 [main] HashMove - I accept the terms & conditions button has clicked.
-[INFO ] 2023-04-08 12:07:16.791 [main] HashMove - Update Status link has clicked again.
-[INFO ] 2023-04-08 12:15:32.734 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 12:15:44.222 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 12:15:44.722 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 12:15:44.831 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 12:15:58.236 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 12:16:08.528 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 12:16:08.820 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 12:16:10.177 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 12:16:11.509 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 12:16:14.086 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 12:16:18.841 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 12:16:22.686 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 12:16:30.757 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 12:16:35.132 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 12:16:37.397 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 12:16:39.645 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 12:16:41.891 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 12:16:44.333 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 12:16:50.996 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 12:16:54.134 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 12:16:56.555 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 12:17:30.795 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 12:17:41.114 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 12:17:41.336 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 12:17:41.438 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 12:17:46.555 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 12:17:56.707 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:17:57.890 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 12:18:00.974 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:18:03.033 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 12:18:09.465 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 12:18:14.718 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 12:18:14.908 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 12:18:15.050 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 12:18:15.233 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 12:18:15.394 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 12:18:15.519 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 12:18:20.772 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 12:18:23.982 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 12:18:26.067 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 12:18:31.226 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 12:18:33.291 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 12:18:39.539 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 12:18:49.706 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 12:18:52.136 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 12:19:00.231 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:19:01.391 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 12:19:04.492 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:19:06.618 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 12:19:08.700 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 12:19:13.779 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 12:19:17.928 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 12:19:18.939 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 12:19:19.103 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 12:19:19.163 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 12:19:27.270 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 12:21:56.130 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 12:22:07.407 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 12:22:07.768 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 12:22:07.878 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 12:22:22.006 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 12:22:32.307 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 12:22:32.641 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 12:22:33.972 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 12:22:35.336 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 12:22:38.302 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 12:22:42.727 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 12:22:46.406 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 12:22:54.345 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 12:22:58.633 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 12:23:00.828 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 12:23:03.015 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 12:23:05.241 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 12:23:07.590 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 12:23:14.190 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 12:23:17.324 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 12:23:19.821 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 12:23:53.782 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 12:24:04.236 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 12:24:04.430 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 12:24:04.486 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 12:24:09.663 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 12:24:19.865 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:24:21.111 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 12:24:24.235 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:24:26.355 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 12:24:32.777 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 12:24:38.048 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 12:24:38.188 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 12:24:38.308 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 12:24:38.411 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 12:24:38.516 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 12:24:38.663 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 12:24:44.002 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 12:24:47.251 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 12:24:49.382 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 12:24:54.604 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 12:24:56.683 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 12:25:04.667 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 12:25:14.832 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 12:25:17.207 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 12:25:25.356 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:25:26.583 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 12:25:29.728 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:25:31.848 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 12:25:33.923 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 12:25:39.060 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 12:25:43.262 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 12:25:44.101 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 12:25:44.173 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 12:25:44.224 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 12:25:52.317 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 12:26:04.700 [main] HashMove - Consignee Name = Atco21669 has entered
-[INFO ] 2023-04-08 12:26:04.986 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-08 12:26:10.224 [main] HashMove - City = Karachi has entered
-[INFO ] 2023-04-08 12:26:10.381 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-08 12:26:10.534 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 12:26:15.984 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:26:20.308 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:26:24.628 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 12:26:26.702 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-08 12:26:28.936 [main] HashMove - Consignee Name = Dell12008 has entered
-[INFO ] 2023-04-08 12:26:29.093 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-08 12:26:34.301 [main] HashMove - City = Jeddah has entered
-[INFO ] 2023-04-08 12:26:34.531 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-08 12:26:34.682 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 12:26:40.013 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-08 12:26:44.347 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-08 12:26:50.688 [main] HashMove - Consignee Name = Dell12008 has entered
-[INFO ] 2023-04-08 12:26:55.761 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-08 12:26:58.951 [main] HashMove - Package List has clicked.
-[INFO ] 2023-04-08 12:27:00.019 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-08 12:27:05.326 [main] HashMove - Packet List Document has uploaded successfully!!!
-[INFO ] 2023-04-08 12:27:12.927 [main] HashMove - Hash Move Provider Portal page has opened
-[INFO ] 2023-04-08 12:27:31.250 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 12:27:32.443 [main] HashMove - Booking Request Number has entered!!!
-[INFO ] 2023-04-08 12:27:35.630 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 12:27:42.048 [main] HashMove - Loading Plan has clicked.
-[INFO ] 2023-04-08 12:27:43.132 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-08 12:27:52.420 [main] HashMove - Loading Plan Document has uploaded successfully!!!
-[INFO ] 2023-04-08 12:28:01.346 [main] HashMove - Update Status link has clicked.
-[INFO ] 2023-04-08 12:28:04.564 [main] HashMove - Shipment Status has updated to Confirmed.
-[INFO ] 2023-04-08 12:28:04.827 [main] HashMove - Shipment Details Confrimed has entered.
-[INFO ] 2023-04-08 12:28:06.936 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-08 12:28:09.054 [main] HashMove - I accept the terms & conditions button has clicked.
-[INFO ] 2023-04-08 12:28:14.157 [main] HashMove - Update Status link has clicked again.
-[INFO ] 2023-04-08 12:28:17.340 [main] HashMove - Shipment Status has updated to Confirmed.
-[INFO ] 2023-04-08 12:28:17.635 [main] HashMove - Shipment Details Completed has entered.
-[INFO ] 2023-04-08 12:28:19.689 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-08 14:12:24.565 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 14:12:36.172 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 14:12:36.509 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 14:12:36.579 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 14:12:49.619 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 14:12:59.911 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 14:13:00.341 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 14:13:01.771 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 14:13:03.187 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 14:13:06.357 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 14:13:10.715 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 14:13:14.599 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 14:13:22.690 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 14:13:27.021 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 14:13:29.595 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 14:13:31.770 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 14:13:34.106 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 14:13:36.289 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 14:13:43.030 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 14:13:46.223 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 14:13:48.640 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 14:14:23.074 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 14:14:33.350 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 14:14:33.514 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 14:14:33.583 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 14:14:38.727 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 14:14:48.874 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 14:14:50.059 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 14:14:53.147 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 14:14:55.210 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 14:15:01.635 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 14:15:06.865 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 14:15:07.037 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 14:15:07.170 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 14:15:07.355 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 14:15:07.494 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 14:15:07.638 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 14:15:13.011 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 14:15:16.219 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 14:15:18.371 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 14:15:23.538 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 14:15:25.613 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 14:15:31.859 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 14:15:42.012 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 14:15:44.427 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 14:15:52.530 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 14:15:53.687 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 14:15:56.774 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 14:15:58.839 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 14:16:00.919 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 14:16:06.011 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 14:16:10.154 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 14:16:11.202 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 14:16:11.371 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 14:16:11.429 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 14:16:19.642 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 14:16:31.891 [main] HashMove - Shipper Name =  has entered
-[INFO ] 2023-04-08 14:27:41.154 [main] HashMove - Hash Move Customer Portal Login page has opened
-[INFO ] 2023-04-08 14:27:53.649 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-08 14:27:54.282 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-08 14:27:54.420 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 14:28:18.394 [main] HashMove - Sea Shipment - LCL has selected
-[INFO ] 2023-04-08 14:28:29.031 [main] HashMove - Cargo Readiness Month Year has selected
-[INFO ] 2023-04-08 14:28:29.606 [main] HashMove - Cargo Readiness Day has selected
-[INFO ] 2023-04-08 14:28:31.231 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-08 14:28:33.005 [main] HashMove - HS Code = 2523.1000 has entered
-[INFO ] 2023-04-08 14:28:36.967 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-08 14:28:41.564 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-08 14:28:45.859 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-08 14:28:54.610 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-08 14:28:59.041 [main] HashMove - Package Type = Pallets has entered
-[INFO ] 2023-04-08 14:29:01.641 [main] HashMove - Quantity = 1 has entered
-[INFO ] 2023-04-08 14:29:03.938 [main] HashMove - Length = 111 has entered
-[INFO ] 2023-04-08 14:29:06.306 [main] HashMove - Width = 111 has entered
-[INFO ] 2023-04-08 14:29:08.786 [main] HashMove - Height = 111 has entered
-[INFO ] 2023-04-08 14:29:15.753 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-08 14:29:18.983 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-08 14:29:21.471 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-08 14:29:56.858 [main] HashMove - Hash Move Provider Portal Login page has opened
-[INFO ] 2023-04-08 14:30:07.358 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-08 14:30:07.943 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-08 14:30:08.039 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-08 14:30:13.279 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-08 14:30:23.520 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 14:30:24.885 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 14:30:28.025 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 14:30:30.103 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-08 14:30:36.818 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-08 14:30:42.114 [main] HashMove - Rate Per CBM = 8500 has entered
-[INFO ] 2023-04-08 14:30:42.373 [main] HashMove - Chargeable CBM = 2 has entered
-[INFO ] 2023-04-08 14:30:42.548 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-08 14:30:42.860 [main] HashMove - LCL Destuffing = 30 has entered
-[INFO ] 2023-04-08 14:30:43.041 [main] HashMove - Port Handling = 20 has entered
-[INFO ] 2023-04-08 14:30:43.214 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-08 14:30:48.600 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-08 14:30:51.912 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-08 14:30:54.095 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-08 14:30:59.347 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-08 14:31:01.555 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-08 14:31:09.841 [main] HashMove - Hash Move Customer Portal page has opened
-[INFO ] 2023-04-08 14:31:20.100 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-08 14:31:22.784 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-08 14:31:30.932 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 14:31:32.147 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-08 14:31:35.487 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 14:31:37.583 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-08 14:31:39.701 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-08 14:31:44.846 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-08 14:31:49.081 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-08 14:31:50.753 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-08 14:31:50.892 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-08 14:31:50.975 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-08 14:31:59.147 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-08 14:32:12.142 [main] HashMove - Consignee Name = Atco76974 has entered
-[INFO ] 2023-04-08 14:32:14.118 [main] HashMove - Contact Person = Syed Ahsan Abbas has entered
-[INFO ] 2023-04-08 14:32:19.503 [main] HashMove - City = Karachi has entered
-[INFO ] 2023-04-08 14:32:19.741 [main] HashMove - Contact Phone = 3452512522 has entered
-[INFO ] 2023-04-08 14:32:20.002 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 14:32:25.977 [main] HashMove - Consignee Pin Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 14:32:31.009 [main] HashMove - Consignee Main Address = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 14:32:35.398 [main] HashMove - Shipper Name = Karachi Airport, Faisal Cantonment, Karachi, Pakistan has entered
-[INFO ] 2023-04-08 14:32:37.597 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-08 14:32:40.083 [main] HashMove - Consignee Name = Dell18899 has entered
-[INFO ] 2023-04-08 14:32:40.396 [main] HashMove - Contact Person = Salman bin Abdulaziz has entered
-[INFO ] 2023-04-08 14:32:45.673 [main] HashMove - City = Jeddah has entered
-[INFO ] 2023-04-08 14:32:45.893 [main] HashMove - Contact Phone = 845154555 has entered
-[INFO ] 2023-04-08 14:32:46.297 [main] HashMove - Contact Email = yopmail.com has entered
-[INFO ] 2023-04-08 14:32:52.065 [main] HashMove - Consignee Pin Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-08 14:32:56.502 [main] HashMove - Consignee Main Address = Jeddah, Saudi Arabia has entered
-[INFO ] 2023-04-08 14:33:02.882 [main] HashMove - Consignee Name = Dell18899 has entered
-[INFO ] 2023-04-08 14:33:08.012 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-08 14:33:11.214 [main] HashMove - Package List has clicked.
-[INFO ] 2023-04-08 14:33:12.311 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-08 14:33:17.531 [main] HashMove - Packet List Document has uploaded successfully!!!
-[INFO ] 2023-04-08 14:33:31.309 [main] HashMove - Hash Move Provider Portal page has opened
-[INFO ] 2023-04-08 14:33:51.123 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-08 14:33:53.279 [main] HashMove - Booking Request Number has entered!!!
-[INFO ] 2023-04-08 14:33:56.955 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-08 14:34:04.330 [main] HashMove - Loading Plan has clicked.
-[INFO ] 2023-04-08 14:34:05.772 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-08 14:34:15.312 [main] HashMove - Loading Plan Document has uploaded successfully!!!
-[INFO ] 2023-04-08 14:34:20.696 [main] HashMove - Goods Declaration  has clicked.
-[INFO ] 2023-04-08 14:34:22.010 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 16:41:39.353 [main] HashMove - Disclaimer has selected
+[INFO ] 2023-04-13 16:41:39.415 [main] HashMove - Confirm button has clicked!!!
+[INFO ] 2023-04-13 16:41:47.520 [main] HashMove - View Booking has clicked!!!
+[INFO ] 2023-04-13 16:41:56.766 [main] HashMove - Shipper Name = Atco has entered
+[INFO ] 2023-04-13 16:41:58.866 [main] HashMove - Shipper Information has added....
+[INFO ] 2023-04-13 16:42:03.117 [main] HashMove - Consignee Name = Super Star has entered
+[INFO ] 2023-04-13 16:42:05.194 [main] HashMove - Consignee Information has added....
+[INFO ] 2023-04-13 16:42:07.317 [main] HashMove - Package List has clicked.
+[INFO ] 2023-04-13 16:42:08.378 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 16:42:12.538 [main] HashMove - Package List Document has uploaded successfully!!!
+[INFO ] 2023-04-13 16:42:22.127 [main] HashMove - Hash Move Provider Portal has opened!!!
+[INFO ] 2023-04-13 16:42:40.916 [main] HashMove - Click filter request link has clicked!!!
+[INFO ] 2023-04-13 16:42:42.484 [main] HashMove - Booking Request Number has entered!!!
+[INFO ] 2023-04-13 16:42:45.823 [main] HashMove - Filter Records button has clicked!!!
+[INFO ] 2023-04-13 16:42:52.408 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) has clicked.
+[INFO ] 2023-04-13 16:42:53.512 [main] HashMove - Select a file has clicked.
+[INFO ] 2023-04-13 16:43:02.785 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) Document has uploaded successfully!!!
+[INFO ] 2023-04-13 16:43:07.904 [main] HashMove - Confirm Booking Yes button has clicked
+[INFO ] 2023-04-13 16:43:09.130 [main] HashMove - Shipment Details = Shipment booking has confirmed  has entered
+[INFO ] 2023-04-13 16:43:11.247 [main] HashMove - Submit button has clicked.
+[INFO ] 2023-04-13 16:43:16.414 [main] HashMove - I accept the terms & conditions button has clicked.
+[INFO ] 2023-04-13 16:43:18.514 [main] HashMove - Add Schedule button has clicked.
+[INFO ] 2023-04-13 16:43:20.819 [main] HashMove - Departure Date Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:43:21.396 [main] HashMove - Departure Date Day 20 has selected
+[INFO ] 2023-04-13 16:43:21.684 [main] HashMove - Arrival Date Month Year April 2023 has selected
+[INFO ] 2023-04-13 16:43:22.129 [main] HashMove - Arrival Date Day 25 has selected
+[INFO ] 2023-04-13 16:43:26.526 [main] HashMove - Vessel Name = CMA CGM OKAPI has entered
+[INFO ] 2023-04-13 16:43:28.871 [main] HashMove - Voyage Number = 25488 has entered
+[INFO ] 2023-04-13 16:43:31.009 [main] HashMove - Update Schedule button has clicked
+[INFO ] 2023-04-13 16:43:36.189 [main] HashMove - Bill of Lading has clicked.
+[INFO ] 2023-04-13 16:43:39.504 [main] HashMove - Bill Number = BL87882341012 has entered

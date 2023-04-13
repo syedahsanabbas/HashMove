@@ -79,7 +79,7 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
 
-		Thread.sleep(12000);
+		Thread.sleep(15000);
 
 		// Select Sea Shipment - LCL
 		String searchcategory = getCellData(2, 3, "QACustomerLCLTestData");
@@ -504,9 +504,9 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		bdp.clickaddshipper();
 		Thread.sleep(2000);
 
-		// Enter Consignee Name
-		String consigneename = bdp.setconsigneename(getCellData(2, 27, "QACustomerLCLTestData") + bdp.getSaltString());
-		logger.info("Consignee Name = " + consigneename + " has entered");
+		// Enter Shipper Name
+		String shipperename = bdp.setshipperename(getCellData(2, 27, "QACustomerLCLTestData") + bdp.getSaltString());
+		logger.info("Shipper Name = " + shipperename + " has entered");
 
 		// Enter Contact Person
 		bdp.setcontactperson(getCellData(2, 28, "QACustomerLCLTestData"));
@@ -541,15 +541,15 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("Consignee Main Address = " + cell.getStringCellValue() + " has entered");
 
 		// Click Save Consignee info
-		bdp.clicksaveconsigneeinfo();
+		bdp.clicksaveshipperinfo();
 		Thread.sleep(2000);
 
 		// Select SHIPPER NAME
-		bdp.setshippername(consigneename);
+		bdp.setshippername(shipperename);
 		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Shipper Information
-		bdp.clicksaveshipperinfo();
+		bdp.clicksavemainshipperinfo();
 		Thread.sleep(2000);
 		logger.info("Shipper Information has added....");
 
@@ -560,9 +560,9 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Consignee Name
-		String consigneename2 = bdp
-				.setconsigneename2(getCellData(2, 33, "QACustomerLCLTestData") + bdp.getSaltString());
-		logger.info("Consignee Name = " + consigneename2 + " has entered");
+		String consigneename = bdp
+				.setconsigneename(getCellData(2, 33, "QACustomerLCLTestData") + bdp.getSaltString());
+		logger.info("Consignee Name = " + consigneename + " has entered");
 
 		// Enter Contact Person
 		bdp.setcontactperson2(getCellData(2, 34, "QACustomerLCLTestData"));
@@ -602,8 +602,8 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Select Consignee Name
-		bdp.setmainconsigneename(consigneename2);
-		logger.info("Consignee Name = " + consigneename2 + " has entered");
+		bdp.setmainconsigneename(consigneename);
+		logger.info("Consignee Name = " + consigneename + " has entered");
 
 		// Save Consignee Information
 		bdp.clicksavemainconsigneeinfo();

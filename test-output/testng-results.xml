@@ -2,40 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-08T14:27:33 PKT" name="Default suite" finished-at="2023-04-08T14:34:31 PKT" duration-ms="417993">
+  <suite started-at="2023-04-13T16:37:51 PKT" name="Default suite" finished-at="2023-04-13T16:43:42 PKT" duration-ms="351226">
     <groups>
     </groups>
-    <test started-at="2023-04-08T14:27:33 PKT" name="Default test" finished-at="2023-04-08T14:34:31 PKT" duration-ms="417993">
-      <class name="com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002@3697186]" started-at="2023-04-08T14:27:33 PKT" name="setup" finished-at="2023-04-08T14:27:38 PKT" duration-ms="4703" status="PASS">
+    <test started-at="2023-04-13T16:37:51 PKT" name="Default test" finished-at="2023-04-13T16:43:42 PKT" duration-ms="351226">
+      <class name="com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001@3697186]" started-at="2023-04-13T16:37:51 PKT" name="setup" finished-at="2023-04-13T16:37:54 PKT" duration-ms="3152" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifylclspotrateandbookingwithaddingshipperinfo()[pri:0, instance:com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002@3697186]" started-at="2023-04-08T14:27:38 PKT" name="verifylclspotrateandbookingwithaddingshipperinfo" finished-at="2023-04-08T14:34:31 PKT" duration-ms="413070" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="verifyfclspotrateandbookingwithoutaddingshipperinfo()[pri:0, instance:com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001@3697186]" started-at="2023-04-13T16:37:54 PKT" name="verifyfclspotrateandbookingwithoutaddingshipperinfo" finished-at="2023-04-13T16:43:42 PKT" duration-ms="347899" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[stale element reference: element is not attached to the page document
+              <![CDATA[element click intercepted: Element <input type="text" readonly="" ngbdatepicker="" class="form-control settings-documents-foam-field ng-tns-c242-0 ng-untouched ng-pristine ng-valid ng-star-inserted" style="background-color: #fff;" placeholder="BL Date"> is not clickable at point (687, 128). Other element would receive the click: <hr class="hr-solid mt-3 mb-2 ng-tns-c242-0">
   (Session info: chrome=112.0.5615.49)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4ccadb188c11e52ad5f2be0cf8d01a1, clickElement {id=84b7e3bf-e5ec-4aaf-b725-86f60670eeef}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63196/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b4ccadb188c11e52ad5f2be0cf8d01a1)] -> xpath: //button[normalize-space()='Upload']]
-Session ID: b4ccadb188c11e52ad5f2be0cf8d01a1]]>
+Command: [8cc7159c5eab3cd8713cb0b265da882a, clickElement {id=da744e48-b862-428c-9521-774a98357c3c}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57709/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8cc7159c5eab3cd8713cb0b265da882a)] -> xpath: //input[@placeholder='BL Date']]
+Session ID: 8cc7159c5eab3cd8713cb0b265da882a]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <input type="text" readonly="" ngbdatepicker="" class="form-control settings-documents-foam-field ng-tns-c242-0 ng-untouched ng-pristine ng-valid ng-star-inserted" style="background-color: #fff;" placeholder="BL Date"> is not clickable at point (687, 128). Other element would receive the click: <hr class="hr-solid mt-3 mb-2 ng-tns-c242-0">
   (Session info: chrome=112.0.5615.49)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
 Build info: version: '4.6.0', revision: '79f1c02ae20'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b4ccadb188c11e52ad5f2be0cf8d01a1, clickElement {id=84b7e3bf-e5ec-4aaf-b725-86f60670eeef}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63196}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63196/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (b4ccadb188c11e52ad5f2be0cf8d01a1)] -> xpath: //button[normalize-space()='Upload']]
-Session ID: b4ccadb188c11e52ad5f2be0cf8d01a1
+Command: [8cc7159c5eab3cd8713cb0b265da882a, clickElement {id=da744e48-b862-428c-9521-774a98357c3c}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57709}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57709/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8cc7159c5eab3cd8713cb0b265da882a)] -> xpath: //input[@placeholder='BL Date']]
+Session ID: 8cc7159c5eab3cd8713cb0b265da882a
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -50,13 +48,13 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at jdk.internal.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+at jdk.internal.reflect.GeneratedMethodAccessor1.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
 at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-at com.hashmove.pageobjects.BookingDetailPage.clickupload2(BookingDetailPage.java:453)
-at com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002.verifylclspotrateandbookingwithaddingshipperinfo(TC_QA_LCLSpotRateandBooking_002.java:776)
+at com.hashmove.pageobjects.BookingDetailPage.clickbldate(BookingDetailPage.java:637)
+at com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001.verifyfclspotrateandbookingwithoutaddingshipperinfo(TC_QA_FCLSpotRateandBooking_001.java:710)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -87,15 +85,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifylclspotrateandbookingwithaddingshipperinfo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002@3697186]" started-at="2023-04-08T14:34:31 PKT" name="teardown" finished-at="2023-04-08T14:34:31 PKT" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyfclspotrateandbookingwithoutaddingshipperinfo -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001@3697186]" started-at="2023-04-13T16:43:42 PKT" name="teardown" finished-at="2023-04-13T16:43:42 PKT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.hashmove.testcases.TC_QA_LCLSpotRateandBooking_002 -->
+      </class> <!-- com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

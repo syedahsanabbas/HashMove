@@ -79,7 +79,7 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
 
-		Thread.sleep(12000);
+		Thread.sleep(8000);
 
 		// Select Sea Shipment - LCL
 		String searchcategory = getCellData(1, 3, "QACustomerLCLTestData");
@@ -129,10 +129,10 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(1, 4, "QACustomerLCLTestData"));
-		logger.info("Cargo Readiness Month Year has selected");
+		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue() +  " has selected");
 
 		hp.setcargoreadinessday(getCellData(1, 5, "QACustomerLCLTestData"));
-		logger.info("Cargo Readiness Day has selected");
+		logger.info("Cargo Readiness Day " + cell.getStringCellValue() + " has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
@@ -305,7 +305,7 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		// Search the Spot Request
 		rrp.clickfilteryourrequest();
 		logger.info("Click filter request link has clicked!!!");
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 
 		// Enter Spot Request Number
 		rrp.setrequestnumber(spotraterequestnumber);
@@ -696,6 +696,9 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		bdp.clicksubmitshipmentstatus2();
 		logger.info("Submit button has clicked.");
 		Thread.sleep(5000);
+		
+		
+		// Add Schul
 
 		// Click Update Status
 		bdp.clickupdatestatus();

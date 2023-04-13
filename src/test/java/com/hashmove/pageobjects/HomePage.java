@@ -201,8 +201,8 @@ public class HomePage {
 		List<WebElement> allOptions = ldriver.findElements(By.xpath(
 				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
 		for (int i = 0; i < allOptions.size(); i++) {
-			if (allOptions.get(i).getText().toString().contains(cargoreadinessday)) {
-				
+			if (allOptions.get(i).getText().toString().equals(cargoreadinessday)) {
+				System.out.println(cargoreadinessday);
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;
