@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 06 10:32:39 PKT 2023</td>
+<td>Started on:</td><td>Mon Apr 17 15:00:10 PKT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>36 seconds (36951 ms)</td>
+<tr><td>Total time:</td><td>478 seconds (478202 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,16 +75,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hashmove.testcases.TestCase_SpotRateandBooking_002.verifyspotrateandbooking()'><b>verifyspotrateandbooking</b><br>Test class: com.hashmove.testcases.TestCase_SpotRateandBooking_002</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[normalize-space()=&apos;Sea Shipment - FCL&apos;]&quot;}
+<td title='com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_002.verifyfclspotrateandbookingwithoutaddingshipperinfo()'><b>verifyfclspotrateandbookingwithoutaddingshipperinfo</b><br>Test class: com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_002</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=112.0.5615.49)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [445ba6d3098cc260f484b3044d2efadd, findElement {using=xpath, value=//span[normalize-space()=&apos;Sea Shipment - FCL&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52651/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 445ba6d3098cc260f484b3044d2efadd
+Command: [d6a7a82f4a858ee03b398d0574607c93, findElement {using=id, value=hashDatepicker}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64906}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64906/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6a7a82f4a858ee03b398d0574607c93
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -98,20 +98,20 @@ Session ID: 445ba6d3098cc260f484b3044d2efadd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at com.hashmove.pageobjects.HomePage.clickseashipmentfcl(HomePage.java:131)
-	at com.hashmove.testcases.TestCase_SpotRateandBooking_002.verifyspotrateandbooking(TestCase_SpotRateandBooking_002.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.click(Unknown Source)
+	at com.hashmove.pageobjects.HomePage.clickcargoreadiness(HomePage.java:180)
+	at com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_002.verifyfclspotrateandbookingwithoutaddingshipperinfo(TC_QA_FCLSpotRateandBooking_002.java:143)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1387462740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1387462740'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[normalize-space()=&apos;Sea Shipment - FCL&apos;]&quot;}
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace418461526", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace418461526'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=112.0.5615.49)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [445ba6d3098cc260f484b3044d2efadd, findElement {using=xpath, value=//span[normalize-space()=&apos;Sea Shipment - FCL&apos;]}]
-Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Program Files (x86)\scop...}, goog:chromeOptions: {debuggerAddress: localhost:52651}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52651/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 445ba6d3098cc260f484b3044d2efadd
+Command: [d6a7a82f4a858ee03b398d0574607c93, findElement {using=id, value=hashDatepicker}]
+Capabilities {acceptInsecureCerts: true, browserName: chrome, browserVersion: 112.0.5615.49, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\DELLPC~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64906}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64906/devtoo..., se:cdpVersion: 112.0.5615.49, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d6a7a82f4a858ee03b398d0574607c93
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -130,9 +130,9 @@ Session ID: 445ba6d3098cc260f484b3044d2efadd
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy33.click(Unknown Source)
-	at com.hashmove.pageobjects.HomePage.clickseashipmentfcl(HomePage.java:131)
-	at com.hashmove.testcases.TestCase_SpotRateandBooking_002.verifyspotrateandbooking(TestCase_SpotRateandBooking_002.java:91)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.click(Unknown Source)
+	at com.hashmove.pageobjects.HomePage.clickcargoreadiness(HomePage.java:180)
+	at com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_002.verifyfclspotrateandbookingwithoutaddingshipperinfo(TC_QA_FCLSpotRateandBooking_002.java:143)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -162,8 +162,21 @@ Session ID: 445ba6d3098cc260f484b3044d2efadd
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>27</td>
-<td>com.hashmove.testcases.TestCase_SpotRateandBooking_002@3697186</td></tr>
+<td>48</td>
+<td>com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_002@6239aba6</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001.verifyfclspotrateandbookingwithoutaddingshipperinfo()'><b>verifyfclspotrateandbookingwithoutaddingshipperinfo</b><br>Test class: com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001</td>
+<td></td>
+<td>413</td>
+<td>com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001@6c4980d3</td></tr>
 </table><p>
 </body>
 </html>

@@ -11,6 +11,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import io.qameta.allure.Step;
+
 public class HomePage {
 
 	// Create object of Webdriver
@@ -39,6 +41,10 @@ public class HomePage {
 	@FindBy(xpath = "//span[normalize-space()='Sea Shipment - LCL']")
 	@CacheLookup
 	WebElement btnseashipmentlcl;
+	
+	@FindBy(xpath = "//span[normalize-space()='Warehousing']")
+	@CacheLookup
+	WebElement btnwarehousing;
 
 	@FindBy(id = "hashDatepicker")
 	@CacheLookup
@@ -163,28 +169,34 @@ public class HomePage {
 	
 
 	// Identify Action on all Web Elements
-
+	@Step("Click Sea Shipment - FCL")
 	public void clickseashipmentfcl() {
 		btnseashipmentfcl.click();
 
 	}
-	
+	@Step("Click Sea Shipment - LCL")
 	public void clickseashipmentlcl() {
 		btnseashipmentlcl.click();
 
 	}
 	
+	@Step("Click Warehousing")
+	public void clickwarehousing() {
+		btnwarehousing.click();
+
+	}
+	
+	@Step("Click Cargo Readiness Date")
 	public void clickcargoreadiness() {
 		datepickercargoreadiness.click();
 
 	}
-
+	@Step("Select Readiness Month Year")
 	public void setcargoreadinessmonthyear(String cargoreadinessmonthyear) {
 		while (true) {
 			WebElement monthyeartext = ldriver
 					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
 			String monthyear = monthyeartext.getText();
-			System.out.println(monthyear);
 			if (monthyear.equals(cargoreadinessmonthyear)) {
 				break;
 
@@ -197,12 +209,12 @@ public class HomePage {
 		}
 	}
 
+	@Step("Select Readiness Day")
 	public void setcargoreadinessday(String cargoreadinessday) {
 		List<WebElement> allOptions = ldriver.findElements(By.xpath(
 				"//div[@class='ngb-dp-content ngb-dp-months']//div[@class='ngb-dp-week ng-star-inserted']//div[@class = 'ngb-dp-day ng-star-inserted']//div[@class='btn-light ng-star-inserted']"));
 		for (int i = 0; i < allOptions.size(); i++) {
 			if (allOptions.get(i).getText().toString().equals(cargoreadinessday)) {
-				System.out.println(cargoreadinessday);
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;
@@ -215,7 +227,7 @@ public class HomePage {
 		ddcargotype.click();
 
 	}
-
+	@Step("Select Cargo Type:  {0}")
 	public void setcargotype(String cargotype) {
 		List<WebElement> allOptions = ldriver
 				.findElements(By.xpath("//div[@aria-labelledby='fcl_cargo_ddl']//div//span"));

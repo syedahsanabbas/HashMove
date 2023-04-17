@@ -28,12 +28,24 @@ import com.hashmove.pageobjects.RateRequestsPage;
 import com.hashmove.pageobjects.ThankyouBookingPage;
 import com.hashmove.utilities.ScreenRecorderUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.Story;
+import io.qameta.allure.*;
+
 //						********* TestCase_SpotRateandBooking_001 *********
 //		Description: Verify that Customer should request FCL Spot Rate without creating [shipper & consignee information] and Book the Shipment
 
 public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 
 	@Test(priority = 0)
+	@Description  ("Verify that FCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
+	@Severity(SeverityLevel.CRITICAL)
+	@Epic("EP001")
+	@Feature("Feature: FCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
+	@Story("Story: FCL Search Spot Rate and Booking")
 	public void verifyfclspotrateandbookingwithoutaddingshipperinfo() throws Exception
 
 	{
@@ -44,7 +56,7 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		
 		// Open Hash Move Customer Portal URL
 		driver.get(qacustomerportalurl);
-
+		
 		String ActualTitle = driver.getTitle();
 		String ExpectedTitle = "HashMove – Connecting World Logistics";
 		Assert.assertEquals(ExpectedTitle, ActualTitle);
@@ -283,7 +295,7 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		// Click Spot Rate left menu
 		dp.clickspotratesleftmenu();
 		logger.info("Spot Rate link has clicked!!!");
-		Thread.sleep(8000);
+		Thread.sleep(12000);
 
 		// Search the Spot Request
 		rrp.clickfilteryourrequest();
@@ -538,14 +550,17 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		// press Contol+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
-
+		Thread.sleep(1000);
+		
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
-
+		Thread.sleep(1000);
+		
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
 		
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -612,23 +627,23 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// Click Upload button
 		bdp.clickupload2();
@@ -698,7 +713,9 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(1000);
 		
 		// Object of Actions class to scroll up and down
-		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
 		Thread.sleep(2000);
 
 		// Enter Bill Number
@@ -710,7 +727,8 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		bdp.clickbldate();
 		bdp.setbldatemonthyear(getCellData(2, 19, "QAFCLProviderTestData"));
 		logger.info("BL Date Month Year" + cell.getStringCellValue() + " has selected");
-
+		Thread.sleep(2000);
+		
 		bdp.setbldateday(getCellData(2, 20, "QAFCLProviderTestData"));
 		logger.info("BL Date Day has selected");
 		Thread.sleep(1000);
@@ -726,20 +744,20 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// Click Upload button
 		bdp.clickupload3();

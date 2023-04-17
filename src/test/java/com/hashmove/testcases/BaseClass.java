@@ -6,7 +6,6 @@ import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
@@ -25,11 +24,13 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseClass {
 
 	ReadConfig readConfig = new ReadConfig();
-
+	
+	String devdffcustomerportalurl = readConfig.getdevdffcustomerportalurl();
 	String qacustomerportalurl = readConfig.getqacustomerportalurl();
 	String qaproviderportalurl = readConfig.getqaproviderportalurl();
 	String prehubcustomerportalurl = readConfig.getprehubcustomerportalurl();
 	String prehubproviderportalurl = readConfig.getprehubproviderportalurl();
+	
 	String browser = readConfig.getBrowser();
 
 	public static WebDriver driver;
@@ -47,21 +48,34 @@ public class BaseClass {
 		sheet = wb.getSheet(sheetname);
 		row = sheet.getRow(rownum);
 		cell = row.getCell(col);
-		DataFormatter formatter = new DataFormatter();
-		String data;
-		try {
-			data = formatter.formatCellValue(cell);
-		}
-
-		catch (Exception e) {
-
-			data = "";
-		}
+		
+		String data= cell.getStringCellValue();
+		
+	    // Check the cell type
+        switch(cell.getCellType())
+        {
+        case STRING:
+            System.out.print(cell.getStringCellValue());
+            break;
+              
+        case NUMERIC:
+            System.out.print(cell.getNumericCellValue()); 
+            break;
+              
+        case FORMULA:
+            System.out.print(cell.getStringCellValue());
+            break;
+            
+		default:
+			break;
+        }
 		wb.close();
 		fis.close();
 		return data;
 
 	}
+	
+
 	
 
 	@BeforeClass
@@ -84,8 +98,8 @@ public class BaseClass {
 			//Creating instance of Chrome driver by passing reference of ChromeOptions object
 			driver = new ChromeDriver(chromeOptions);
 			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
-			driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-			driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
+			//driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+			//driver.manage().timeouts().scriptTimeout(Duration.ofSeconds(30));
 			
 			break;
 
@@ -128,7 +142,7 @@ public class BaseClass {
 	public void teardown()
 
 	{
-		//driver.quit();
+		driver.quit();
 
 	}
 

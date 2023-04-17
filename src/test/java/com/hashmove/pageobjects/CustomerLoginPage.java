@@ -6,6 +6,8 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import io.qameta.allure.Step;
+
 public class CustomerLoginPage {
 
 	// Create object of Webdriver
@@ -37,21 +39,21 @@ public class CustomerLoginPage {
 	
 
 	// Identify Action on all Web Elements
-
+	@Step("Entering the User id:  {0}")
 	public void setuserid(String userid) throws InterruptedException {
 		txtboxuserid.clear();
 		txtboxuserid.sendKeys(userid);
 		
 
 	}
-	
+	@Step("Entering the Password:  {0}")
 	public void setpassword(String password) throws InterruptedException {
 		txtboxpassword.clear();
 		txtboxpassword.sendKeys(password);
 		
 
 	}
-	
+	@Step("Click Login Now button")
 	public void clickloginnow() {
 		btnloginnow.click();
 		

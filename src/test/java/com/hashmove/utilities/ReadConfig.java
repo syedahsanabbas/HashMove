@@ -24,6 +24,18 @@ public class ReadConfig {
 		}
 
 	}
+	
+	public String getdevdffcustomerportalurl()
+
+	{
+		String value = properties.getProperty("devdffcustomerportalurl");
+		if (value != null)
+			return value;
+
+		else
+			throw new RuntimeException("DEV DFF Customer Portal url is not Specfied in Config file.");
+
+	}
 
 	public String getqacustomerportalurl()
 
@@ -73,7 +85,7 @@ public class ReadConfig {
 
 	}
 
-
+	
 	public String getBrowser()
 
 	{

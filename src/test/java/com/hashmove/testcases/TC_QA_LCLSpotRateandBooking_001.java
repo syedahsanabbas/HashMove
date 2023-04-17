@@ -28,12 +28,21 @@ import com.hashmove.pageobjects.RateRequestsPage;
 import com.hashmove.pageobjects.ThankyouBookingPage;
 import com.hashmove.utilities.ScreenRecorderUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
+
 //						********* TC_QA_LCLSpotRateandBooking_001 *********
 //		Description: Verify that Customer should request LCL Spot Rate and Book the Shipment
 
 public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 
 	@Test(priority = 0)
+	@Description  ("Verify that LCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
+	@Epic("EP003")
+	@Feature("Feature: LCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
+	@Story("Story: LCL Search Spot Rate and Booking")
 	public void verifylclspotrateandbookingwithoutaddingshipperinfo() throws Exception
 
 	{

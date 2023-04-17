@@ -28,12 +28,24 @@ import com.hashmove.pageobjects.RateRequestsPage;
 import com.hashmove.pageobjects.ThankyouBookingPage;
 import com.hashmove.utilities.ScreenRecorderUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 //						********* TestCase_SpotRateandBooking_002 *********
 //		Description: Verify that Customer should request FCL Spot Rate with creating [shipper & consignee information] and Book the Shipment
 
 public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 
 	@Test(priority = 0)
+	@Description  ("Verify that FCL Search Spot Rate and Book the Shipment with creating [shipper & consignee information]")
+	@Severity(SeverityLevel.CRITICAL)
+	@Epic("EP002")
+	@Feature("Feature: FCL Search Spot Rate and Book the Shipment with creating [shipper & consignee information]")
+	@Story("Story: FCL Search Spot Rate and Booking")
 	public void verifyfclspotrateandbookingwithoutaddingshipperinfo() throws Exception
 
 	{
@@ -795,24 +807,25 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		bdp.clickbilloflading();
 		logger.info("Bill of Lading has clicked.");
 		Thread.sleep(1000);
+		
+		// Object of Actions class to scroll up and down
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(2000);
 
 		// Enter Bill Number
 		bdp.setbillnumber(getCellData(2, 18, "QAFCLProviderTestData"));
 		logger.info("Bill Number = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-		
-		// Object of Actions class to scroll up and down
-		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
-		
+	
 		// Set BL Date
 		bdp.clickbldate();
 		bdp.setbldatemonthyear(getCellData(2, 19, "QAFCLProviderTestData"));
-		logger.info("BL Date Month Year has selected");
+		logger.info("BL Date Month Year " + cell.getStringCellValue() + " has selected");
 		
-
 		bdp.setbldateday(getCellData(2, 20, "QAFCLProviderTestData"));
-		logger.info("BL Date Day has selected");
+		logger.info("BL Date Day " + cell.getStringCellValue() + " has selected");
 		Thread.sleep(1000);
 
 		bdp.clickselectafile3();
@@ -826,20 +839,20 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		
-		Thread.sleep(2000);
-
+		Thread.sleep(1000);
+		
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		// Click Upload button
 		bdp.clickupload3();

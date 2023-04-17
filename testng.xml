@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="com.hashmove.testcases.TestCase_SpotRateandBooking_002"/>
+      <class name="com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_001"/>
+      <class name="com.hashmove.testcases.TC_QA_FCLSpotRateandBooking_002"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
