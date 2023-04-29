@@ -78,6 +78,7 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 
 		// Click Accept cookies button
 		rrp.clickaccept();
+		logger.info("Accept cookies button has clicked");
 		
 		// Enter User ID
 		clp.setuserid(getCellData(2, 1, "QAFCLCustomerTestData"));
@@ -102,7 +103,6 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 
 			hp.clickseashipmentfcl();
 			logger.info("Sea shipment FCL has selected....");
-			Thread.sleep(2000);
 
 		} else if (searchcategory.equals("Sea Shipment - LCL")) {
 
@@ -139,11 +139,10 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		}
 
 		// Select Cargo Readiness Date
-		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(2, 4, "QAFCLCustomerTestData"));
 		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue()  +  " has selected");
-
+		Thread.sleep(1000);
 		hp.setcargoreadinessday(getCellData(2, 5, "QAFCLCustomerTestData"));
 		logger.info("Cargo Readiness Day " +  cell.getStringCellValue()  + " has selected");
 
@@ -180,16 +179,11 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		hp.clickdeliverylocationdropdown();
 		Thread.sleep(2000);
 
-		/*
-		 * Comment out for stale element issue hp.setdeliverylocation(getCellData(1, 9,
-		 * "TestData2")); logger.info("Delivery Location = " + cell.getStringCellValue()
-		 * + " has entered"); Thread.sleep(2000);
-		 */
-
-		// use this temp function
-		hp.setdeliverylocation();
-		Thread.sleep(2000);
-
+		
+		 hp.setdeliverylocation(getCellData(2, 11, "QAFCLCustomerTestData"));
+		 logger.info("Delivery Location = " + cell.getStringCellValue() + " has entered"); 
+		 Thread.sleep(2000);
+		 
 		// Enter Port of Delivery
 		hp.setportofdelivery(getCellData(2, 12, "QAFCLCustomerTestData"));
 		logger.info("Port of Delivery = " + cell.getStringCellValue() + " has entered");
@@ -276,6 +270,7 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		
 		// Click Accept cookies button
 		rrp.clickaccept2();
+		logger.info("Accept cookies button has clicked!!!");
 
 		// Enter User ID
 		plp.setuserid(getCellData(2, 1, "QAFCLProviderTestData"));

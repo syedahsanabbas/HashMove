@@ -184,6 +184,10 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//div[@class='card-header']//span[normalize-space()='Goods Declaration']")
 	@CacheLookup
 	WebElement lnktextgoodsdeclaration;
+	
+	@FindBy(xpath = "//input[@placeholder='BL No']")
+	@CacheLookup
+	WebElement txtboxbillnumber;
 
 	@FindBy(xpath = "//button[normalize-space()='Yes']")
 	@CacheLookup
@@ -245,9 +249,13 @@ public class BookingDetailPage {
 	@CacheLookup
 	WebElement lnktextbilloflading;
 
-	@FindBy(xpath = "//input[@placeholder='BL No']")
+	@FindBy(xpath = "//input[@placeholder='GD No']")
 	@CacheLookup
-	WebElement txtboxbillnumber;
+	WebElement txtboxgoodsdeclarationnumber;
+	
+	@FindBy(xpath = "//input[@placeholder='GD Date']")
+	@CacheLookup
+	WebElement datepickergddate;
 
 	@FindBy(xpath = "//input[@placeholder='BL Date']")
 	@CacheLookup
@@ -705,6 +713,49 @@ public class BookingDetailPage {
 		btnsubmitshipmentstatus2.click();
 
 	}
+	
+	public void setgoodsdeclarationnumber(String goodsdeclarationnumber) {
+		txtboxgoodsdeclarationnumber.sendKeys(goodsdeclarationnumber);
+
+	}
+	
+	public void clickgddate() {
+		datepickergddate.click();
+
+	}
+
+	public void setgddatemonthyear(String gddatemonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			if (monthyear.equals(gddatemonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setgddateday(String gddateday) throws InterruptedException {
+		
+			List<WebElement> allOptions = ldriver
+					.findElements(By.xpath("//div//div//div//div[@class='btn-light ng-star-inserted']"));
+			for (int i = 0; i < allOptions.size(); i++) {
+				if (allOptions.get(i).getText().toString().equals(gddateday)) {
+					System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+					allOptions.get(i).click();
+					break;
+				}
+			}
+		
+
+	}
+
 
 	public String getSaltString() {
 		String SALTCHARS = "1234567890";

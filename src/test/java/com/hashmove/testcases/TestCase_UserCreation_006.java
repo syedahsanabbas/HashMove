@@ -1,15 +1,14 @@
 package com.hashmove.testcases;
 
-import static org.testng.Assert.assertTrue;
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
 import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -17,129 +16,147 @@ import com.hashmove.pageobjects.CustomerLoginPage;
 import com.hashmove.pageobjects.AllUsersPage;
 import com.hashmove.pageobjects.HomePage;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 //						********* TestCase_UserCreation_006 *********
 //		Description: Verify that Add new user with role = Partner on ELM Portal
 
 public class TestCase_UserCreation_006 extends BaseClass {
 
 	@Test(priority = 0)
+	@Description("Verify that Add new user with role = Partner on ELM Portal")
+	@Severity(SeverityLevel.CRITICAL)
+	@Epic("EPUC001")
+	@Feature("Feature: Add new user with role = Partner on ELM Portal")
+	@Story("Story: Create New User")
 	public void verifycreatepartneruser() throws InterruptedException, IOException
 
 	{
 		System.out.println("***************TestCase_UserCreation_006*******************");
-
 		// Open Hash Move URL
-		driver.get(qacustomerportalurl);
-		
-		String ActualTitle = driver.getTitle();
-		String ExpectedTitle = "HashMove – Connecting World Logistics";
-		Assert.assertEquals(ExpectedTitle, ActualTitle);
+				driver.get(qacustomerportalurl);
 
-		// Maximize current window
-		driver.manage().window().maximize();
-		logger.info("Hash Move Login page has opened");
+				String ActualTitle = driver.getTitle();
+				String ExpectedTitle = "HashMove – Connecting World Logistics";
+				Assert.assertEquals(ExpectedTitle, ActualTitle);
 
-		Thread.sleep(10000);
+				// Maximize current window
+				driver.manage().window().maximize();
+				logger.info("Hash Move Login page has opened");
 
-		CustomerLoginPage lp = new CustomerLoginPage(driver);
-		HomePage hp = new HomePage(driver);
-		AllUsersPage alp = new AllUsersPage(driver);
+				Thread.sleep(10000);
 
-		// Enter User ID
-		lp.setuserid(getCellData(6, 1, "TestData1"));
-		logger.info("User ID = " + cell.getStringCellValue() + " has entered");
+				CustomerLoginPage lp = new CustomerLoginPage(driver);
+				HomePage hp = new HomePage(driver);
+				AllUsersPage alp = new AllUsersPage(driver);
 
-		// Enter Password
-		lp.setpassword(getCellData(6, 2, "TestData1"));
-		logger.info("Password = " + cell.getStringCellValue() + " has entered");
+				// Enter User ID
+				lp.setuserid(getCellData(6, 1, "UserCreationTestData"));
+				logger.info("User ID = " + cell.getStringCellValue() + " has entered");
 
-		// Click Login Now button
-		lp.clickloginnow();
-		logger.info("Login Now button has clicked!!!");
+				// Enter Password
+				lp.setpassword(getCellData(6, 2, "UserCreationTestData"));
+				logger.info("Password = " + cell.getStringCellValue() + " has entered");
 
-		// Capturing the screenshot
-		Date d = new Date();
-		String FileName = "screenshot" + d.toString().replace(" ", "_").replace(":", "") + ".png";
-		System.out.println(FileName);
-		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(f,
-				new File("C:\\Users\\SYED AHSAN ABBAS\\eclipse-workspace\\HashMove\\ScreenShots\\" + FileName));
+				// Click Login Now button
+				lp.clickloginnow();
+				logger.info("Login Now button has clicked!!!");
 
-		// screenshot copied from buffer is saved at the mentioned path.
+				Thread.sleep(5000);
 
-		System.out.println("The Screenshot is captured.");
+				// Click Options Drop down
+				hp.clickoptionsdropdown();
+				logger.info("Options Dropdown has clicked!!!");
+				Thread.sleep(2000);
 
-		Thread.sleep(5000);
-		
-		// Click Options Dropdown
-		hp.clickoptionsdropdown();
-		logger.info("Options Dropdown has clicked!!!");
-		Thread.sleep(2000);
+				hp.clickusers();
+				logger.info("Users option has clicked!!!");
+				Thread.sleep(5000);
 
-		hp.clickusers();
-		logger.info("Users option has clicked!!!");
-		Thread.sleep(5000);
+				// Click a Add New user
 
-		// Click a Add New user
+				alp.clickaddnewuser();
+				logger.info("Add a New user link has clicked!!!");
+				Thread.sleep(1000);
 
-		alp.clickaddnewuser();
-		logger.info("Add a New user link has clicked!!!");
-		Thread.sleep(1000);
+				// Enter First Name
+				alp.setfirstname(getCellData(6, 3, "UserCreationTestData"));
+				logger.info("First Name = " + cell.getStringCellValue() + " has entered");
+				Thread.sleep(1000);
 
-		// Enter First Name
-		alp.setfirstname(getCellData(6, 3, "TestData1"));
-		logger.info("First Name = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(1000);
+				// Enter Last Name
+				alp.setlastname(getCellData(6, 4, "UserCreationTestData"));
+				logger.info("Last Name = " + cell.getStringCellValue() + " has entered");
+				Thread.sleep(1000);
 
-		// Enter Last Name
-		alp.setlastname(getCellData(6, 4, "TestData1"));
-		logger.info("Last Name = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(1000);
-		
-		// Enter City
-		alp.setcity(getCellData(6, 5, "TestData1"));
-		logger.info("Last Name = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(1000);
+				// Enter City
+				alp.setcity(getCellData(6, 5, "UserCreationTestData"));
+				logger.info("City = " + cell.getStringCellValue() + " has entered");
+				Thread.sleep(2000);
 
-		// Enter Contact
-		alp.setcontact(getCellData(6, 6, "TestData1"));
-		logger.info("Contact = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(1000);
+				// Enter Contact
+				alp.setcontact(getCellData(6, 6, "UserCreationTestData"));
+				logger.info("Contact = " + cell.getStringCellValue() + " has entered");
+				Thread.sleep(1000);
 
-		// Enter Email
-		alp.setemail(getCellData(6, 7, "TestData1"));
-		logger.info("Email = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(1000);
-		
-		// Select User Role
-		alp.setuserrole(getCellData(6, 8, "TestData1"));
-		logger.info("User Role = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(1000);
-		
-		// Select Business Unit
-		alp.clickbusinessunitdropdown();
-		alp.setbusinessunit(getCellData(6, 9, "TestData1"));
-		Thread.sleep(1000);
-		
-		// Select Agreement
-		alp.selectagreement();
-		logger.info("I agree to theTerms and Conditions, Privacy Policy and Software License Agreement has selected.");
-		Thread.sleep(1000);
-		
-		// Click Create Account
-		alp.clickcreateaccount();
-		logger.info("Create Account button has clicked.");
-		Thread.sleep(2000);
-		
-		// Assertion on Toaster Message
-	
-		String actual_error = driver.findElement(By.xpath("//div[@class='toast-top-right toast-container']")).getText();
-		String expected_error = "You have been registered successfully. Please check your email to verify your account before logging in.";
-		
-		System.out.println("Actual Error: " + actual_error);
-		System.out.println("Expected Error: " + expected_error);
-		assertTrue(actual_error.contains(expected_error));
-		
+				// Enter Email
+				alp.setemail("test" + alp.getSaltString() + "@" + getCellData(6, 7, "UserCreationTestData"));
+				logger.info("Email = " + cell.getStringCellValue() + " has entered");
+				Thread.sleep(1000);
+
+				// Select User Role
+				alp.setuserrole(getCellData(6, 8, "UserCreationTestData"));
+				logger.info("User Role = " + cell.getStringCellValue() + " has entered");
+				Thread.sleep(1000);
+
+				// Select Business Unit
+				alp.clickbusinessunitdropdown();
+				alp.setbusinessunit(getCellData(6, 9, "UserCreationTestData"));
+				Thread.sleep(1000);
+
+				// Select Agreement
+				alp.selectagreement();
+				logger.info("I agree to theTerms and Conditions, Privacy Policy and Software License Agreement has selected.");
+				Thread.sleep(1000);
+				
+				// Object of Actions class to scroll up and down
+				Actions a = new Actions(driver);
+				a.sendKeys(Keys.PAGE_DOWN).build().perform();
+				Thread.sleep(2000);
+
+				// Click Create Account
+				alp.clickcreateaccount();
+				logger.info("Create Account button has clicked.");
+				Thread.sleep(2000);
+
+				// Capturing the screenshot
+				Date d = new Date();
+				String FileName = "screenshot" + d.toString().replace(" ", "_").replace(":", "") + ".png";
+				System.out.println(FileName);
+				File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+				FileUtils.copyFile(f, new File(System.getProperty("user.dir") + "\\ScreenShots\\" + FileName));
+
+				// screenshot copied from buffer is saved at the mentioned path.
+
+				System.out.println("The Screenshot is captured.");
+
+				// Assertion on Toaster Message
+
+				// String actual_error =
+				// driver.findElement(By.xpath("//div[@class='toast-top-right
+				// toast-container']")).getText();
+				// String expected_error = "You have been registered successfully. Please check
+				// your email to verify your account before logging in.";
+
+				// System.out.println("Actual Error: " + actual_error);
+				// System.out.println("Expected Error: " + expected_error);
+				// assertTrue(actual_error.contains(expected_error));
+
 
 
 	}

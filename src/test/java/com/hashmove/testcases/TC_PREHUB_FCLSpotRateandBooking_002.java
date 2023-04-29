@@ -41,7 +41,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		// Start Recording
 		ScreenRecorderUtil.startRecord("verifyfclspotrateandbookingwithoutaddingshipperinfo()");
-		
+
 		// Open Hash Move Customer Portal URL
 		driver.get(qacustomerportalurl);
 
@@ -66,7 +66,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		// Click Accept cookies button
 		rrp.clickaccept();
-		
+
 		// Enter User ID
 		clp.setuserid(getCellData(2, 1, "PreHubFCLCustomerTestData"));
 		logger.info("User ID = " + cell.getStringCellValue() + " has entered");
@@ -78,7 +78,6 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// Click Login Now button
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
-		
 
 		Thread.sleep(12000);
 
@@ -130,10 +129,10 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(2, 4, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue()  +  " has selected");
+		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue() + " has selected");
 
 		hp.setcargoreadinessday(getCellData(2, 5, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Day " +  cell.getStringCellValue()  + " has selected");
+		logger.info("Cargo Readiness Day " + cell.getStringCellValue() + " has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
@@ -168,14 +167,8 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		hp.clickdeliverylocationdropdown();
 		Thread.sleep(2000);
 
-		/*
-		 * Comment out for stale element issue hp.setdeliverylocation(getCellData(1, 9,
-		 * "TestData2")); logger.info("Delivery Location = " + cell.getStringCellValue()
-		 * + " has entered"); Thread.sleep(2000);
-		 */
-
-		// use this temp function
-		hp.setdeliverylocation();
+		hp.setdeliverylocation(getCellData(1, 11, "PreHubFCLCustomerTestData"));
+		logger.info("Delivery Location = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Port of Delivery
@@ -198,12 +191,12 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		hp.setweight(getCellData(2, 15, "PreHubFCLCustomerTestData"));
 		logger.info("Weight = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-		
+
 		// Click Payment Terms
 		hp.clickpaymentterms();
 		logger.info("Payment Terms link has clicked");
 		Thread.sleep(5000);
-		
+
 		// Select Payment Terms & Conditions
 		String paymentterms = getCellData(2, 16, "PreHubFCLCustomerTestData");
 		System.out.println("Payment Terms : " + searchcategory);
@@ -216,7 +209,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 			hp.clicksavepaymentterms();
 
 		} else if (paymentterms.equals("Days after the issuance of BL")) {
-			
+
 			hp.selectdaysaftertheissuanceofbl();
 			logger.info("Days after the issuance of BL has selected");
 			hp.setpaymenttermsdays(getCellData(2, 17, "PreHubFCLCustomerTestData"));
@@ -237,14 +230,11 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		}
 
-		 else {
+		else {
 
 			System.out.println("Statement outside if...else block");
 
 		}
-	
-		
-		
 
 		// Click Request Spot Rate
 		hp.clickrequestspotrate();
@@ -337,7 +327,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		rrp.setterminalhandlingcharge(getCellData(2, 8, "PreHubFCLProviderTestData"));
 		logger.info("Terminal Handling Charge - Origin = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-		
+
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(3000);
@@ -547,7 +537,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-		
+
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
@@ -611,19 +601,19 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// press Contol+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
-		
+
 		Thread.sleep(2000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
-		
+
 		Thread.sleep(2000);
 
 		// for pressing and releasing Enter
 		rb.keyPress(KeyEvent.VK_ENTER);
 		rb.keyRelease(KeyEvent.VK_ENTER);
-		
+
 		Thread.sleep(2000);
 
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -659,7 +649,6 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		bdp.clickaddschedule();
 		logger.info("Add Schedule button has clicked.");
 		Thread.sleep(2000);
-		
 
 		// Set Departure Date
 		bdp.clickdeparturefrom();
@@ -667,7 +656,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("Departure Date Month Year " + cell.getRawValue() + " has selected");
 
 		bdp.setdeparturedateday(getCellData(2, 12, "PreHubFCLProviderTestData"));
-		logger.info("Departure Date Day " + cell.getRawValue()  + " has selected");
+		logger.info("Departure Date Day " + cell.getRawValue() + " has selected");
 
 		// Set Arrival Date
 		bdp.clickarrivalto();
@@ -702,16 +691,15 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		bdp.setbillnumber(getCellData(2, 18, "PreHubFCLProviderTestData"));
 		logger.info("Bill Number = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-		
+
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
 		Thread.sleep(2000);
-		
+
 		// Set BL Date
 		bdp.clickbldate();
 		bdp.setbldatemonthyear(getCellData(2, 19, "PreHubFCLProviderTestData"));
 		logger.info("BL Date Month Year has selected");
-		
 
 		bdp.setbldateday(getCellData(2, 20, "PreHubFCLProviderTestData"));
 		logger.info("BL Date Day has selected");
@@ -727,13 +715,13 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// press Contol+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
-		
+
 		Thread.sleep(2000);
 
 		// release Contol+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
-		
+
 		Thread.sleep(2000);
 
 		// for pressing and releasing Enter
@@ -757,32 +745,30 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		bdp.setshipmentdetailsintransit(getCellData(2, 21, "PreHubFCLProviderTestData"));
 		logger.info("Shipment Details In-Transit = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-		
+
 		// Click Submit
 		bdp.clicksubmitintransit();
 		logger.info("Submit button for In-Transit has clicked.");
 		Thread.sleep(2000);
-		
-		
+
 		driver.navigate().refresh();
 		Thread.sleep(3000);
-		
+
 		// Update Booking Status from In-Transit to Complete
 		// Click Update Status
 		bdp.clickupdatestatus();
 		logger.info("Update Status link has clicked.");
 		Thread.sleep(3000);
-		
+
 		// Select Shipment Status
 		bdp.clickshipmentstatusdropdown();
 		bdp.setshipmentstatus(getCellData(2, 22, "PreHubFCLProviderTestData"));
-		
+
 		// Enter Details
-		
+
 		// Click Submit
 		bdp.clicksubmitshipmentstatus();
 		logger.info("Submit button has clicked.");
-		
 
 		// Capturing the screenshot
 		Date d = new Date();
@@ -795,10 +781,9 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		System.out.println("The Screenshot is captured.");
 
-
 		// Stop Recording
 		ScreenRecorderUtil.stopRecord();
-		
+
 	}
 
 }

@@ -1,6 +1,7 @@
 package com.hashmove.pageobjects;
 
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -93,7 +94,7 @@ public class AllUsersPage {
 	public void setcity(String city) throws InterruptedException {
 		txtboxcity.clear();
 		txtboxcity.sendKeys(city);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		txtboxcity.sendKeys(Keys.ENTER);
 
 	}
@@ -151,5 +152,16 @@ public class AllUsersPage {
 		}
 	}
 	
-	
+	public String getSaltString() {
+		String SALTCHARS = "1234567890";
+		StringBuilder salt = new StringBuilder();
+		Random rnd = new Random();
+		while (salt.length() < 5) { // length of the random string.
+			int index = (int) (rnd.nextFloat() * SALTCHARS.length());
+			salt.append(SALTCHARS.charAt(index));
+		}
+		String saltStr = salt.toString();
+		return saltStr;
+
+	}
 }

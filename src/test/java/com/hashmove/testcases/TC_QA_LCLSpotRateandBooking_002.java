@@ -79,7 +79,7 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
 
-		Thread.sleep(15000);
+		Thread.sleep(10000);
 
 		// Select Sea Shipment - LCL
 		String searchcategory = getCellData(2, 3, "QACustomerLCLTestData");
@@ -89,12 +89,10 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 
 			hp.clickseashipmentfcl();
 			logger.info("Sea shipment FCL has selected....");
-			Thread.sleep(2000);
 
 		} else if (searchcategory.equals("Sea Shipment - LCL")) {
 			hp.clickseashipmentlcl();
 			logger.info("Sea Shipment - LCL has selected");
-			Thread.sleep(2000);
 		}
 
 		else if (searchcategory.equals("Air Shipment"))
@@ -126,11 +124,10 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		}
 
 		// Select Cargo Readiness Date
-		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(2, 4, "QACustomerLCLTestData"));
 		logger.info("Cargo Readiness Month Year has selected");
-
+		Thread.sleep(1000);
 		hp.setcargoreadinessday(getCellData(2, 5, "QACustomerLCLTestData"));
 		logger.info("Cargo Readiness Day has selected");
 
@@ -167,14 +164,8 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		hp.clickdeliverylocationdropdown();
 		Thread.sleep(2000);
 
-		/*
-		 * Comment out for stale element issue hp.setdeliverylocation(getCellData(2, 9,
-		 * "TestData2")); logger.info("Delivery Location = " + cell.getStringCellValue()
-		 * + " has entered"); Thread.sleep(2000);
-		 */
-
-		// use this temp function
-		hp.setdeliverylocation();
+		hp.setdeliverylocation(getCellData(2, 11, "QACustomerLCLTestData"));
+		logger.info("Delivery Location = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Port of Delivery
@@ -560,8 +551,7 @@ public class TC_QA_LCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Consignee Name
-		String consigneename = bdp
-				.setconsigneename(getCellData(2, 33, "QACustomerLCLTestData") + bdp.getSaltString());
+		String consigneename = bdp.setconsigneename(getCellData(2, 33, "QACustomerLCLTestData") + bdp.getSaltString());
 		logger.info("Consignee Name = " + consigneename + " has entered");
 
 		// Enter Contact Person

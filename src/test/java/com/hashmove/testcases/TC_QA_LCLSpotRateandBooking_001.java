@@ -39,7 +39,7 @@ import io.qameta.allure.Story;
 public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 
 	@Test(priority = 0)
-	@Description  ("Verify that LCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
+	@Description("Verify that LCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
 	@Epic("EP003")
 	@Feature("Feature: LCL Search Spot Rate and Book the Shipment without creating [shipper & consignee information]")
 	@Story("Story: LCL Search Spot Rate and Booking")
@@ -75,6 +75,7 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 
 		// Click Accept cookies button
 		rrp.clickaccept();
+		logger.info("Accept cookies button has clicked");
 
 		// Enter User ID
 		clp.setuserid(getCellData(1, 1, "QACustomerLCLTestData"));
@@ -88,7 +89,7 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
 
-		Thread.sleep(8000);
+		Thread.sleep(15000);
 
 		// Select Sea Shipment - LCL
 		String searchcategory = getCellData(1, 3, "QACustomerLCLTestData");
@@ -98,12 +99,11 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 
 			hp.clickseashipmentfcl();
 			logger.info("Sea shipment FCL has selected....");
-			Thread.sleep(2000);
 
 		} else if (searchcategory.equals("Sea Shipment - LCL")) {
 			hp.clickseashipmentlcl();
 			logger.info("Sea Shipment - LCL has selected");
-			Thread.sleep(2000);
+
 		}
 
 		else if (searchcategory.equals("Air Shipment"))
@@ -135,25 +135,20 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		}
 
 		// Select Cargo Readiness Date
-		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(1, 4, "QACustomerLCLTestData"));
-		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue() +  " has selected");
-
+		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue() + " has selected");
 		hp.setcargoreadinessday(getCellData(1, 5, "QACustomerLCLTestData"));
 		logger.info("Cargo Readiness Day " + cell.getStringCellValue() + " has selected");
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
-		Thread.sleep(1000);
 		hp.setcargotype(getCellData(1, 6, "QACustomerLCLTestData"));
 		logger.info("Cargo Type = " + cell.getStringCellValue() + " has selected");
-		Thread.sleep(1000);
 
 		// Enter HS Code
 		hp.sethscode(getCellData(1, 7, "QACustomerLCLTestData"));
 		logger.info("HS Code = " + cell.getStringCellValue() + " has entered");
-		Thread.sleep(2000);
 
 		// Enter Cargo Description
 		hp.setcargodescription(getCellData(1, 8, "QACustomerLCLTestData"));
@@ -176,14 +171,8 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		hp.clickdeliverylocationdropdown();
 		Thread.sleep(2000);
 
-		/*
-		 * Comment out for stale element issue hp.setdeliverylocation(getCellData(1, 9,
-		 * "TestData2")); logger.info("Delivery Location = " + cell.getStringCellValue()
-		 * + " has entered"); Thread.sleep(2000);
-		 */
-
-		// use this temp function
-		hp.setdeliverylocation();
+		hp.setdeliverylocation(getCellData(1, 11, "QACustomerLCLTestData"));
+		logger.info("Delivery Location = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
 		// Enter Port of Delivery
@@ -292,6 +281,7 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 
 		// Click Accept cookies button
 		rrp.clickaccept2();
+		logger.info("Accept cookies button has clicked");
 
 		// Enter User ID
 		plp.setuserid(getCellData(1, 1, "QAProviderLCLTestData"));
@@ -368,7 +358,6 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		rrp.setterminalhandlingcharge(getCellData(1, 9, "QAProviderLCLTestData"));
 		logger.info("Terminal Handling Charge - Origin = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
-		
 
 		// Object of Actions class to scroll up and down
 		a.sendKeys(Keys.PAGE_DOWN).build().perform();
@@ -511,18 +500,18 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		// Add Shipping Information //
 
 		// Select SHIPPER NAME
-		bdp.setshippername(getCellData(1, 28, "QACustomerLCLTestData"));
+		bdp.setshippername(getCellData(1, 27, "QACustomerLCLTestData"));
 		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Shipper Information
-		bdp.clicksaveshipperinfo();
+		bdp.clicksavemainshipperinfo();
 		Thread.sleep(2000);
 		logger.info("Shipper Information has added....");
 
 		// Add Consignee Information //
 
 		// Select Consignee Name
-		bdp.setmainconsigneename(getCellData(1, 34, "QACustomerLCLTestData"));
+		bdp.setmainconsigneename(getCellData(1, 33, "QACustomerLCLTestData"));
 		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
 
 		// Save Consignee Information
@@ -550,17 +539,17 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		// creating object of Robot class
 		Robot rb = new Robot();
 
-		// copying File path to Clipboard
+		// copying File path to Clip board
 		StringSelection str = new StringSelection(System.getProperty("user.dir") + "\\UploadFiles\\Document.txt");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 
 		Thread.sleep(1000);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 
@@ -657,6 +646,58 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		logger.info("Loading Plan Document has uploaded successfully!!!");
 		Thread.sleep(5000);
 
+		// Upload Goods Declaration
+		bdp.clickgoodsdeclaration();
+		logger.info("Goods Declaration has clicked.");
+		Thread.sleep(1000);
+
+		// Enter GD No
+		bdp.setgoodsdeclarationnumber(getCellData(1, 11, "QAProviderLCLTestData"));
+		logger.info("GD No = " + cell.getStringCellValue() + " has entered");
+
+		// Select GD Date
+		bdp.clickgddate();
+		bdp.setgddatemonthyear(getCellData(1, 12, "QAProviderLCLTestData"));
+		logger.info("GD Date Month Year " + cell.getStringCellValue() + " has selected");
+		Thread.sleep(2000);
+		bdp.setgddateday(getCellData(1, 13, "QAProviderLCLTestData"));
+		logger.info("GD Date Day " + cell.getStringCellValue() + " has selected");
+
+		bdp.clickselectafile3();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(1000);
+
+		// copying File path to Clipboard
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Contol+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+
+		Thread.sleep(2000);
+
+		// release Contol+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+
+		Thread.sleep(2000);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		Thread.sleep(2000);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Upload button
+		bdp.clickupload2();
+		logger.info("Loading Plan Document has uploaded successfully!!!");
+		Thread.sleep(5000);
+
 		driver.navigate().refresh();
 		Thread.sleep(3000);
 
@@ -705,9 +746,8 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		bdp.clicksubmitshipmentstatus2();
 		logger.info("Submit button has clicked.");
 		Thread.sleep(5000);
-		
-		
-		// Add Schul
+
+		///////////
 
 		// Click Update Status
 		bdp.clickupdatestatus();
