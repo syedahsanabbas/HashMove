@@ -635,15 +635,15 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		// creating object of Robot class
 		Robot rb = new Robot();
 
-		// copying File path to Clipboard
+		// copying File path to Clip board
 		StringSelection str = new StringSelection(System.getProperty("user.dir") + "\\UploadFiles\\Document.txt");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 
@@ -713,13 +713,13 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 		
 		Thread.sleep(2000);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		
@@ -830,13 +830,13 @@ public class TC_QA_FCLSpotRateandBooking_002 extends BaseClass {
 		// copying File path to Clipboard
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 		
 		Thread.sleep(1000);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 		

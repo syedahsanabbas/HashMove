@@ -1,149 +1,122 @@
-[INFO ] 2023-04-29 17:56:59.083 [main] HashMove - Hash Move Login page has opened
-[INFO ] 2023-04-29 17:58:44.152 [main] HashMove - Hash Move Login page has opened
-[INFO ] 2023-04-29 17:58:54.548 [main] HashMove - Accept cookies button has clicked
-[INFO ] 2023-04-29 17:58:56.709 [main] HashMove - User ID = atco@hashmove.com has entered
-[INFO ] 2023-04-29 17:58:57.565 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-29 17:58:57.930 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-29 17:59:13.590 [main] HashMove - Sea shipment FCL has selected....
-[INFO ] 2023-04-29 17:59:14.490 [main] HashMove - Cargo Readiness Month Year June 2023 has selected
-[INFO ] 2023-04-29 17:59:16.190 [main] HashMove - Cargo Readiness Day 1 has selected
-[INFO ] 2023-04-29 17:59:18.169 [main] HashMove - Cargo Type = General Goods has selected
-[INFO ] 2023-04-29 17:59:20.218 [main] HashMove - HS Code = 7501.2000 has entered
-[INFO ] 2023-04-29 17:59:24.291 [main] HashMove - Cargo Description = Cargo was originally a shipload but now covers all types of freight, including transport by rail, van, truck, or intermodal container. has entered
-[INFO ] 2023-04-29 17:59:29.099 [main] HashMove - Pickup Location = Picking up from port would mean you are responsible to get your cargo delivered to the port of departure. has entered
-[INFO ] 2023-04-29 17:59:33.407 [main] HashMove - Port of Pickup = PK KCT, KICT, Karachi, Pakistan (PK) has entered
-[INFO ] 2023-04-29 17:59:38.322 [main] HashMove - Delivery Location = DELIVERY AT PORT has entered
-[INFO ] 2023-04-29 17:59:43.134 [main] HashMove - Port of Delivery = SA JED, Jeddah, Jeddah, Saudi Arabia (SA) has entered
-[INFO ] 2023-04-29 17:59:48.624 [main] HashMove - Container Size = Standard 20' has selected
-[INFO ] 2023-04-29 17:59:49.006 [main] HashMove - Quantity = 2 has entered
-[INFO ] 2023-04-29 17:59:51.354 [main] HashMove - Weight = 17 has entered
-[INFO ] 2023-04-29 17:59:53.691 [main] HashMove - Payment Terms link has clicked
-[INFO ] 2023-04-29 17:59:59.098 [main] HashMove - Advance Payment at the time of Booking Confirmation has selected....
-[INFO ] 2023-04-29 18:00:01.618 [main] HashMove - Request Spot Rate button has clicked!!!
-[INFO ] 2023-04-29 18:00:37.673 [main] HashMove - Hash Move Provider Portal has opened
-[INFO ] 2023-04-29 18:00:48.279 [main] HashMove - User ID = costa@gmail.com has entered
-[INFO ] 2023-04-29 18:00:48.550 [main] HashMove - Password = 123456 has entered
-[INFO ] 2023-04-29 18:00:48.666 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-29 18:00:53.809 [main] HashMove - Spot Rate link has clicked!!!
-[INFO ] 2023-04-29 18:01:06.056 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-29 18:01:07.342 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-29 18:01:10.481 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-29 18:01:12.581 [main] HashMove - Provide Your Quote button has clicked!!!
-[INFO ] 2023-04-29 18:01:19.283 [main] HashMove - Shipping Line = Hapag-Lloyd, Hapag-Lloyd Shipping has entered
-[INFO ] 2023-04-29 18:01:24.774 [main] HashMove - Rate Per Container = 8500 has entered
-[INFO ] 2023-04-29 18:01:25.046 [main] HashMove - Bill of Lading = 200 has entered
-[INFO ] 2023-04-29 18:01:25.219 [main] HashMove - LOLO = 30 has entered
-[INFO ] 2023-04-29 18:01:25.408 [main] HashMove - SEAL Charges = 20 has entered
-[INFO ] 2023-04-29 18:01:25.619 [main] HashMove - Terminal Handling Charge - Origin = 150 has entered
-[INFO ] 2023-04-29 18:01:32.087 [main] HashMove - Rate Validity Start Date has entered
-[INFO ] 2023-04-29 18:01:35.417 [main] HashMove - Rate Validity End Date has entered
-[INFO ] 2023-04-29 18:01:37.582 [main] HashMove - I ACCEPT CUSTOMER PAYMENT TERMS has selected ...
-[INFO ] 2023-04-29 18:01:42.845 [main] HashMove - Save and Close button has clicked!!!
-[INFO ] 2023-04-29 18:01:44.938 [main] HashMove - Would you like to proceed? button has clicked!!!
-[INFO ] 2023-04-29 18:01:52.726 [main] HashMove - Hash Move Customer Portal has opened!!!
-[INFO ] 2023-04-29 18:02:02.941 [main] HashMove - Options Dropdown has clicked!!!
-[INFO ] 2023-04-29 18:02:05.971 [main] HashMove - Spot Rates option has clicked!!!
-[INFO ] 2023-04-29 18:02:14.130 [main] HashMove - Filter request link has clicked!!!
-[INFO ] 2023-04-29 18:02:17.383 [main] HashMove - Spot Request Number has entered!!!
-[INFO ] 2023-04-29 18:02:20.503 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-29 18:02:22.582 [main] HashMove - View Quotes link has clicked!!!
-[INFO ] 2023-04-29 18:02:24.811 [main] HashMove - Book Now link has clicked!!!
-[INFO ] 2023-04-29 18:02:31.958 [main] HashMove - Next button has clicked!!!
-[INFO ] 2023-04-29 18:02:36.168 [main] HashMove - Reference Number = 5102055 has entered
-[INFO ] 2023-04-29 18:02:38.393 [main] HashMove - Shipping Instructions = Shipping instructions is a document, provided by the exporter (or agent) to the carrier, containing details of the cargo to be shipped, the parties involved and the requirements for its transportation. The shipping instructions are used by the carrier to create the Bill of Lading.
- has entered
-[INFO ] 2023-04-29 18:02:38.652 [main] HashMove - Disclaimer has selected
-[INFO ] 2023-04-29 18:02:38.741 [main] HashMove - Confirm button has clicked!!!
-[INFO ] 2023-04-29 18:02:46.979 [main] HashMove - View Booking has clicked!!!
-[INFO ] 2023-04-29 18:02:56.668 [main] HashMove - Shipper Name = Atco Laboratories has entered
-[INFO ] 2023-04-29 18:02:58.800 [main] HashMove - Shipper Information has added....
-[INFO ] 2023-04-29 18:03:03.206 [main] HashMove - Consignee Name = Super Star has entered
-[INFO ] 2023-04-29 18:03:05.319 [main] HashMove - Consignee Information has added....
-[INFO ] 2023-04-29 18:03:07.505 [main] HashMove - Package List has clicked.
-[INFO ] 2023-04-29 18:03:08.608 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-29 18:03:15.823 [main] HashMove - Package List Document has uploaded successfully!!!
-[INFO ] 2023-04-29 18:03:29.610 [main] HashMove - Hash Move Provider Portal has opened!!!
-[INFO ] 2023-04-29 18:03:49.555 [main] HashMove - Click filter request link has clicked!!!
-[INFO ] 2023-04-29 18:03:51.451 [main] HashMove - Booking Request Number has entered!!!
-[INFO ] 2023-04-29 18:03:54.928 [main] HashMove - Filter Records button has clicked!!!
-[INFO ] 2023-04-29 18:04:02.252 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) has clicked.
-[INFO ] 2023-04-29 18:04:03.526 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-29 18:04:08.935 [main] HashMove - Booking Confirmation Document (CRO/BC/SC) Document has uploaded successfully!!!
-[INFO ] 2023-04-29 18:04:14.255 [main] HashMove - Confirm Booking Yes button has clicked
-[INFO ] 2023-04-29 18:04:15.775 [main] HashMove - Shipment Details = Shipment booking has confirmed  has entered
-[INFO ] 2023-04-29 18:04:18.009 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-29 18:04:23.311 [main] HashMove - I accept the terms & conditions button has clicked.
-[INFO ] 2023-04-29 18:04:25.534 [main] HashMove - Add Schedule button has clicked.
-[INFO ] 2023-04-29 18:04:28.848 [main] HashMove - Departure Date Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:04:29.720 [main] HashMove - Departure Date Day 3 has selected
-[INFO ] 2023-04-29 18:04:30.330 [main] HashMove - Arrival Date Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:04:31.505 [main] HashMove - Arrival Date Day 7 has selected
-[INFO ] 2023-04-29 18:04:36.545 [main] HashMove - Vessel Name = CMA CGM OKAPI has entered
-[INFO ] 2023-04-29 18:04:39.169 [main] HashMove - Voyage Number = 25488 has entered
-[INFO ] 2023-04-29 18:04:41.451 [main] HashMove - Update Schedule button has clicked
-[INFO ] 2023-04-29 18:04:46.700 [main] HashMove - Bill of Lading has clicked.
-[INFO ] 2023-04-29 18:04:50.317 [main] HashMove - Bill Number = BL87882347882 has entered
-[INFO ] 2023-04-29 18:04:53.114 [main] HashMove - BL Date Month YearApril 2023 has selected
-[INFO ] 2023-04-29 18:04:55.746 [main] HashMove - BL Date Day has selected
-[INFO ] 2023-04-29 18:04:56.964 [main] HashMove - Select a file has clicked.
-[INFO ] 2023-04-29 18:05:01.576 [main] HashMove - BL Document has uploaded successfully!!!
-[INFO ] 2023-04-29 18:05:04.008 [main] HashMove - In-Transit Yes button has clicked
-[INFO ] 2023-04-29 18:05:05.532 [main] HashMove - Shipment Details In-Transit = In-Transit Shipment booking has confirmed  has entered
-[INFO ] 2023-04-29 18:05:07.755 [main] HashMove - Submit button for In-Transit has clicked.
-[INFO ] 2023-04-29 18:05:14.307 [main] HashMove - Update Status link has clicked.
-[INFO ] 2023-04-29 18:05:17.750 [main] HashMove - Submit button has clicked.
-[INFO ] 2023-04-29 18:33:15.535 [main] HashMove - Hash Move Login page has opened
-[INFO ] 2023-04-29 18:33:25.812 [main] HashMove - Accept cookies button has clicked
-[INFO ] 2023-04-29 18:33:26.114 [main] HashMove - Login link has clicked
-[INFO ] 2023-04-29 18:33:28.766 [main] HashMove - User ID = devhub1@yopmail.com has entered
-[INFO ] 2023-04-29 18:33:29.770 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-29 18:33:29.910 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-29 18:34:03.361 [main] HashMove - Warehousing has selected
-[INFO ] 2023-04-29 18:34:03.887 [main] HashMove - Storage = For Warehouse has selected
-[INFO ] 2023-04-29 18:34:06.228 [main] HashMove - City = Jeddah has entered
-[INFO ] 2023-04-29 18:34:06.843 [main] HashMove - Rent From Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:34:07.135 [main] HashMove - Rent From Day 1 has selected
-[INFO ] 2023-04-29 18:34:07.573 [main] HashMove - Rent Until Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:34:08.527 [main] HashMove - Rent Until Day 29 has selected
-[INFO ] 2023-04-29 18:34:12.868 [main] HashMove - By Pallet has selected....
-[INFO ] 2023-04-29 18:34:12.868 [main] HashMove - STANDARD Size Pallet has selected....
-[INFO ] 2023-04-29 18:34:14.169 [main] HashMove - Quantity 10 has entered
-[INFO ] 2023-04-29 18:34:14.444 [main] HashMove - WEIGHT PER PALLET 10 has entered
-[INFO ] 2023-04-29 18:34:14.549 [main] HashMove - ADD button has clicked!!!
-[INFO ] 2023-04-29 18:34:14.657 [main] HashMove - Close X button has clicked!!!
-[INFO ] 2023-04-29 18:34:14.926 [main] HashMove - Find Best Rates button has clicked!!!
-[INFO ] 2023-04-29 18:34:21.045 [main] HashMove - Yes, Modify search criteria button has clicked!!!
-[INFO ] 2023-04-29 18:39:51.704 [main] HashMove - Hash Move Login page has opened
-[INFO ] 2023-04-29 18:40:01.849 [main] HashMove - Accept cookies button has clicked
-[INFO ] 2023-04-29 18:40:02.192 [main] HashMove - Login link has clicked
-[INFO ] 2023-04-29 18:40:04.586 [main] HashMove - User ID = devhub1@yopmail.com has entered
-[INFO ] 2023-04-29 18:40:05.322 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-29 18:40:05.439 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-29 18:40:24.696 [main] HashMove - Warehousing has selected
-[INFO ] 2023-04-29 18:40:25.232 [main] HashMove - Storage = For Warehouse has selected
-[INFO ] 2023-04-29 18:40:27.648 [main] HashMove - City = Jeddah has entered
-[INFO ] 2023-04-29 18:40:28.203 [main] HashMove - Rent From Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:40:28.601 [main] HashMove - Rent From Day 1 has selected
-[INFO ] 2023-04-29 18:40:29.136 [main] HashMove - Rent Until Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:40:30.150 [main] HashMove - Rent Until Day 29 has selected
-[INFO ] 2023-04-29 18:42:32.503 [main] HashMove - Hash Move Login page has opened
-[INFO ] 2023-04-29 18:42:43.662 [main] HashMove - Accept cookies button has clicked
-[INFO ] 2023-04-29 18:42:43.848 [main] HashMove - Login link has clicked
-[INFO ] 2023-04-29 18:42:46.217 [main] HashMove - User ID = devhub1@yopmail.com has entered
-[INFO ] 2023-04-29 18:42:47.208 [main] HashMove - Password = Hsm@1234 has entered
-[INFO ] 2023-04-29 18:42:47.340 [main] HashMove - Login Now button has clicked!!!
-[INFO ] 2023-04-29 18:43:09.490 [main] HashMove - Warehousing has selected
-[INFO ] 2023-04-29 18:43:10.127 [main] HashMove - Storage = For Warehouse has selected
-[INFO ] 2023-04-29 18:43:12.655 [main] HashMove - City = Jeddah has entered
-[INFO ] 2023-04-29 18:43:13.312 [main] HashMove - Rent From Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:43:13.660 [main] HashMove - Rent From Day 1 has selected
-[INFO ] 2023-04-29 18:43:14.303 [main] HashMove - Rent Until Month Year May 2023 has selected
-[INFO ] 2023-04-29 18:43:15.377 [main] HashMove - Rent Until Day 29 has selected
-[INFO ] 2023-04-29 18:43:19.799 [main] HashMove - By Pallet has selected....
-[INFO ] 2023-04-29 18:43:19.799 [main] HashMove - STANDARD Size Pallet has selected....
-[INFO ] 2023-04-29 18:43:21.142 [main] HashMove - Quantity 10 has entered
-[INFO ] 2023-04-29 18:43:21.403 [main] HashMove - WEIGHT PER PALLET 10 has entered
-[INFO ] 2023-04-29 18:43:21.524 [main] HashMove - ADD button has clicked!!!
-[INFO ] 2023-04-29 18:43:21.643 [main] HashMove - Close X button has clicked!!!
-[INFO ] 2023-04-29 18:43:21.906 [main] HashMove - Find Best Rates button has clicked!!!
-[INFO ] 2023-04-29 18:43:27.107 [main] HashMove - Yes, Modify search criteria button has clicked!!!
+[INFO ] 2023-05-08 16:31:05.286 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 16:31:11.446 [main] HashMove - Accept cookies button has clicked
+[INFO ] 2023-05-08 16:31:11.547 [main] HashMove - Login link has clicked
+[INFO ] 2023-05-08 16:31:12.927 [main] HashMove - User ID = devhub1@yopmail.com has entered
+[INFO ] 2023-05-08 16:31:13.489 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-05-08 16:31:13.577 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-05-08 16:31:29.108 [main] HashMove - Warehousing has selected
+[INFO ] 2023-05-08 16:31:31.524 [main] HashMove - Storage = Warehouse has selected
+[INFO ] 2023-05-08 16:31:35.421 [main] HashMove - City = Jeddah has entered
+[INFO ] 2023-05-08 16:31:37.702 [main] HashMove - Rent From Month Year May 2023 has selected
+[INFO ] 2023-05-08 16:31:37.968 [main] HashMove - Rent From Day 10 has selected
+[INFO ] 2023-05-08 16:31:38.202 [main] HashMove - Rent Until Month Year May 2023 has selected
+[INFO ] 2023-05-08 16:31:38.871 [main] HashMove - Rent Until Day 31 has selected
+[INFO ] 2023-05-08 16:31:39.274 [main] HashMove - Dry Storage has selected
+[INFO ] 2023-05-08 16:31:39.458 [main] HashMove - BY PALLET tab has selected....
+[INFO ] 2023-05-08 16:31:39.609 [main] HashMove - STANDARD SIZE pallet has selected....
+[INFO ] 2023-05-08 16:31:44.117 [main] HashMove - STANDARD SIZE pallet has added
+[INFO ] 2023-05-08 16:31:44.223 [main] HashMove - STANDARD SIZE pallet card has closed
+[INFO ] 2023-05-08 16:31:54.988 [main] HashMove - Currency Saudi Riyal ( SAR ) has selected
+[INFO ] 2023-05-08 16:32:07.236 [main] HashMove - Custom Clearance has toggle on....
+[INFO ] 2023-05-08 16:32:09.699 [main] HashMove - Container Size: Standard 20' has selected
+[INFO ] 2023-05-08 16:32:09.830 [main] HashMove - Quantity : 2 has entered
+[INFO ] 2023-05-08 16:32:09.931 [main] HashMove - Add Custom Clearance button has clicked...
+[INFO ] 2023-05-08 16:32:10.180 [main] HashMove - Insurance Services has toggle on....
+[INFO ] 2023-05-08 16:32:12.462 [main] HashMove - VALUE OF GOODS : 50000 has entered
+[INFO ] 2023-05-08 16:37:45.362 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 16:39:43.955 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 16:39:49.376 [main] HashMove - Accept cookies button has clicked
+[INFO ] 2023-05-08 16:39:49.505 [main] HashMove - Login link has clicked
+[INFO ] 2023-05-08 16:39:50.992 [main] HashMove - User ID = devhub1@yopmail.com has entered
+[INFO ] 2023-05-08 16:39:51.496 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-05-08 16:39:51.712 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-05-08 16:39:57.256 [main] HashMove - Warehousing has selected
+[INFO ] 2023-05-08 16:39:59.618 [main] HashMove - Storage = Warehouse has selected
+[INFO ] 2023-05-08 16:40:02.966 [main] HashMove - City = Jeddah has entered
+[INFO ] 2023-05-08 16:40:05.359 [main] HashMove - Rent From Month Year May 2023 has selected
+[INFO ] 2023-05-08 16:40:05.698 [main] HashMove - Rent From Day 10 has selected
+[INFO ] 2023-05-08 16:40:06.023 [main] HashMove - Rent Until Month Year May 2023 has selected
+[INFO ] 2023-05-08 16:40:06.722 [main] HashMove - Rent Until Day 31 has selected
+[INFO ] 2023-05-08 16:45:39.909 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 16:45:45.169 [main] HashMove - Accept cookies button has clicked
+[INFO ] 2023-05-08 16:45:45.447 [main] HashMove - Login link has clicked
+[INFO ] 2023-05-08 16:45:47.679 [main] HashMove - User ID = devhub1@yopmail.com has entered
+[INFO ] 2023-05-08 16:45:48.554 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-05-08 16:45:48.657 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-05-08 16:45:54.695 [main] HashMove - Warehousing has selected
+[INFO ] 2023-05-08 16:45:57.130 [main] HashMove - Storage = Warehouse has selected
+[INFO ] 2023-05-08 16:46:00.462 [main] HashMove - City = Jeddah has entered
+[INFO ] 2023-05-08 16:46:02.752 [main] HashMove - Rent From Month Year May 2023 has selected
+[INFO ] 2023-05-08 16:46:02.988 [main] HashMove - Rent From Day 10 has selected
+[INFO ] 2023-05-08 16:46:03.294 [main] HashMove - Rent Until Month Year May 2023 has selected
+[INFO ] 2023-05-08 16:46:03.932 [main] HashMove - Rent Until Day 31 has selected
+[INFO ] 2023-05-08 16:46:04.212 [main] HashMove - Dry Storage has selected
+[INFO ] 2023-05-08 16:46:04.435 [main] HashMove - BY PALLET tab has selected....
+[INFO ] 2023-05-08 16:46:04.614 [main] HashMove - STANDARD SIZE pallet has selected....
+[INFO ] 2023-05-08 16:46:09.093 [main] HashMove - STANDARD SIZE pallet has added
+[INFO ] 2023-05-08 16:46:09.179 [main] HashMove - STANDARD SIZE pallet card has closed
+[INFO ] 2023-05-08 16:46:20.025 [main] HashMove - Currency Saudi Riyal ( SAR ) has selected
+[INFO ] 2023-05-08 16:46:32.316 [main] HashMove - Custom Clearance has toggle on....
+[INFO ] 2023-05-08 16:46:34.793 [main] HashMove - Container Size: Standard 20' has selected
+[INFO ] 2023-05-08 16:46:34.979 [main] HashMove - Quantity : 2 has entered
+[INFO ] 2023-05-08 16:46:35.137 [main] HashMove - Add Custom Clearance button has clicked...
+[INFO ] 2023-05-08 16:46:35.721 [main] HashMove - Insurance Services has toggle on....
+[INFO ] 2023-05-08 16:46:38.878 [main] HashMove - VALUE OF GOODS : 50000 has entered
+[INFO ] 2023-05-08 16:46:39.180 [main] HashMove - I accept terms & conditions has toggle on....
+[INFO ] 2023-05-08 16:46:41.348 [main] HashMove - Book & Pay button has clicked....
+[INFO ] 2023-05-08 17:09:18.192 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 17:09:23.298 [main] HashMove - Accept cookies button has clicked
+[INFO ] 2023-05-08 17:09:23.463 [main] HashMove - Login link has clicked
+[INFO ] 2023-05-08 17:09:25.106 [main] HashMove - User ID = devhub1@yopmail.com has entered
+[INFO ] 2023-05-08 17:09:25.728 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-05-08 17:09:25.819 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-05-08 17:09:32.054 [main] HashMove - Warehousing has selected
+[INFO ] 2023-05-08 17:09:34.448 [main] HashMove - Storage = Warehouse has selected
+[INFO ] 2023-05-08 17:09:37.860 [main] HashMove - City = Jeddah has entered
+[INFO ] 2023-05-08 17:09:40.162 [main] HashMove - Rent From Month Year May 2023 has selected
+[INFO ] 2023-05-08 17:09:40.462 [main] HashMove - Rent From Day 10 has selected
+[INFO ] 2023-05-08 17:09:40.688 [main] HashMove - Rent Until Month Year May 2023 has selected
+[INFO ] 2023-05-08 17:09:41.452 [main] HashMove - Rent Until Day 31 has selected
+[INFO ] 2023-05-08 17:09:42.067 [main] HashMove - Dry Storage has selected
+[INFO ] 2023-05-08 17:09:42.250 [main] HashMove - BY PALLET tab has selected....
+[INFO ] 2023-05-08 17:09:42.396 [main] HashMove - STANDARD SIZE pallet has selected....
+[INFO ] 2023-05-08 17:09:46.862 [main] HashMove - STANDARD SIZE pallet has added
+[INFO ] 2023-05-08 17:09:46.978 [main] HashMove - STANDARD SIZE pallet card has closed
+[INFO ] 2023-05-08 17:09:57.955 [main] HashMove - Currency Saudi Riyal ( SAR ) has selected
+[INFO ] 2023-05-08 17:10:10.210 [main] HashMove - Custom Clearance has toggle on....
+[INFO ] 2023-05-08 17:10:12.663 [main] HashMove - Container Size: Standard 20' has selected
+[INFO ] 2023-05-08 17:10:12.868 [main] HashMove - Quantity : 2 has entered
+[INFO ] 2023-05-08 17:10:12.979 [main] HashMove - Add Custom Clearance button has clicked...
+[INFO ] 2023-05-08 17:10:13.287 [main] HashMove - Insurance Services has toggle on....
+[INFO ] 2023-05-08 17:10:16.517 [main] HashMove - VALUE OF GOODS : 50000 has entered
+[INFO ] 2023-05-08 17:10:16.835 [main] HashMove - I accept terms & conditions has toggle on....
+[INFO ] 2023-05-08 17:10:18.935 [main] HashMove - Book & Pay button has clicked....
+[INFO ] 2023-05-08 17:13:26.392 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 17:14:33.703 [main] HashMove - Hash Move Login page has opened
+[INFO ] 2023-05-08 17:14:42.532 [main] HashMove - Accept cookies button has clicked
+[INFO ] 2023-05-08 17:14:42.678 [main] HashMove - Login link has clicked
+[INFO ] 2023-05-08 17:14:44.116 [main] HashMove - User ID = devhub1@yopmail.com has entered
+[INFO ] 2023-05-08 17:14:44.598 [main] HashMove - Password = Hsm@1234 has entered
+[INFO ] 2023-05-08 17:14:44.680 [main] HashMove - Login Now button has clicked!!!
+[INFO ] 2023-05-08 17:14:50.097 [main] HashMove - Warehousing has selected
+[INFO ] 2023-05-08 17:14:52.572 [main] HashMove - Storage = Warehouse has selected
+[INFO ] 2023-05-08 17:14:55.973 [main] HashMove - City = Jeddah has entered
+[INFO ] 2023-05-08 17:14:58.281 [main] HashMove - Rent From Month Year May 2023 has selected
+[INFO ] 2023-05-08 17:14:58.572 [main] HashMove - Rent From Day 10 has selected
+[INFO ] 2023-05-08 17:14:58.807 [main] HashMove - Rent Until Month Year May 2023 has selected
+[INFO ] 2023-05-08 17:14:59.436 [main] HashMove - Rent Until Day 31 has selected
+[INFO ] 2023-05-08 17:14:59.823 [main] HashMove - Dry Storage has selected
+[INFO ] 2023-05-08 17:15:00.075 [main] HashMove - BY PALLET tab has selected....
+[INFO ] 2023-05-08 17:15:00.206 [main] HashMove - STANDARD SIZE pallet has selected....
+[INFO ] 2023-05-08 17:15:04.631 [main] HashMove - STANDARD SIZE pallet has added
+[INFO ] 2023-05-08 17:15:04.710 [main] HashMove - STANDARD SIZE pallet card has closed
+[INFO ] 2023-05-08 17:15:15.517 [main] HashMove - Currency Saudi Riyal ( SAR ) has selected
+[INFO ] 2023-05-08 17:15:27.801 [main] HashMove - Custom Clearance has toggle on....
+[INFO ] 2023-05-08 17:15:30.235 [main] HashMove - Container Size: Standard 20' has selected
+[INFO ] 2023-05-08 17:15:30.439 [main] HashMove - Quantity : 2 has entered
+[INFO ] 2023-05-08 17:15:30.527 [main] HashMove - Add Custom Clearance button has clicked...
+[INFO ] 2023-05-08 17:15:30.711 [main] HashMove - Insurance Services has toggle on....
+[INFO ] 2023-05-08 17:15:33.892 [main] HashMove - VALUE OF GOODS : 50000 has entered
+[INFO ] 2023-05-08 17:15:34.244 [main] HashMove - I accept terms & conditions has toggle on....
+[INFO ] 2023-05-08 17:15:36.347 [main] HashMove - Book & Pay button has clicked....
+[INFO ] 2023-05-08 17:15:40.449 [main] HashMove - View Bookings link has clicked....

@@ -32,7 +32,6 @@ public class AllUsersPage {
 	@CacheLookup
 	WebElement lnktextaddnewuser;
 	
-	
 	@FindBy(xpath = "//input[@placeholder='Your first name']")
 	@CacheLookup
 	WebElement txtboxfirstname;

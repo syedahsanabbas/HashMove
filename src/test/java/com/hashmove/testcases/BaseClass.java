@@ -1,5 +1,6 @@
 package com.hashmove.testcases;
 
+
 import java.io.FileInputStream;
 import java.io.IOException;
 
@@ -65,7 +66,8 @@ public class BaseClass {
 		return data;
 	}
 	
-
+	
+	
 	
 
 	@BeforeClass
@@ -131,7 +133,7 @@ public class BaseClass {
 	public void teardown()
 
 	{
-	driver.quit();
+	//driver.quit();
 
 	}
 

@@ -702,12 +702,6 @@ public class TC_QA_FCLSpotRateandBooking_001 extends BaseClass {
 		logger.info("Bill of Lading has clicked.");
 		Thread.sleep(1000);
 
-		// Object of Actions class to scroll up and down
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		a.sendKeys(Keys.ARROW_DOWN).build().perform();
-		Thread.sleep(2000);
-
 		// Enter Bill Number
 		bdp.setbillnumber(getCellData(1, 18, "QAFCLProviderTestData"));
 		logger.info("Bill Number = " + cell.getStringCellValue() + " has entered");

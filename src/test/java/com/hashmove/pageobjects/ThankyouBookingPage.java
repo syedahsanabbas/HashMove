@@ -30,6 +30,10 @@ public class ThankyouBookingPage {
 	@FindBy(xpath = "//a[@class='view-booking hvr-icon link-hover-1']")
 	@CacheLookup
 	WebElement lnktextviewbooking;
+	
+	@FindBy(xpath = "//span[@class='wh-booking-num pointer']")
+	@CacheLookup
+	WebElement labeltextwarehousebooking;
 
 
 	// Identify Action on all Web Elements
@@ -44,4 +48,8 @@ public class ThankyouBookingPage {
 
 	}
 	
+	public String getbookingnumberforwarehouse() {
+		return labeltextwarehousebooking.getText();
+
+	}
 }

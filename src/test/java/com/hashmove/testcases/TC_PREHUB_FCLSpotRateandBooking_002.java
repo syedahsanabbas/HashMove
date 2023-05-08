@@ -28,12 +28,24 @@ import com.hashmove.pageobjects.RateRequestsPage;
 import com.hashmove.pageobjects.ThankyouBookingPage;
 import com.hashmove.utilities.ScreenRecorderUtil;
 
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
 //						********* TestCase_SpotRateandBooking_002 *********
 //		Description: Verify that Customer should request FCL Spot Rate and Book the Shipment
 
 public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 	@Test(priority = 0)
+	@Description("Verify that FCL Search Spot Rate and Book the Shipment with creating [shipper & consignee information]")
+	@Severity(SeverityLevel.CRITICAL)
+	@Epic("EP002")
+	@Feature("Feature: FCL Search Spot Rate and Book the Shipment with creating [shipper & consignee information]")
+	@Story("Story: FCL Search Spot Rate and Booking")
 	public void verifyfclspotrateandbookingwithoutaddingshipperinfo() throws Exception
 
 	{
@@ -43,7 +55,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		ScreenRecorderUtil.startRecord("verifyfclspotrateandbookingwithoutaddingshipperinfo()");
 
 		// Open Hash Move Customer Portal URL
-		driver.get(qacustomerportalurl);
+		driver.get(prehubcustomerportalurl);
 
 		String ActualTitle = driver.getTitle();
 		String ExpectedTitle = "HashMove – Connecting World Logistics";
@@ -126,7 +138,6 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		}
 
 		// Select Cargo Readiness Date
-		Thread.sleep(8000);
 		hp.clickcargoreadiness();
 		hp.setcargoreadinessmonthyear(getCellData(2, 4, "PreHubFCLCustomerTestData"));
 		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue() + " has selected");
@@ -250,7 +261,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		System.out.println("Spot Rate Request number:" + spotraterequestnumber);
 
 		// Open Hash Move Provider Portal URL
-		driver.get(qaproviderportalurl);
+		driver.get(prehubproviderportalurl);
 		Thread.sleep(10000);
 
 		// Enter User ID
@@ -382,7 +393,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// Customer Book Quotes
 
 		// Open Hash Move Customer Portal URL
-		driver.get(qacustomerportalurl);
+		driver.get(prehubcustomerportalurl);
 		Thread.sleep(10000);
 
 		// Click Options Drop down
@@ -473,14 +484,107 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		// Add Shipping Information //
 
-		// Select SHIPPER NAME
-		bdp.setshippername(getCellData(2, 20, "PreHubFCLCustomerTestData"));
-		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
+		// Click Add Shipper button
+		bdp.clickaddshipper();
+		Thread.sleep(2000);
 
-		// Save Shipper Information
+		// Enter Shipper Name
+		String shipperename = bdp
+				.setshipperename(getCellData(2, 20, "PreHubFCLCustomerTestData") + bdp.getSaltString());
+		logger.info("Shipper Name = " + shipperename + " has entered");
+
+		// Enter Contact Person
+		bdp.setcontactperson(getCellData(2, 21, "PreHubFCLCustomerTestData"));
+		logger.info("Contact Person = " + cell.getStringCellValue() + " has entered");
+
+		// Enter City
+		bdp.setcity(getCellData(2, 22, "PreHubFCLCustomerTestData"));
+		logger.info("City = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Contact Phone
+		bdp.setcontactphone(getCellData(2, 23, "PreHubFCLCustomerTestData"));
+		logger.info("Contact Phone = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Contact Email
+		bdp.setcontactemail("atco" + bdp.getSaltString() + "@" + getCellData(2, 24, "PreHubFCLCustomerTestData"));
+		logger.info("Contact Email = " + cell.getStringCellValue() + " has entered");
+
+		// Select and Enter Address
+		bdp.clickaddressicon();
+		Thread.sleep(1000);
+
+		bdp.setconsigneepinaddress(getCellData(2, 25, "PreHubFCLCustomerTestData"));
+		logger.info("Consignee Pin Address = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Submit
+		bdp.clicksubmitconsigneeaddress();
+		Thread.sleep(2000);
+
+		// Enter Main Address
+		bdp.setconsigneemainaddress(getCellData(2, 25, "PreHubFCLCustomerTestData"));
+		logger.info("Consignee Main Address = " + cell.getStringCellValue() + " has entered");
+
+		// Click Save Shipper info
 		bdp.clicksaveshipperinfo();
 		Thread.sleep(2000);
+
+		// Select SHIPPER NAME
+		bdp.setshippername(shipperename);
+		logger.info("Shipper Name = " + shipperename + " has entered");
+
+		// Save Shipper Information
+		bdp.clicksavemainshipperinfo();
+		Thread.sleep(2000);
 		logger.info("Shipper Information has added....");
+
+		// Add Consignee Information //
+
+		// Click Add Consignee button
+		bdp.clickaddconsignee();
+		Thread.sleep(2000);
+
+		// Enter Consignee Name
+		String consigneename = bdp
+				.setconsigneename(getCellData(2, 26, "PreHubFCLCustomerTestData") + bdp.getSaltString());
+		logger.info("Consignee Name = " + consigneename + " has entered");
+
+		// Enter Contact Person
+		bdp.setcontactperson2(getCellData(2, 27, "PreHubFCLCustomerTestData"));
+		logger.info("Contact Person = " + cell.getStringCellValue() + " has entered");
+
+		// Enter City
+		bdp.setcity2(getCellData(2, 28, "PreHubFCLCustomerTestData"));
+		logger.info("City = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Contact Phone
+		bdp.setcontactphone2(getCellData(2, 29, "PreHubFCLCustomerTestData"));
+		logger.info("Contact Phone = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Contact Email
+		bdp.setcontactemail2("dell" + bdp.getSaltString() + "@" + getCellData(2, 30, "PreHubFCLCustomerTestData"));
+		logger.info("Contact Email = " + cell.getStringCellValue() + " has entered");
+
+		// Select and Enter Address
+		bdp.clickaddressicon2();
+		Thread.sleep(1000);
+
+		bdp.setconsigneepinaddress2(getCellData(2, 31, "PreHubFCLCustomerTestData"));
+		logger.info("Consignee Pin Address = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Submit
+		bdp.clicksubmitconsigneeaddress2();
+		Thread.sleep(2000);
+
+		// Enter Main Address
+		bdp.setconsigneemainaddress2(getCellData(2, 31, "PreHubFCLCustomerTestData"));
+		logger.info("Consignee Main Address = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Save Consignee info
+		bdp.clicksaveconsigneeinfo();
+		Thread.sleep(2000);
 
 		// Object of Actions class to scroll down
 
@@ -495,11 +599,11 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// Add Consignee Information //
 
 		// Select Consignee Name
-		bdp.setmainconsigneename(getCellData(2, 26, "PreHubFCLCustomerTestData"));
-		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
+		bdp.setmainconsigneename(consigneename);
+		logger.info("Consignee Name = " + consigneename + " has entered");
 
 		// Save Consignee Information
-		bdp.clicksaveconsigneeinfo2();
+		bdp.clicksavemainconsigneeinfo();
 		Thread.sleep(2000);
 		logger.info("Consignee Information has added....");
 
@@ -526,11 +630,11 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		StringSelection str = new StringSelection(System.getProperty("user.dir") + "\\UploadFiles\\Document.txt");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 
@@ -548,7 +652,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Open Hash Move Provider Portal URL
-		driver.get(qaproviderportalurl);
+		driver.get(prehubproviderportalurl);
 		Thread.sleep(10000);
 
 		// Click Booking Link
@@ -598,13 +702,13 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 
 		Thread.sleep(2000);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 
@@ -692,10 +796,6 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("Bill Number = " + cell.getStringCellValue() + " has entered");
 		Thread.sleep(2000);
 
-		// Object of Actions class to scroll up and down
-		a.sendKeys(Keys.PAGE_DOWN).build().perform();
-		Thread.sleep(2000);
-
 		// Set BL Date
 		bdp.clickbldate();
 		bdp.setbldatemonthyear(getCellData(2, 19, "PreHubFCLProviderTestData"));
@@ -709,16 +809,16 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("Select a file has clicked.");
 		Thread.sleep(1000);
 
-		// copying File path to Clipboard
+		// copying File path to Clip board
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
-		// press Contol+V for pasting
+		// press Control+V for pasting
 		rb.keyPress(KeyEvent.VK_CONTROL);
 		rb.keyPress(KeyEvent.VK_V);
 
 		Thread.sleep(2000);
 
-		// release Contol+V for pasting
+		// release Control+V for pasting
 		rb.keyRelease(KeyEvent.VK_CONTROL);
 		rb.keyRelease(KeyEvent.VK_V);
 

@@ -1,7 +1,12 @@
 package com.hashmove.testcases;
 
+import java.time.Duration;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.hashmove.pageobjects.DFFCustomerPage;
 import com.hashmove.pageobjects.HomePage;
@@ -143,13 +148,13 @@ public class TC_QA_ModifySearchRequest_002 extends BaseClass {
 		Thread.sleep(3000);
 		
 		// Select By Pallet / By Area
-		String by = getCellData(2, 10, "QAWarehouseing");
+		String by = getCellData(2, 11, "QAWarehouseing");
 		System.out.println("By : " + by);
 		
-		String size = getCellData(2, 11, "QAWarehouseing");
+		String size = getCellData(2, 12, "QAWarehouseing");
 		System.out.println("Size : " + size);
 
-		if (by.equals("PALLET")) {
+		if (by.equals("BY PALLET")) {
 			dcp.clickbypallet();
 			Thread.sleep(1000);
 			logger.info("By Pallet has selected....");
@@ -160,11 +165,11 @@ public class TC_QA_ModifySearchRequest_002 extends BaseClass {
 				logger.info("STANDARD Size Pallet has selected....");
 				Thread.sleep(1000);
 				// Enter Quantity
-				dcp.setquantity(getCellData(2, 12, "QAWarehouseing"));
+				dcp.setquantity(getCellData(2, 13, "QAWarehouseing"));
 				logger.info("Quantity " +  cell.getStringCellValue()  + " has entered");
 				
 				// Enter WEIGHT PER PALLET
-				dcp.setweightperpallet(getCellData(2, 12, "QAWarehouseing"));
+				dcp.setweightperpallet(getCellData(2, 14, "QAWarehouseing"));
 				logger.info("WEIGHT PER PALLET " +  cell.getStringCellValue()  + " has entered");
 				
 				// Click ADD button
@@ -189,11 +194,11 @@ public class TC_QA_ModifySearchRequest_002 extends BaseClass {
 				Thread.sleep(1000);
 				
 				// Enter Quantity
-				dcp.setquantity(getCellData(2, 12, "QAWarehouseing"));
+				dcp.setquantity(getCellData(2, 13, "QAWarehouseing"));
 				logger.info("Quantity " +  cell.getStringCellValue()  + " has entered");
 				
 				// Enter WEIGHT PER PALLET
-				dcp.setweightperpallet(getCellData(2, 12, "QAWarehouseing"));
+				dcp.setweightperpallet(getCellData(2, 14, "QAWarehouseing"));
 				logger.info("WEIGHT PER PALLET " +  cell.getStringCellValue()  + " has entered");
 				
 				// Click ADD button
@@ -212,7 +217,7 @@ public class TC_QA_ModifySearchRequest_002 extends BaseClass {
 			
 			
 
-		} else if (searchcategory.equals("Area")) {
+		} else if (searchcategory.equals("BY AREA")) {
 			dcp.clickbyarea();
 			logger.info("By Area has selected....");
 
@@ -234,10 +239,12 @@ public class TC_QA_ModifySearchRequest_002 extends BaseClass {
 		logger.info("Yes, Modify search criteria button has clicked!!!");
 		Thread.sleep(3000);
 		
-		// Find X button on Search Card
-		Assert.assertEquals(false, dcp.btnclosestandandardcard2.isDisplayed());
-		System.out.println("Close button is not showing on Card");
-		
+		 // Wait for the element to not be displayed
+	      WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
+	      Boolean element = wait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//img[@alt='delete-icon']")));
+	      
+	      // Assert that the element is not displayed
+	      assert element == true : "Element is still displayed";
 		
 		
 

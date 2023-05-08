@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-29T18:42:24 PKT" name="Default suite" finished-at="2023-04-29T18:43:31 PKT" duration-ms="67302">
+  <suite started-at="2023-05-08T17:14:23 PKT" name="Default suite" finished-at="2023-05-08T17:15:42 PKT" duration-ms="79483">
     <groups>
     </groups>
-    <test started-at="2023-04-29T18:42:24 PKT" name="Default test" finished-at="2023-04-29T18:43:31 PKT" duration-ms="67302">
-      <class name="com.hashmove.testcases.TC_QA_ModifySearchRequest_001">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.hashmove.testcases.TC_QA_ModifySearchRequest_001@54504ecd]" started-at="2023-04-29T18:42:24 PKT" name="setup" finished-at="2023-04-29T18:42:28 PKT" duration-ms="3851" status="PASS">
+    <test started-at="2023-05-08T17:14:23 PKT" name="Default test" finished-at="2023-05-08T17:15:42 PKT" duration-ms="79483">
+      <class name="com.hashmove.testcases.TC_QA_WarehousingRateandBooking_001">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.hashmove.testcases.TC_QA_WarehousingRateandBooking_001@54504ecd]" started-at="2023-05-08T17:14:23 PKT" name="setup" finished-at="2023-05-08T17:14:26 PKT" duration-ms="3322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifymodifysearchrequest()[pri:0, instance:com.hashmove.testcases.TC_QA_ModifySearchRequest_001@54504ecd]" started-at="2023-04-29T18:42:28 PKT" name="verifymodifysearchrequest" finished-at="2023-04-29T18:43:30 PKT" duration-ms="61883" status="PASS">
+        <test-method signature="verifywarehouserateandbooking()[pri:0, instance:com.hashmove.testcases.TC_QA_WarehousingRateandBooking_001@54504ecd]" started-at="2023-05-08T17:14:26 PKT" name="verifywarehouserateandbooking" finished-at="2023-05-08T17:15:42 PKT" duration-ms="76036" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifymodifysearchrequest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hashmove.testcases.TC_QA_ModifySearchRequest_001@54504ecd]" started-at="2023-04-29T18:43:30 PKT" name="teardown" finished-at="2023-04-29T18:43:31 PKT" duration-ms="1371" status="PASS">
+        </test-method> <!-- verifywarehouserateandbooking -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.hashmove.testcases.TC_QA_WarehousingRateandBooking_001@54504ecd]" started-at="2023-05-08T17:15:42 PKT" name="teardown" finished-at="2023-05-08T17:15:42 PKT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- com.hashmove.testcases.TC_QA_ModifySearchRequest_001 -->
+      </class> <!-- com.hashmove.testcases.TC_QA_WarehousingRateandBooking_001 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

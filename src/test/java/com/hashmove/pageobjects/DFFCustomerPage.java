@@ -74,6 +74,22 @@ public class DFFCustomerPage {
 	@FindBy(xpath = "//span[normalize-space()='BY AREA']")
 	@CacheLookup
 	WebElement lnktextbyarea;
+	
+	@FindBy(xpath = "//label[normalize-space()='A/C Storage']")
+	@CacheLookup
+	WebElement lnktextacstorage;
+	
+	@FindBy(xpath = "//label[normalize-space()='Dry Storage']")
+	@CacheLookup
+	WebElement lnktextdrystorage;
+	
+	@FindBy(xpath = "//label[normalize-space()='Chilled Storage']")
+	@CacheLookup
+	WebElement lnktextchilledstorage;
+	
+	@FindBy(xpath = "//label[normalize-space()='Frozen Storage']")
+	@CacheLookup
+	WebElement lnktextfrozenstorage;
 
 	@FindBy(xpath = "//p[normalize-space()='STANDARD SIZE']")
 	@CacheLookup
@@ -82,6 +98,10 @@ public class DFFCustomerPage {
 	@FindBy(xpath = "//p[normalize-space()='EUROPEAN SIZE']")
 	@CacheLookup
 	WebElement lnktexteuropeansize;
+	
+	@FindBy(xpath = "//p[normalize-space()='CHEP']")
+	@CacheLookup
+	WebElement lnktextchepsize;
 	
 	@FindBy(xpath = "(//input[@class='form-control quantity ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
@@ -106,6 +126,14 @@ public class DFFCustomerPage {
 	@FindBy(xpath = "//button[normalize-space()='Find Best Rates']")
 	@CacheLookup
 	WebElement btnfindbestrates;
+	
+	@FindBy(id = "dropdowncountry")
+	@CacheLookup
+	WebElement ddcurrency;
+	
+	@FindBy(xpath = "(//button[normalize-space()='Proceed'])[1]")
+	@CacheLookup
+	WebElement btnproceed;
 	
 	@FindBy(xpath = "//a[normalize-space()='MODIFY SEARCH']")
 	@CacheLookup
@@ -166,7 +194,8 @@ public class DFFCustomerPage {
 		List<WebElement> allOptions = ldriver.findElements(By.xpath("//div[@aria-labelledby='wh-st-tg']//div//span"));
 
 		for (int i = 0; i < allOptions.size(); i++) {
-			if (allOptions.get(i).getText().toString().contains(storage)) {
+			
+			if (allOptions.get(i).getText().toString().equals(storage)) {
 				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
 				allOptions.get(i).click();
 				break;
@@ -258,6 +287,27 @@ public class DFFCustomerPage {
 
 	}
 	
+	
+	public void clickacstorage() {
+		lnktextacstorage.click();
+
+	}
+	
+	public void clickdrystorage() {
+		lnktextdrystorage.click();
+
+	}
+	
+	public void clickchilledstorage() {
+		lnktextchilledstorage.click();
+
+	}
+	
+	public void clickfrozenstorage() {
+		lnktextfrozenstorage.click();
+
+	}
+	
 	public void clickstandardsize() {
 		lnktextstandardsize.click();
 
@@ -267,6 +317,12 @@ public class DFFCustomerPage {
 		lnktexteuropeansize.click();
 
 	}
+	
+	public void clickchepsize() {
+		lnktextchepsize.click();
+
+	}
+	
 	
 	public void setquantity(String quantity) {
 		txtboxquantity.sendKeys(quantity);
@@ -295,6 +351,30 @@ public class DFFCustomerPage {
 	
 	public void clickfindbestrates() {
 		btnfindbestrates.click();
+
+	}
+	
+	public void clickcurrency() {
+		ddcurrency.click();
+
+	}
+
+	public void setcurrency(String currency) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath("//div[@aria-labelledby ='dropdowncountry']//ul/li"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			
+			if (allOptions.get(i).getText().toString().equals(currency)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	public void clickproceed() {
+		btnproceed.click();
 
 	}
 	
