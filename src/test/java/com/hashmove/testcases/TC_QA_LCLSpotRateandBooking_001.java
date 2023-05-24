@@ -364,18 +364,20 @@ public class TC_QA_LCLSpotRateandBooking_001 extends BaseClass {
 		Thread.sleep(2000);
 
 		// Enter Rate Validity Start Date
-		rrp.setratevaliditystartdate();
-		logger.info("Rate Validity Start Date has entered");
+		rrp.clickratevaliditystart();
+		rrp.setratevaliditystartmonthyear(getFormulaMonthYearDateAsString(1, 9, "QAProviderLCLTestData"));
+		rrp.setratevaliditystartday(getFormulaDayDateAsString(1, 10, "QAProviderLCLTestData"));
+
 		Thread.sleep(2000);
 
 		// Enter Rate Validity End Date
-		rrp.setratevalidityenddate();
-		logger.info("Rate Validity End Date has entered");
-		Thread.sleep(2000);
+		rrp.clickratevalidityend();
+		rrp.setratevalidityendmonthyear(getFormulaMonthYearDateAsString(1, 11, "QAProviderLCLTestData"));
+		rrp.setratevalidityendday(getFormulaDayDateAsString(1, 12, "QAProviderLCLTestData"));
 
 		// Select Customer Payment Terms
 
-		String customerpaymentterms = getCellData(1, 10, "QAProviderLCLTestData");
+		String customerpaymentterms = getCellData(1, 12, "QAProviderLCLTestData");
 		System.out.println("Customer Payment Terms : " + customerpaymentterms);
 
 		if (customerpaymentterms.equals("I ACCEPT CUSTOMER PAYMENT TERMS")) {

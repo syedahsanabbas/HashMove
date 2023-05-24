@@ -1,0 +1,793 @@
+package com.hashmove.testcases;
+
+import java.awt.Toolkit;
+import java.awt.event.KeyEvent;
+import java.io.File;
+import java.util.Date;
+import java.awt.datatransfer.StringSelection;
+
+import java.awt.Robot;
+
+import org.openqa.selenium.Keys;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.lang.StringUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
+import org.openqa.selenium.interactions.Actions;
+
+import com.hashmove.pageobjects.BookingDetailPage;
+import com.hashmove.pageobjects.BookingProcessPage;
+import com.hashmove.pageobjects.CustomerLoginPage;
+import com.hashmove.pageobjects.DashboardPage;
+import com.hashmove.pageobjects.HomePage;
+import com.hashmove.pageobjects.PartnerLoginPage;
+import com.hashmove.pageobjects.RateRequestsPage;
+import com.hashmove.pageobjects.ThankyouBookingPage;
+import com.hashmove.utilities.ScreenRecorderUtil;
+
+import io.qameta.allure.Description;
+import io.qameta.allure.Epic;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import io.qameta.allure.Story;
+
+//						********* TestCase_ShanFoodsFCLSpotRateandBooking_001 *********
+//		Description: Verify that Customer [Shan Foods] should request FCL Spot Rate
+
+public class TC_PREHUB_ShanFoodsFCLSpotRateandBooking_001 extends BaseClass {
+
+	@Test(priority = 0)
+	@Description("Verify that Customer [Shan Foods] should request FCL Spot Rate")
+	@Severity(SeverityLevel.CRITICAL)
+	@Epic("EPSH001")
+	@Feature("Verify that Customer [Shan Foods] should request FCL Spot Rate")
+	@Story("Story: FCL Search Spot Rate and Booking")
+	public void verifyfclspotrateandbooking() throws Exception
+
+	{
+		System.out.println("***************TC_PREHUB_ShanFoodsFCLSpotRateandBooking_001*******************");
+
+		// Start Recording
+		ScreenRecorderUtil.startRecord("verifyfclspotrateandbooking()");
+
+		// Open Hash Move Customer Portal URL
+		driver.get(prehubshanfoodsportalurl);
+
+		String ActualTitle = driver.getTitle();
+		String ExpectedTitle = "HashMove – Connecting World Logistics";
+		Assert.assertEquals(ExpectedTitle, ActualTitle);
+
+		// Maximize current window
+		driver.manage().window().maximize();
+		logger.info("Hash Move Login page has opened");
+
+		Thread.sleep(10000);
+
+		CustomerLoginPage clp = new CustomerLoginPage(driver);
+		HomePage hp = new HomePage(driver);
+		PartnerLoginPage plp = new PartnerLoginPage(driver);
+		DashboardPage dp = new DashboardPage(driver);
+		RateRequestsPage rrp = new RateRequestsPage(driver);
+		BookingProcessPage bpp = new BookingProcessPage(driver);
+		ThankyouBookingPage tybp = new ThankyouBookingPage(driver);
+		BookingDetailPage bdp = new BookingDetailPage(driver);
+
+		// Click Accept cookies button
+		rrp.clickaccept();
+		logger.info("Accept cookies button has clicked!!!");
+
+		// Enter User ID
+		clp.setuserid(getCellData(1, 1, "PreHubFCLShanFoodsTestData"));
+		logger.info("User ID = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Password
+		clp.setpassword(getCellData(1, 2, "PreHubFCLShanFoodsTestData"));
+		logger.info("Password = " + cell.getStringCellValue() + " has entered");
+
+		// Click Login Now button
+		clp.clickloginnow();
+		logger.info("Login Now button has clicked!!!");
+
+		Thread.sleep(5000);
+
+		// Select Sea Shipment - FCL
+		String searchcategory = getCellData(1, 3, "PreHubFCLShanFoodsTestData");
+		System.out.println("Search Category: " + searchcategory);
+
+		if (searchcategory.equals("Sea Shipment - FCL")) {
+
+			hp.clickseashipmentfcl();
+			logger.info("Sea shipment FCL has selected....");
+
+		} else if (searchcategory.equals("Sea Shipment - LCL")) {
+
+			logger.info("Sea Shipment - LCL has selected");
+
+		}
+
+		else if (searchcategory.equals("Air Shipment"))
+
+		{
+
+			logger.info("Air Shipment has selected");
+
+		} else if (searchcategory.equals("Rail Freight")) {
+
+			logger.info("Rail Freight has selected");
+
+		}
+
+		else if (searchcategory.equals("Warehousing")) {
+
+			logger.info("Warehousing has selected");
+
+		}
+
+		else if (searchcategory.equals("Truck - FTL")) {
+
+			logger.info("Truck - FTL has selected");
+
+		} else {
+
+			System.out.println("Statement outside if...else block");
+
+		}
+
+		// Select Cargo Readiness Date
+		hp.clickcargoreadiness();
+		hp.setcargoreadinessmonthyear(getFormulaMonthYearDateAsString(1, 4, "PreHubFCLShanFoodsTestData"));
+		hp.setcargoreadinessday(getFormulaDayDateAsString(1, 5, "PreHubFCLShanFoodsTestData"));
+		Thread.sleep(1000);
+
+		// Enter HS Code
+		hp.sethscode(getCellData(1, 6, "PreHubFCLShanFoodsTestData"));
+		logger.info("HS Code = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Enter Cargo Description
+		hp.setcargodescription(getCellData(1, 7, "PreHubFCLShanFoodsTestData"));
+		logger.info("Cargo Description = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Enter Origin Port
+		hp.setoriginport(getCellData(1, 8, "PreHubFCLShanFoodsTestData"));
+		logger.info("Origin Port = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Enter Destination Port
+		hp.setdestinationport(getCellData(1, 9, "PreHubFCLShanFoodsTestData"));
+		logger.info("Destination Port = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Enter Reference Number
+		String referencenumber = hp.setreferencenumber(getCellData(1, 10, "PreHubFCLShanFoodsTestData") + bdp.getSaltString());
+
+		logger.info("Reference Number = " + referencenumber + " has entered");
+		Thread.sleep(2000);
+
+		// Select Container Size
+		hp.clickcontainersizedropdown();
+		Thread.sleep(2000);
+		hp.setcontainersize(getCellData(1, 11, "PreHubFCLShanFoodsTestData"));
+		logger.info("Container Size = " + cell.getStringCellValue() + " has selected");
+
+		// Enter Quantity
+		hp.setquantity(getCellData(1, 12, "PreHubFCLShanFoodsTestData"));
+		logger.info("Quantity = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Enter Weight
+		hp.setweight(getCellData(1, 13, "PreHubFCLShanFoodsTestData"));
+		logger.info("Weight = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Payment Terms
+		hp.clickpaymentterms();
+		logger.info("Payment Terms link has clicked");
+		Thread.sleep(5000);
+
+		// Select Payment Terms & Conditions
+		String paymentterms = getCellData(1, 14, "PreHubFCLShanFoodsTestData");
+		System.out.println("Payment Terms : " + paymentterms);
+
+		if (paymentterms.equals("Advance Payment at the time of Booking Confirmation")) {
+			boolean status = hp.tglbtnadvancepayment.isSelected();
+			System.out.println("Toggle: " + status);
+			if (status == true)
+			{
+				logger.info("Advance Payment at the time of Booking Confirmation already selected....");
+				Thread.sleep(2000);
+				hp.clicksavepaymentterms();
+			}
+			else
+			{
+			hp.selectadvancepayment();
+			logger.info("Advance Payment at the time of Booking Confirmation has selected....");
+			Thread.sleep(2000);
+			hp.clicksavepaymentterms();
+			}
+
+		} else if (paymentterms.equals("Days after the issuance of BL")) {
+			boolean status = hp.tglbtndaysaftertheissuanceofbl.isSelected();
+			System.out.println("Toggle: " + status);
+			if (status == true)
+			{
+				logger.info("Days after the issuance of BL already selected....");
+				Thread.sleep(2000);
+				hp.clickclosepaymentterms();
+			}
+			else
+			{
+			hp.selectdaysaftertheissuanceofbl();
+			logger.info("Days after the issuance of BL has selected");
+			hp.setpaymenttermsdays(getCellData(1, 15, "PreHubFCLShanFoodsTestData"));
+			Thread.sleep(2000);
+			hp.clicksavepaymentterms();
+			Thread.sleep(2000);
+			}
+
+		}
+
+		else if (paymentterms.equals("Days from the issuance of Invoice"))
+
+		{
+
+			logger.info("Days from the issuance of Invoice has selected");
+
+		} else if (paymentterms.equals("Days after the Shipment Arrival at the Port")) {
+
+			logger.info("Days after the Shipment Arrival at the Port has selected");
+
+		}
+
+		else {
+
+			System.out.println("Statement outside if...else block");
+
+		}
+
+		// Click Request Spot Rate
+		hp.clickrequestspotrate();
+		logger.info("Request Spot Rate button has clicked!!!");
+		Thread.sleep(25000);
+
+		// Storing the request number in a string
+		String fullspotraterequestnumber = hp.labelrequest.getText();
+		String spotraterequestnumber = fullspotraterequestnumber.substring(0,
+				Math.min(fullspotraterequestnumber.length(), 14));
+
+		System.out.println("Full Spot Rate Request number:" + fullspotraterequestnumber);
+		System.out.println("Spot Rate Request number:" + spotraterequestnumber);
+
+		// Open Hash Move Provider Portal URL
+		driver.get(prehubproviderportalurl);
+		logger.info("Hash Move Provider Portal page has opened");
+		Thread.sleep(10000);
+
+		// Click Accept cookies button
+		rrp.clickaccept2();
+		Thread.sleep(1000);
+
+		// Enter User ID
+		plp.setuserid(getCellData(1, 1, "PreHubFCLProviderTestData"));
+		logger.info("User ID = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Password
+		plp.setpassword(getCellData(1, 2, "PreHubFCLProviderTestData"));
+		logger.info("Password = " + cell.getStringCellValue() + " has entered");
+
+		// Click Login Now button
+		plp.clickloginnow();
+		logger.info("Login Now button has clicked!!!");
+		Thread.sleep(5000);
+
+		// Click Spot Rate left menu
+		dp.clickspotratesleftmenu();
+		logger.info("Spot Rate link has clicked!!!");
+		Thread.sleep(12000);
+
+		// Search the Spot Request
+		rrp.clickfilteryourrequest();
+		logger.info("Click filter request link has clicked!!!");
+		Thread.sleep(3000);
+
+		// Enter Spot Request Number
+		rrp.setrequestnumber(spotraterequestnumber);
+		logger.info("Spot Request Number has entered!!!");
+		Thread.sleep(1000);
+
+		// Object of Actions class to scroll up and down
+		Actions a = new Actions(driver);
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Filter Records button
+		rrp.clickfilterrecords();
+		logger.info("Filter Records button has clicked!!!");
+		Thread.sleep(2000);
+
+		// Click Provide Your Quote button
+		rrp.clickprovideyourquote();
+		logger.info("Provide Your Quote button has clicked!!!");
+		Thread.sleep(5000);
+
+		// Enter Shipping Line
+		rrp.setshipingline(getCellData(1, 3, "PreHubFCLProviderTestData"));
+		logger.info("Shipping Line = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(3000);
+
+		// Enter Rate Per Container
+		rrp.setratepercontainer(getCellData(1, 4, "PreHubFCLProviderTestData"));
+		logger.info("Rate Per Container = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Bill of Lading
+		rrp.setbillofloading(getCellData(1, 5, "PreHubFCLProviderTestData"));
+		logger.info("Bill of Lading = " + cell.getStringCellValue() + " has entered");
+
+		// Enter LOLO
+		rrp.setlolo(getCellData(1, 6, "PreHubFCLProviderTestData"));
+		logger.info("LOLO = " + cell.getStringCellValue() + " has entered");
+
+		// Enter SEAL Charges
+		rrp.setsealcharges(getCellData(1, 7, "PreHubFCLProviderTestData"));
+		logger.info("SEAL Charges = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Terminal Handling Charge - Origin
+		rrp.setterminalhandlingcharge(getCellData(1, 8, "PreHubFCLProviderTestData"));
+		logger.info("Terminal Handling Charge - Origin = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Object of Actions class to scroll up and down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(3000);
+
+		// Enter Rate Validity Start Date
+		rrp.clickratevaliditystart();
+		rrp.setratevaliditystartmonthyear(getFormulaMonthYearDateAsString(1, 9, "PreHubFCLProviderTestData"));
+		rrp.setratevaliditystartday(getFormulaDayDateAsString(1, 10, "PreHubFCLProviderTestData"));
+
+		Thread.sleep(2000);
+
+		// Enter Rate Validity End Date
+		rrp.clickratevalidityend();
+		rrp.setratevalidityendmonthyear(getFormulaMonthYearDateAsString(1, 11, "PreHubFCLProviderTestData"));
+		rrp.setratevalidityendday(getFormulaDayDateAsString(1, 12, "PreHubFCLProviderTestData"));
+
+		// Select Customer Payment Terms
+
+		String customerpaymentterms = getCellData(1, 13, "PreHubFCLProviderTestData");
+		System.out.println("Customer Payment Terms : " + customerpaymentterms);
+
+		if (customerpaymentterms.equals("I ACCEPT CUSTOMER PAYMENT TERMS")) {
+
+			rrp.selectiacceptcustomerpaymentterms();
+			logger.info("I ACCEPT CUSTOMER PAYMENT TERMS has selected ...");
+			Thread.sleep(2000);
+
+		} else if (customerpaymentterms.equals("I WILL SET MY OWN PAYMENT TERMS")) {
+
+			logger.info("I WILL SET MY OWN PAYMENT TERMS has selected ...");
+
+		}
+
+		else {
+
+			System.out.println("Statement outside if...else block");
+
+		}
+
+		// Object of Actions class to scroll up and down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(3000);
+
+		// Click Save and Close
+		rrp.clicksaveandclose();
+		logger.info("Save and Close button has clicked!!!");
+		Thread.sleep(2000);
+
+		// Click Would you like to proceed?
+		rrp.clickWouldyouliketoproceed();
+		logger.info("Would you like to proceed? button has clicked!!!");
+		Thread.sleep(5000);
+
+		// Customer Book Quotes
+
+		// Open Hash Move Customer Portal URL
+		driver.get(prehubcustomerportalurl);
+		Thread.sleep(10000);
+
+		// Click Options Drop down
+		hp.clickoptionsdropdown();
+		logger.info("Options Dropdown has clicked!!!");
+		Thread.sleep(2000);
+
+		hp.clickspotrates();
+		logger.info("Spot Rates option has clicked!!!");
+		Thread.sleep(8000);
+
+		// Search the Spot Request
+		rrp.clickfilteryourrequest2();
+		logger.info("Filter request link has clicked!!!");
+		Thread.sleep(3000);
+
+		// Enter Spot Request Number
+		rrp.setrequestnumber2(spotraterequestnumber);
+		logger.info("Spot Request Number has entered!!!");
+		Thread.sleep(1000);
+
+		// Object of Actions class to scroll down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Filter Records button
+		rrp.clickfilterrecords2();
+		logger.info("Filter Records button has clicked!!!");
+		Thread.sleep(2000);
+
+		// Click View Quotes
+		rrp.clickviewquotes();
+		logger.info("View Quotes link has clicked!!!");
+		Thread.sleep(2000);
+
+		// Click Book Now
+		rrp.clickbooknow();
+		logger.info("Book Now link has clicked!!!");
+		Thread.sleep(5000);
+
+		// Click Next
+		bpp.clicknext();
+		logger.info("Next button has clicked!!!");
+		Thread.sleep(2000);
+
+		// Object of Actions class to scroll down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Enter Reference Number (optional)
+		bpp.setreferencenumber(getCellData(1, 18, "PreHubFCLShanFoodsTestData"));
+		logger.info("Reference Number = " + cell.getStringCellValue() + " has entered");
+
+		// Enter Shipping Instructions
+		bpp.setshippinginstructions(getCellData(1, 19, "PreHubFCLShanFoodsTestData"));
+		logger.info("Shipping Instructions = " + cell.getStringCellValue() + " has entered");
+
+		// Check Disclaimer
+		bpp.selectdisclaimer();
+		logger.info("Disclaimer has selected");
+
+		// Click Confirm
+		bpp.clickconfirm();
+		logger.info("Confirm button has clicked!!!");
+		Thread.sleep(8000);
+
+		// Get Booking Number
+		String bookingnumbertext = tybp.getbookingnumber();
+		System.out.println("Booking Number Text : " + bookingnumbertext);
+		String bookingnumber2 = StringUtils.right(bookingnumbertext, 13);
+		System.out.println("Booking Number: " + bookingnumber2);
+
+		// Click View Booking
+		tybp.clickviewbooking();
+		logger.info("View Booking has clicked!!!");
+		Thread.sleep(5000);
+
+		// Object of Actions class to scroll down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Add Shipping Information //
+
+		// Select SHIPPER NAME
+		bdp.setshippername(getCellData(1, 20, "PreHubFCLShanFoodsTestData"));
+		logger.info("Shipper Name = " + cell.getStringCellValue() + " has entered");
+
+		// Save Shipper Information
+		bdp.clicksavemainshipperinfo();
+		Thread.sleep(2000);
+		logger.info("Shipper Information has added....");
+
+		// Object of Actions class to scroll down
+
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		a.sendKeys(Keys.ARROW_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Add Consignee Information //
+
+		// Select Consignee Name
+		bdp.setmainconsigneename(getCellData(1, 26, "PreHubFCLShanFoodsTestData"));
+		logger.info("Consignee Name = " + cell.getStringCellValue() + " has entered");
+
+		// Save Consignee Information
+		bdp.clicksavemainconsigneeinfo();
+		Thread.sleep(2000);
+		logger.info("Consignee Information has added....");
+
+		// Object of Actions class to scroll down
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Upload Shipment Documents
+
+		// Upload Packet List
+		bdp.clickpackagelist();
+		logger.info("Package List has clicked.");
+		Thread.sleep(1000);
+
+		bdp.clickselectafile();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(2000);
+
+		// creating object of Robot class
+		Robot rb = new Robot();
+
+		// copying File path to Clip board
+		StringSelection str = new StringSelection(System.getProperty("user.dir") + "\\UploadFiles\\Document.txt");
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Control+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+		Thread.sleep(1000);
+
+		// release Control+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+		Thread.sleep(1000);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+		Thread.sleep(1000);
+
+		// Object of Actions class to scroll up and down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Upload button
+		bdp.clickupload();
+		logger.info("Package List Document has uploaded successfully!!!");
+		Thread.sleep(2000);
+
+		// Open Hash Move Provider Portal URL
+		driver.get(prehubproviderportalurl);
+		Thread.sleep(10000);
+
+		// Click Booking Link
+		bdp.clickbookings();
+		Thread.sleep(8000);
+
+		// Search Booking Request Number
+		rrp.clickfilteryourrequest3();
+		logger.info("Click filter request link has clicked!!!");
+		Thread.sleep(1000);
+
+		// Enter Booking Request Number
+		rrp.setrequestnumber3(bookingnumber2);
+		logger.info("Booking Request Number has entered!!!");
+		Thread.sleep(1000);
+
+		// Object of Actions class to scroll down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Filter Records button
+		rrp.clickfilterrecords3();
+		logger.info("Filter Records button has clicked!!!");
+		Thread.sleep(2000);
+
+		// Click Booking request link
+		bdp.clickbookingrequestlink();
+		Thread.sleep(2000);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Upload Booking Confirmation Document (CRO/BC/SC)
+		bdp.clickbookingconfirmationdocument();
+		logger.info("Booking Confirmation Document (CRO/BC/SC) has clicked.");
+		Thread.sleep(1000);
+
+		bdp.clickselectafile2();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(1000);
+
+		// copying File path to Clip board
+
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Control+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+
+		Thread.sleep(2000);
+
+		// release Control+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+
+		Thread.sleep(2000);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		Thread.sleep(2000);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		// Click Upload button
+		bdp.clickupload2();
+		logger.info("Document has uploaded successfully!!!");
+		Thread.sleep(5000);
+
+		// Click Update Booking Status
+		bdp.clickconfirmbookingyes();
+		logger.info("Confirm Booking Yes button has clicked");
+		Thread.sleep(1000);
+
+		// Enter Shipment Details
+		bdp.setshipmentdetails(getCellData(1, 14, "PreHubFCLProviderTestData"));
+		logger.info("Shipment Details = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Submit
+		bdp.clicksubmit();
+		logger.info("Submit button has clicked.");
+		Thread.sleep(5000);
+
+		// Click I accept the terms & conditions
+		bdp.clickiacceptthetermsandconditions();
+		logger.info("I accept the terms & conditions button has clicked.");
+		Thread.sleep(2000);
+
+		// Add Add Schedule
+		bdp.clickaddschedule();
+		logger.info("Add Schedule button has clicked.");
+		Thread.sleep(2000);
+
+		// Set Departure Date
+		bdp.clickdeparturefrom();
+		bdp.setdeparturedatemonthyear(getFormulaMonthYearDateAsString(1, 15, "PreHubFCLProviderTestData"));
+		bdp.setdeparturedateday(getFormulaDayDateAsString(1, 16, "PreHubFCLProviderTestData"));
+
+		// Set Arrival Date
+		bdp.clickarrivalto();
+		bdp.setarrivaldatemonthyear(getFormulaMonthYearDateAsString(1, 17, "PreHubFCLProviderTestData"));
+		bdp.setarrivaldateday(getFormulaDayDateAsString(1, 18, "PreHubFCLProviderTestData"));
+		Thread.sleep(2000);
+
+		// Enter Vessel Name
+		bdp.setvesselname(getCellData(1, 19, "PreHubFCLProviderTestData"));
+		logger.info("Vessel Name = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Enter Voyage Number
+		bdp.setvoyagenumber(getCellData(1, 20, "PreHubFCLProviderTestData"));
+		logger.info("Voyage Number = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Update Schedule
+		bdp.clickupdateschedule();
+		logger.info("Update Schedule button has clicked");
+		Thread.sleep(5000);
+
+		// Upload Bill of Lading
+		bdp.clickbilloflading();
+		logger.info("Bill of Lading has clicked.");
+		Thread.sleep(1000);
+
+		// Enter Bill Number
+		bdp.setbillnumber(getCellData(1, 22, "PreHubFCLProviderTestData"));
+		logger.info("Bill Number = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Set BL Date
+		bdp.clickbldate();
+		bdp.setbldatemonthyear(getFormulaMonthYearDateAsString(1, 23, "PreHubFCLProviderTestData"));
+		bdp.setbldateday(getFormulaDayDateAsString(1, 24, "PreHubFCLProviderTestData"));
+		Thread.sleep(1000);
+
+		// Object of Actions class to scroll up and down
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(2000);
+
+		bdp.clickselectafile3();
+		logger.info("Select a file has clicked.");
+		Thread.sleep(1000);
+
+		// copying File path to Clip board
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+		// press Control+V for pasting
+		rb.keyPress(KeyEvent.VK_CONTROL);
+		rb.keyPress(KeyEvent.VK_V);
+
+		Thread.sleep(1000);
+
+		// release Control+V for pasting
+		rb.keyRelease(KeyEvent.VK_CONTROL);
+		rb.keyRelease(KeyEvent.VK_V);
+
+		Thread.sleep(1000);
+
+		// for pressing and releasing Enter
+		rb.keyPress(KeyEvent.VK_ENTER);
+		rb.keyRelease(KeyEvent.VK_ENTER);
+
+		a.sendKeys(Keys.PAGE_DOWN).build().perform();
+		Thread.sleep(1000);
+
+		// Click Upload button
+		bdp.clickupload3();
+		logger.info("Document has uploaded successfully!!!");
+		Thread.sleep(2000);
+
+		// Click In-Transit Yes
+		bdp.clickintransityes();
+		logger.info("In-Transit Yes button has clicked");
+		Thread.sleep(1000);
+
+		// Enter Shipment Details In-Transit
+		bdp.setshipmentdetailsintransit(getCellData(1, 25, "PreHubFCLProviderTestData"));
+		logger.info("Shipment Details In-Transit = " + cell.getStringCellValue() + " has entered");
+		Thread.sleep(2000);
+
+		// Click Submit
+		bdp.clicksubmitintransit();
+		logger.info("Submit button for In-Transit has clicked.");
+		Thread.sleep(2000);
+
+		driver.navigate().refresh();
+		Thread.sleep(3000);
+
+		// Update Booking Status from In-Transit to Complete
+		// Click Update Status
+		bdp.clickupdatestatus();
+		logger.info("Update Status link has clicked.");
+		Thread.sleep(3000);
+
+		// Select Shipment Status
+		bdp.clickshipmentstatusdropdown();
+		bdp.setshipmentstatus(getCellData(1, 26, "PreHubFCLProviderTestData"));
+
+		// Enter Details
+
+		// Click Submit
+		bdp.clicksubmitshipmentstatus();
+		logger.info("Submit button has clicked.");
+
+		// Capturing the screenshot
+		Date d = new Date();
+		String FileName = "screenshot" + d.toString().replace(" ", "_").replace(":", "") + ".png";
+		System.out.println(FileName);
+		File f = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		FileUtils.copyFile(f, new File(System.getProperty("user.dir") + "\\ScreenShots\\" + FileName));
+
+		// screenshot copied from buffer is saved at the mentioned path.
+
+		System.out.println("The Screenshot is captured.");
+
+		// Stop Recording
+		ScreenRecorderUtil.stopRecord();
+
+	}
+
+}

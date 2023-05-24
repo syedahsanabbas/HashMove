@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteWarehousing">
+	<test thread-count="5" name="TestWarehouse">
+		<classes>
+			<class
+				name="com.hashmove.testcases.TC_QA_WarehousingRateandBooking_001" />
+			<class
+				name="com.hashmove.testcases.TC_QA_WarehousingRateandBooking_002" />
+			<class
+				name="com.hashmove.testcases.TC_QA_WarehousingRateandBooking_003" />
+
+		</classes>
+	</test> <!-- TestWarehouse -->
+</suite> <!-- SuiteWarehousing -->

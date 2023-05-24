@@ -91,7 +91,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		clp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
 
-		Thread.sleep(12000);
+		Thread.sleep(15000);
 
 		// Select Sea Shipment - FCL
 		String searchcategory = getCellData(2, 3, "PreHubFCLCustomerTestData");
@@ -139,11 +139,9 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		// Select Cargo Readiness Date
 		hp.clickcargoreadiness();
-		hp.setcargoreadinessmonthyear(getCellData(2, 4, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Month Year " + cell.getStringCellValue() + " has selected");
-
-		hp.setcargoreadinessday(getCellData(2, 5, "PreHubFCLCustomerTestData"));
-		logger.info("Cargo Readiness Day " + cell.getStringCellValue() + " has selected");
+		hp.setcargoreadinessmonthyear(getFormulaMonthYearDateAsString(2, 4, "PreHubFCLCustomerTestData"));
+		hp.setcargoreadinessday(getFormulaDayDateAsString(2, 5, "PreHubFCLCustomerTestData"));
+		Thread.sleep(1000);
 
 		// Select Cargo Type
 		hp.clickcargotypedropdown();
@@ -263,6 +261,10 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// Open Hash Move Provider Portal URL
 		driver.get(prehubproviderportalurl);
 		Thread.sleep(10000);
+		
+		// Click Accept cookies button
+		rrp.clickaccept2();
+		Thread.sleep(1000);
 
 		// Enter User ID
 		plp.setuserid(getCellData(2, 1, "PreHubFCLProviderTestData"));
@@ -276,9 +278,6 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		plp.clickloginnow();
 		logger.info("Login Now button has clicked!!!");
 		Thread.sleep(5000);
-
-		// Click Accept cookies button
-		rrp.clickaccept2();
 
 		// Click Spot Rate left menu
 		dp.clickspotratesleftmenu();
@@ -344,18 +343,20 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		Thread.sleep(3000);
 
 		// Enter Rate Validity Start Date
-		rrp.setratevaliditystartdate();
-		logger.info("Rate Validity Start Date has entered");
+		rrp.clickratevaliditystart();
+		rrp.setratevaliditystartmonthyear(getFormulaMonthYearDateAsString(2, 9, "PreHubFCLProviderTestData"));
+		rrp.setratevaliditystartday(getFormulaDayDateAsString(2, 10, "PreHubFCLProviderTestData"));
+
 		Thread.sleep(2000);
 
 		// Enter Rate Validity End Date
-		rrp.setratevalidityenddate();
-		logger.info("Rate Validity End Date has entered");
-		Thread.sleep(2000);
+		rrp.clickratevalidityend();
+		rrp.setratevalidityendmonthyear(getFormulaMonthYearDateAsString(2, 11, "PreHubFCLProviderTestData"));
+		rrp.setratevalidityendday(getFormulaDayDateAsString(2, 12, "PreHubFCLProviderTestData"));
 
 		// Select Customer Payment Terms
 
-		String customerpaymentterms = getCellData(2, 9, "PreHubFCLProviderTestData");
+		String customerpaymentterms = getCellData(2, 13, "PreHubFCLProviderTestData");
 		System.out.println("Customer Payment Terms : " + customerpaymentterms);
 
 		if (customerpaymentterms.equals("I ACCEPT CUSTOMER PAYMENT TERMS")) {
@@ -626,7 +627,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		// creating object of Robot class
 		Robot rb = new Robot();
 
-		// copying File path to Clipboard
+		// copying File path to Clip board
 		StringSelection str = new StringSelection(System.getProperty("user.dir") + "\\UploadFiles\\Document.txt");
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
@@ -698,7 +699,7 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 		logger.info("Select a file has clicked.");
 		Thread.sleep(1000);
 
-		// copying File path to Clipboard
+		// copying File path to Clip board
 
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
@@ -756,11 +757,8 @@ public class TC_PREHUB_FCLSpotRateandBooking_002 extends BaseClass {
 
 		// Set Departure Date
 		bdp.clickdeparturefrom();
-		bdp.setdeparturedatemonthyear(getCellData(2, 11, "PreHubFCLProviderTestData"));
-		logger.info("Departure Date Month Year " + cell.getRawValue() + " has selected");
-
-		bdp.setdeparturedateday(getCellData(2, 12, "PreHubFCLProviderTestData"));
-		logger.info("Departure Date Day " + cell.getRawValue() + " has selected");
+		bdp.setdeparturedatemonthyear(getFormulaMonthYearDateAsString(2, 11, "PreHubFCLProviderTestData"));
+		bdp.setdeparturedateday(getFormulaDayDateAsString(2, 12, "PreHubFCLProviderTestData"));
 
 		// Set Arrival Date
 		bdp.clickarrivalto();

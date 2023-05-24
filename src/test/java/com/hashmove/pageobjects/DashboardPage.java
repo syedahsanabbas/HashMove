@@ -21,11 +21,15 @@ public class DashboardPage {
 
 	}
 
-	// Identify All Web Elements on Dashboard Page
+	// Identify All Web Elements on Dash board Page
 	
 	@FindBy(xpath = "//span[@class='menu-text ng-star-inserted'][normalize-space()='Spot Rates']")
 	@CacheLookup
 	WebElement lnktextspotrates;
+	
+	@FindBy(xpath = "//span[@class='menu-text ng-star-inserted'][normalize-space()='Bookings']")
+	@CacheLookup
+	WebElement lnktextbookings;
 	
 
 	// Identify Action on all Web Elements
@@ -35,6 +39,9 @@ public class DashboardPage {
 
 	}
 	
+	public void clickbookingsleftmenu() {
+		lnktextbookings.click();
 
+	}
 	
 }

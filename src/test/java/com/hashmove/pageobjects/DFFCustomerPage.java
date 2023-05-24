@@ -105,23 +105,53 @@ public class DFFCustomerPage {
 	
 	@FindBy(xpath = "(//input[@class='form-control quantity ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
-	WebElement txtboxquantity;
+	WebElement txtboxquantitystandard;
+	
+	
+	@FindBy(xpath = "(//input[@class='form-control quantity ng-untouched ng-pristine ng-valid'])[2]")
+	@CacheLookup
+	WebElement txtboxquantityeuropean;
+	
+	
+	@FindBy(xpath = "(//input[@class='form-control quantity ng-untouched ng-pristine ng-valid'])[3]")
+	@CacheLookup
+	WebElement txtboxquantitychep;
 	
 	@FindBy(xpath = "(//input[@class='form-control ng-untouched ng-pristine ng-valid'])[1]")
 	@CacheLookup
-	WebElement txtboxweightperpallet;
+	WebElement txtboxweightperpalletstandard;
+	
+	@FindBy(xpath = "(//input[@class='form-control ng-untouched ng-pristine ng-valid'])[2]")
+	@CacheLookup
+	WebElement txtboxweightperpalleteuropean;
+	
+	@FindBy(xpath = "(//input[@class='form-control ng-untouched ng-pristine ng-valid'])[3]")
+	@CacheLookup
+	WebElement txtboxweightperpalletchep;
 	
 	@FindBy(xpath = "(//button[normalize-space()='ADD'])[1]")
 	@CacheLookup
 	WebElement btnaddstandard;
 	
-	@FindBy(xpath = "(//button[normalize-space()='ADD'])[1]")
+	@FindBy(xpath = "(//button[normalize-space()='ADD'])[2]")
 	@CacheLookup
 	WebElement btnaddeuropean;
 	
+	@FindBy(xpath = "(//button[normalize-space()='ADD'])[3]")
+	@CacheLookup
+	WebElement btnaddchep;
+	
 	@FindBy(xpath = "//img[@alt='delete-icon']")
 	@CacheLookup
-	public WebElement btnclosestandandardcard;
+	public WebElement btnclosestandardcard;
+	
+	@FindBy(xpath = "//img[@alt='delete-icon']")
+	@CacheLookup
+	public WebElement btncloseeuropeancard;
+	
+	@FindBy(xpath = "//img[@alt='delete-icon']")
+	@CacheLookup
+	public WebElement btnclosechepcard;
 	
 	@FindBy(xpath = "//button[normalize-space()='Find Best Rates']")
 	@CacheLookup
@@ -131,7 +161,7 @@ public class DFFCustomerPage {
 	@CacheLookup
 	WebElement ddcurrency;
 	
-	@FindBy(xpath = "(//button[normalize-space()='Proceed'])[1]")
+	@FindBy(xpath = "//button[normalize-space()='Proceed']")
 	@CacheLookup
 	WebElement btnproceed;
 	
@@ -150,6 +180,14 @@ public class DFFCustomerPage {
 	@FindBy(xpath = "//div[@id='wh-st-tg']//span[contains(text(),'For Warehouse')]")
 	@CacheLookup
 	public WebElement ddstorageassertion;
+	
+	@FindBy(id = "dropdownBasic1")
+	@CacheLookup
+	WebElement ddoptions;
+	
+	@FindBy(xpath = "//span[normalize-space()='Bookings']")
+	@CacheLookup
+	WebElement lnktextbookings;
 	
 	// Identify Action on all Web Elements
 
@@ -324,13 +362,33 @@ public class DFFCustomerPage {
 	}
 	
 	
-	public void setquantity(String quantity) {
-		txtboxquantity.sendKeys(quantity);
+	public void setquantitystandard(String quantitystandard) {
+		txtboxquantitystandard.sendKeys(quantitystandard);
 
 	}
 	
-	public void setweightperpallet(String weightperpallet) {
-		txtboxweightperpallet.sendKeys(weightperpallet);
+	public void setquantityeuropean(String quantityeuropean) {
+		txtboxquantityeuropean.sendKeys(quantityeuropean);
+
+	}
+	
+	public void setquantitychep(String quantitychep) {
+		txtboxquantitychep.sendKeys(quantitychep);
+
+	}
+	
+	public void setweightperpalletstandard(String weightperpalletstandard) {
+		txtboxweightperpalletstandard.sendKeys(weightperpalletstandard);
+
+	}
+	
+	public void setweightperpalleteuropean(String weightperpalleteuropean) {
+		txtboxweightperpalleteuropean.sendKeys(weightperpalleteuropean);
+
+	}
+	
+	public void setweightperpalletchep(String weightperpalletchep) {
+		txtboxweightperpalletchep.sendKeys(weightperpalletchep);
 
 	}
 	
@@ -344,8 +402,23 @@ public class DFFCustomerPage {
 
 	}
 	
-	public void clickclosestandandardcard() {
-		btnclosestandandardcard.click();
+	public void clickaddchep() {
+		btnaddchep.click();
+
+	}
+	
+	public void clickclosestandardcard() {
+		btnclosestandardcard.click();
+
+	}
+	
+	public void clickcloseeuropeancard() {
+		btncloseeuropeancard.click();
+
+	}
+	
+	public void clickclosechepcard() {
+		btnclosechepcard.click();
 
 	}
 	
@@ -385,6 +458,16 @@ public class DFFCustomerPage {
 	
 	public void clickyesmodifysearchcriteria() {
 		btnkyesmodifysearchcriteria.click();
+
+	}
+	
+	public void clickoptionsdropdown() {
+		ddoptions.click();
+
+	}
+	
+	public void clickbookingslink() {
+		lnktextbookings.click();
 
 	}
 }

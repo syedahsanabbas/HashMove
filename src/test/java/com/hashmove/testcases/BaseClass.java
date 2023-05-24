@@ -3,11 +3,17 @@ package com.hashmove.testcases;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.CellValue;
 import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFFormulaEvaluator;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -31,6 +37,7 @@ public class BaseClass {
 	String qacustomerportalurl = readConfig.getqacustomerportalurl();
 	String qaproviderportalurl = readConfig.getqaproviderportalurl();
 	String prehubcustomerportalurl = readConfig.getprehubcustomerportalurl();
+	String prehubshanfoodsportalurl = readConfig.getprehubshanfoodsportalurl();
 	String prehubproviderportalurl = readConfig.getprehubproviderportalurl();
 	
 	String browser = readConfig.getBrowser();
@@ -66,6 +73,58 @@ public class BaseClass {
 		return data;
 	}
 	
+	
+	public static String getFormulaMonthYearDateAsString(int rownum, int colnum, String sheetname) throws IOException {
+	
+	    FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\TestData\\TestData.xlsx");
+	    XSSFWorkbook wb = new XSSFWorkbook(fis);
+	    XSSFSheet sheet = wb.getSheet(sheetname);
+	    XSSFRow row = sheet.getRow(rownum);
+	    XSSFCell cell = row.getCell(colnum);
+	    String result = "";
+
+	    if (cell.getCellType() == CellType.FORMULA) {
+	        XSSFFormulaEvaluator evaluator = wb.getCreationHelper().createFormulaEvaluator();
+	        CellValue cellValue = evaluator.evaluate(cell);
+	        if (cellValue.getCellType() == CellType.NUMERIC && DateUtil.isCellDateFormatted(cell)) {
+	        	  double dateValue = cellValue.getNumberValue(); 
+	        	Date date = DateUtil.getJavaDate(dateValue);
+	            SimpleDateFormat sdf = new SimpleDateFormat("MMMM yyyy");
+	            result = sdf.format(date);
+	            System.out.print(result);
+	            
+	        }
+	    }
+	    wb.close();
+		fis.close();
+	    return result;
+	}
+	
+	public static String getFormulaDayDateAsString(int rownum, int colnum, String sheetname) throws IOException {
+		
+	    FileInputStream fis = new FileInputStream(System.getProperty("user.dir") + "\\TestData\\TestData.xlsx");
+	    XSSFWorkbook wb = new XSSFWorkbook(fis);
+	    XSSFSheet sheet = wb.getSheet(sheetname);
+	    XSSFRow row = sheet.getRow(rownum);
+	    XSSFCell cell = row.getCell(colnum);
+	    String result = "";
+
+	    if (cell.getCellType() == CellType.FORMULA) {
+	        XSSFFormulaEvaluator evaluator = wb.getCreationHelper().createFormulaEvaluator();
+	        CellValue cellValue = evaluator.evaluate(cell);
+	        if (cellValue.getCellType() == CellType.NUMERIC && DateUtil.isCellDateFormatted(cell)) {
+	        	  double dateValue = cellValue.getNumberValue(); 
+	        	Date date = DateUtil.getJavaDate(dateValue);
+	            SimpleDateFormat sdf = new SimpleDateFormat("d");
+	            result = sdf.format(date);
+	            System.out.print(result);
+	            
+	        }
+	    }
+	    wb.close();
+		fis.close();
+	    return result;
+	}
 	
 	
 	

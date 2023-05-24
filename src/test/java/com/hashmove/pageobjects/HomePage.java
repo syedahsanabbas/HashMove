@@ -76,6 +76,18 @@ public class HomePage {
 	@CacheLookup
 	WebElement txtboxportofdelivery;
 
+	@FindBy(xpath = "//input[@id='typeahead-basic']")
+	@CacheLookup
+	WebElement txtboxoriginport;
+
+	@FindBy(xpath = "//input[@id='typeahead-basic2']")
+	@CacheLookup
+	WebElement txtboxdestinationport;
+	
+	@FindBy(xpath = "//input[@placeholder='Reference No']")
+	@CacheLookup
+	WebElement txtboxreferencenumber;
+
 	@FindBy(xpath = "//div[@id='fcl_cont_ddl']")
 	@CacheLookup
 	WebElement ddcontainersize;
@@ -116,21 +128,21 @@ public class HomePage {
 	@CacheLookup
 	WebElement ddunit;
 
-	@FindBy(xpath = "(//span[contains(text(),'Payment Terms')])[6]")
+	@FindBy(xpath = "//div[@class='card-body section-body pt-0']//span[contains(text(),'Payment Terms')]")
 	@CacheLookup
 	WebElement lnktextpaymentterms;
 
-	@FindBy(xpath = "(//div[@class='form-group d-flex flex-column pr-2 ml-3']//span[@class='switch switch-small'])[1]")
+	@FindBy(xpath = "(//div//ui-switch//span)[1]")
 	@CacheLookup
-	WebElement tglbtnadvancepayment;
+	public WebElement tglbtnadvancepayment;
 
-	@FindBy(xpath = "(//div[@class='form-group d-flex flex-column pr-2 ml-3']//span[@class='switch switch-small'])[2]")
+	@FindBy(xpath = "(//div//ui-switch//span)[2]")
 	@CacheLookup
 	public WebElement tglbtndaysaftertheissuanceofbl;
 
 	@FindBy(xpath = "(//label[@class='pt-0 d-flex flex-row align-items-center']//input[@type = 'text'])[1]")
 	@CacheLookup
-	WebElement txtboxpaymenttermsdays;
+	public WebElement txtboxdaysaftertheissuanceofblpaymenttermsdays;
 
 	@FindBy(xpath = "//button[@type='submit']")
 	@CacheLookup
@@ -199,20 +211,19 @@ public class HomePage {
 	}
 
 	public void setcargoreadinessday(String cargoreadinessday) throws InterruptedException {
-		
-			List<WebElement> allOptions = ldriver
-					.findElements(By.xpath("//div//div//div//div//div[@class= 'btn-light ng-star-inserted']"));
-			for (int i = 0; i < allOptions.size(); i++) {
-				System.out.println("Excel" + cargoreadinessday);
-				System.out.println("Application" + allOptions.get(i).getText().toString());
-				System.out.println("Size" + allOptions.size());
-				if (allOptions.get(i).getText().toString().equals(cargoreadinessday)) {
-					System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
-					allOptions.get(i).click();
-					break;
-				}
+
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div//div//div//div//div[@class= 'btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			System.out.println("Excel" + cargoreadinessday);
+			System.out.println("Application" + allOptions.get(i).getText().toString());
+			System.out.println("Size" + allOptions.size());
+			if (allOptions.get(i).getText().toString().equals(cargoreadinessday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
 			}
-		
+		}
 
 	}
 
@@ -222,19 +233,19 @@ public class HomePage {
 	}
 
 	public void setcargotype(String cargotype) {
-		
-			List<WebElement> allOptions = ldriver
-					.findElements(By.xpath("//div[@aria-labelledby='fcl_cargo_ddl']//div//span"));
 
-			for (int i = 0; i < allOptions.size(); i++) {
-				if (allOptions.get(i).getText().toString().contains(cargotype)) {
-					System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
-					allOptions.get(i).click();
-					break;
-				}
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div[@aria-labelledby='fcl_cargo_ddl']//div//span"));
 
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(cargotype)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
 			}
-		
+
+		}
+
 	}
 
 	public void sethscode(String hscode) {
@@ -301,6 +312,29 @@ public class HomePage {
 		txtboxportofdelivery.sendKeys(portofdelivery);
 		Thread.sleep(1000);
 		txtboxportofdelivery.sendKeys(Keys.ENTER);
+
+	}
+
+	public void setoriginport(String originport) throws InterruptedException {
+		txtboxoriginport.clear();
+		txtboxoriginport.sendKeys(originport);
+		Thread.sleep(2000);
+		txtboxoriginport.sendKeys(Keys.ENTER);
+
+	}
+
+	public void setdestinationport(String destinationport) throws InterruptedException {
+		txtboxdestinationport.clear();
+		txtboxdestinationport.sendKeys(destinationport);
+		Thread.sleep(2000);
+		txtboxdestinationport.sendKeys(Keys.ENTER);
+
+	}
+
+	public String setreferencenumber(String referencenumber) {
+
+		txtboxreferencenumber.sendKeys(referencenumber);
+		return referencenumber;
 
 	}
 
@@ -396,9 +430,9 @@ public class HomePage {
 
 	}
 
-	public void setpaymenttermsdays(String paymenttermsdays) {
-		txtboxpaymenttermsdays.clear();
-		txtboxpaymenttermsdays.sendKeys(paymenttermsdays);
+	public void setpaymenttermsdays(String daysaftertheissuanceofblpaymenttermsdays) {
+		txtboxdaysaftertheissuanceofblpaymenttermsdays.clear();
+		txtboxdaysaftertheissuanceofblpaymenttermsdays.sendKeys(daysaftertheissuanceofblpaymenttermsdays);
 
 	}
 
@@ -441,7 +475,5 @@ public class HomePage {
 		tglbtndaysaftertheissuanceofbl.click();
 
 	}
-
-	
 
 }

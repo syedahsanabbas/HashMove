@@ -1,5 +1,8 @@
 package com.hashmove.pageobjects;
 
+import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -112,22 +115,14 @@ public class RateRequestsPage {
 	@CacheLookup
 	WebElement txboxterminalhandlingcharge;
 
-	@FindBy(xpath = " (//input[@id='dpicker'])[2]")
+	@FindBy(xpath = "//div[@class='row mt-4 validity-date']//input[@id='dpicker']")
 	@CacheLookup
-	public WebElement txtboxratevaliditystartdatepicker;
+	public WebElement datepickerratevaliditystart;
 
-	@FindBy(xpath = "//div[@class='btn-light ng-star-inserted'][normalize-space()='1']")
+	@FindBy(xpath = "//div[@class='row mt-4 validity-date']//input[@id='dpicker2']")
 	@CacheLookup
-	WebElement txtboxratevaliditystartdatepicker2;
-
-	@FindBy(id = "dpicker2")
-	@CacheLookup
-	WebElement txtboxratevalidityenddatepicker;
-
-	@FindBy(xpath = "(//div[@class='btn-light ng-star-inserted'][normalize-space()='30'])[2]")
-	@CacheLookup
-	WebElement txtboxratevalidityenddatepicker2;
-
+	public WebElement datepickerratevalidityend;
+	
 	@FindBy(xpath = "(//span[@class = 'switch switch-medium'])[1]")
 	@CacheLookup
 	WebElement btntgliacceptcustomerpaymentterms;
@@ -270,21 +265,88 @@ public class RateRequestsPage {
 		txboxterminalhandlingcharge.sendKeys(terminalhandlingcharge);
 
 	}
+	
+	
+	public void clickratevaliditystart() {
+		datepickerratevaliditystart.click();
 
-	public void setratevaliditystartdate() throws InterruptedException {
-		txtboxratevaliditystartdatepicker.click();
-		Thread.sleep(1000);
-		txtboxratevaliditystartdatepicker2.click();
+	}
+
+	public void setratevaliditystartmonthyear(String ratevaliditystartmonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("(//div[@class='ngb-dp-month-name ng-star-inserted'])[1]"));
+			String monthyear = monthyeartext.getText();
+			if (monthyear.equals(ratevaliditystartmonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setratevaliditystartday(String ratevaliditystartday) throws InterruptedException {
+		
+			List<WebElement> allOptions = ldriver
+					.findElements(By.xpath("(//div[@class='ngb-dp-month ng-star-inserted'])[1]//div//div//div[@class='btn-light ng-star-inserted']"));
+			for (int i = 0; i < allOptions.size(); i++) {
+				System.out.println("Excel" + ratevaliditystartday);
+				System.out.println("Application" + allOptions.get(i).getText().toString());
+				if (allOptions.get(i).getText().toString().equals(ratevaliditystartday)) {
+					System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+					allOptions.get(i).click();
+					break;
+				}
+			}
+		
 
 	}
 	
-	public void setratevalidityenddate() throws InterruptedException {
-		txtboxratevalidityenddatepicker.click();
-		Thread.sleep(1000);
-		txtboxratevalidityenddatepicker2.click();
+	
+	public void clickratevalidityend() {
+		datepickerratevalidityend.click();
 
 	}
 
+	public void setratevalidityendmonthyear(String ratevalidityendmonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver
+					.findElement(By.xpath("(//div[@class='ngb-dp-month-name ng-star-inserted'])[2]"));
+			String monthyear = monthyeartext.getText();
+			if (monthyear.equals(ratevalidityendmonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setratevalidityendday(String ratevalidityendday) throws InterruptedException {
+		
+			List<WebElement> allOptions = ldriver
+					.findElements(By.xpath("(//div[@class='ngb-dp-month ng-star-inserted'])[2]//div//div//div[@class='btn-light ng-star-inserted']"));
+			for (int i = 0; i < allOptions.size(); i++) {
+				System.out.println("Excel" + ratevalidityendday);
+				System.out.println("Application" + allOptions.get(i).getText().toString());
+				System.out.println("Size" + allOptions.size());
+				if (allOptions.get(i).getText().toString().equals(ratevalidityendday)) {
+					System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+					allOptions.get(i).click();
+					break;
+				}
+			}
+		
+
+	}
+	
 	public void selectiacceptcustomerpaymentterms() {
 		btntgliacceptcustomerpaymentterms.click();
 

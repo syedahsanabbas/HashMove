@@ -162,11 +162,11 @@ public class TC_QA_ModifySearchRequest_001 extends BaseClass {
 				
 				Thread.sleep(1000);
 				// Enter Quantity
-				dcp.setquantity(getCellData(1, 12, "QAWarehouseing"));
+				dcp.setquantitystandard(getCellData(1, 11, "QAWarehouseing"));
 				logger.info("Quantity " +  cell.getStringCellValue()  + " has entered");
 				
 				// Enter WEIGHT PER PALLET
-				dcp.setweightperpallet(getCellData(1, 12, "QAWarehouseing"));
+				dcp.setweightperpalletstandard(getCellData(1, 12, "QAWarehouseing"));
 				logger.info("WEIGHT PER PALLET " +  cell.getStringCellValue()  + " has entered");
 				
 				// Click ADD button
@@ -174,7 +174,7 @@ public class TC_QA_ModifySearchRequest_001 extends BaseClass {
 				logger.info("ADD button has clicked!!!");
 				
 				// Click X button
-				dcp.clickclosestandandardcard();
+				dcp.clickclosestandardcard();
 				logger.info("Close X button has clicked!!!");
 				
 				// Click Find Best Rates

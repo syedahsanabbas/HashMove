@@ -27,6 +27,10 @@ public class ThankyouBookingPage {
 	@CacheLookup
 	WebElement labeltext;
 	
+	@FindBy(xpath = "//div[@class='total-payable-title']")
+	@CacheLookup
+	WebElement lbltotalpayable;
+	
 	@FindBy(xpath = "//a[@class='view-booking hvr-icon link-hover-1']")
 	@CacheLookup
 	WebElement lnktextviewbooking;
@@ -46,6 +50,11 @@ public class ThankyouBookingPage {
 	public void clickviewbooking() {
 		lnktextviewbooking.click();
 
+	}
+	
+	public String gettotalpayable() {
+		return lbltotalpayable.getText().toString();
+		
 	}
 	
 	public String getbookingnumberforwarehouse() {

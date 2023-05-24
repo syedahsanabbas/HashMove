@@ -132,7 +132,7 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//button[normalize-space()='SAVE']")
 	@CacheLookup
 	WebElement btnsaveshipperinfo;
-	
+
 	@FindBy(xpath = "//button[normalize-space()='Save']")
 	@CacheLookup
 	WebElement btnsavemainshipperinfo;
@@ -180,11 +180,11 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//span[normalize-space()='Loading Plan']")
 	@CacheLookup
 	WebElement lnktextloadingplan;
-	
+
 	@FindBy(xpath = "//div[@class='card-header']//span[normalize-space()='Goods Declaration']")
 	@CacheLookup
 	WebElement lnktextgoodsdeclaration;
-	
+
 	@FindBy(xpath = "//input[@placeholder='BL No']")
 	@CacheLookup
 	WebElement txtboxbillnumber;
@@ -200,7 +200,7 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//textarea[@placeholder='Details']")
 	@CacheLookup
 	WebElement txtboxshipmentdetails;
-	
+
 	@FindBy(xpath = "//textarea[@placeholder='Details']")
 	@CacheLookup
 	WebElement txtboxshipmentdetails2;
@@ -252,7 +252,7 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//input[@placeholder='GD No']")
 	@CacheLookup
 	WebElement txtboxgoodsdeclarationnumber;
-	
+
 	@FindBy(xpath = "//input[@placeholder='GD Date']")
 	@CacheLookup
 	WebElement datepickergddate;
@@ -276,11 +276,247 @@ public class BookingDetailPage {
 	@FindBy(xpath = "//button[normalize-space()='SUBMIT']")
 	@CacheLookup
 	WebElement btnsubmitshipmentstatus;
-	
+
 	@FindBy(xpath = "//button[normalize-space()='SUBMIT']")
 	@CacheLookup
 	WebElement btnsubmitshipmentstatus2;
 
+	@FindBy(xpath = "//div[@class='dropdown-toggle form-control']//img[@class='pointer']")
+	@CacheLookup
+	WebElement btnaddservice;
+
+	@FindBy(xpath = "//span[normalize-space()='Inbound Shipment']")
+	@CacheLookup
+	WebElement btninboundshipment;
+
+	@FindBy(xpath = "//input[@placeholder='Delivery Note #']")
+	@CacheLookup
+	WebElement txtboxreferencenumber;
+
+	@FindBy(xpath = "//input[@placeholder='Delivery Note #']")
+	@CacheLookup
+	WebElement txtboxreferencenumber2;
+
+	@FindBy(xpath = "//div[@id='fcl_cont_ddl']")
+	@CacheLookup
+	WebElement ddtruckcategory;
+	
+	@FindBy(xpath = "//div[@id='fcl_cont_ddl']")
+	@CacheLookup
+	WebElement ddtruckcategory2;
+
+	@FindBy(xpath = "//div[@id='ftl_cont_ddl']")
+	@CacheLookup
+	WebElement ddtrucktype;
+	
+	@FindBy(xpath = "//div[@id='ftl_cont_ddl']")
+	@CacheLookup
+	WebElement ddtrucktype2;
+
+	@FindBy(xpath = "//input[@placeholder='e.g: ABC-XXXX']")
+	@CacheLookup
+	WebElement txtboxtruckregnumber;
+	
+	@FindBy(xpath = "//input[@placeholder='e.g: ABC-XXXX']")
+	@CacheLookup
+	WebElement txtboxtruckregnumber2;
+
+	@FindBy(xpath = "//input[@placeholder='eg: Services related details']")
+	@CacheLookup
+	WebElement txtboxremarks;
+
+	@FindBy(xpath = "//input[@placeholder='eg: Services related details']")
+	@CacheLookup
+	WebElement txtboxremarks2;
+	
+	@FindBy(xpath = "//button[normalize-space()='Add SKU']")
+	@CacheLookup
+	WebElement btnaddsku;
+	
+	@FindBy(xpath = "//button[normalize-space()='Add SKU']")
+	@CacheLookup
+	WebElement btnaddsku2;
+
+	@FindBy(xpath = "//input[@placeholder='SKU #']")
+	@CacheLookup
+	WebElement txtboxyourskucode;
+	
+	@FindBy(xpath = "//input[@placeholder='SKU #']")
+	@CacheLookup
+	WebElement txtboxyourskucode2;
+
+	@FindBy(xpath = "//input[@placeholder='Description']")
+	@CacheLookup
+	WebElement txtboxskudescription;
+
+	@FindBy(xpath = "//input[@placeholder='HS Code']")
+	@CacheLookup
+	WebElement txtboxhscode;
+
+	@FindBy(xpath = "(//div//select)[1]")
+	@CacheLookup
+	WebElement dduom;
+
+	@FindBy(xpath = "(//div//select)[2]")
+	@CacheLookup
+	WebElement ddweightuom;
+
+	@FindBy(xpath = "//div[label[contains(., 'GROSS WEIGHT')]]/input")
+	@CacheLookup
+	WebElement txtboxgrossweight;
+
+	@FindBy(xpath = "//div[label[contains(., 'NET WEIGHT')]]/input")
+	@CacheLookup
+	WebElement txtboxnetweight;
+
+	@FindBy(xpath = "//span[normalize-space()='Package Type']")
+	@CacheLookup
+	WebElement ddpackagetype;
+
+	@FindBy(xpath = "//input[@placeholder='SKU Qty / Package']")
+	@CacheLookup
+	WebElement txtboxuomperpackage;
+
+	@FindBy(xpath = "//span[normalize-space()='Pallet Type']")
+	@CacheLookup
+	WebElement ddpallettype;
+
+	@FindBy(xpath = "//input[@placeholder='Package / Pallet']")
+	@CacheLookup
+	WebElement txtboxpackageperpallet;
+
+	@FindBy(xpath = "//input[@placeholder='Enter Pallet Qty']")
+	@CacheLookup
+	WebElement txtboxtotalpalletqty;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter Pallet Qty']")
+	@CacheLookup
+	WebElement txtboxtotalpalletqty2;
+
+	@FindBy(xpath = "//input[@placeholder='Enter Package Qty']")
+	@CacheLookup
+	WebElement txtboxtotalpackageqty;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter Package Qty']")
+	@CacheLookup
+	WebElement txtboxtotalpackageqty2;
+
+	@FindBy(xpath = "//input[@placeholder='Enter UOM Qty']")
+	@CacheLookup
+	WebElement txtboxtotaluomqty;
+
+	@FindBy(xpath = "//button[normalize-space()='Submit']")
+	@CacheLookup
+	WebElement btnsubmitsku;
+
+	@FindBy(xpath = "//a[normalize-space()='Services Details']")
+	@CacheLookup
+	WebElement lnktextinboundservicesdetails;
+	
+	@FindBy(xpath = "//a[normalize-space()='Services Details']")
+	@CacheLookup
+	WebElement lnktextoutboundservicesdetails;
+
+	@FindBy(xpath = "//div[@container = 'body']//span[@class='switch switch-small']")
+	@CacheLookup
+	WebElement btntglbatchnumber;
+	
+	@FindBy(xpath = "//input[@placeholder='Batch #']")
+	@CacheLookup
+	WebElement txtboxbatchnumber;
+	
+	@FindBy(xpath = "//div[@class='row mt-3 ng-star-inserted']//input[@placeholder= 'Production Date' and @id ='dpicker']")
+	@CacheLookup
+	WebElement datepickerproduction;
+	
+	@FindBy(xpath = "//div[@class='row mt-3 ng-star-inserted']//input[@placeholder= 'Expiry Date' and @id ='dpicker']")
+	@CacheLookup
+	WebElement datepickerexpiry;
+
+	@FindBy(xpath = "//button[contains(normalize-space(), 'Submit') and contains(normalize-space(), 'Shipment')]")
+	@CacheLookup
+	WebElement btninboundsubmitshipment;
+	
+	@FindBy(xpath = "//button[contains(normalize-space(), 'Submit') and contains(normalize-space(), 'Shipment')]")
+	@CacheLookup
+	WebElement btnoutboundsubmitshipment;
+
+	@FindBy(xpath = "//button[normalize-space()='BOOK & PAY']")
+	@CacheLookup
+	WebElement btnbookandpay;
+	
+	@FindBy(xpath = "//button[normalize-space()='BOOK & PAY']")
+	@CacheLookup
+	WebElement btnbookandpay2;
+
+	@FindBy(xpath = "//div[@class='dropdown-toggle form-control']//img[@class='pointer']")
+	@CacheLookup
+	WebElement btnaddservice2;
+
+	@FindBy(xpath = "//span[normalize-space()='Outbound Shipment']")
+	@CacheLookup
+	WebElement btnoutboundshipment;
+	
+	@FindBy(xpath = "//span[@class='input-group-text']")
+	@CacheLookup
+	WebElement btndeliveryaddresspinlocation;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter at a minimum, the street and town']")
+	@CacheLookup
+	WebElement txtboxpinaddress;
+	
+	@FindBy(xpath = "//input[@placeholder='Delivery Address']")
+	@CacheLookup
+	WebElement txtboxmaindeliveryaddress;
+	
+	@FindBy(xpath = "//button[normalize-space()='Submit']")
+	@CacheLookup
+	WebElement btnsubmitpinaddress;
+	
+	@FindBy(xpath = "//label[@for='rdBond']")
+	@CacheLookup
+	WebElement btntglbypallet;
+	
+	@FindBy(xpath = "//label[@for='rdNonBond']")
+	@CacheLookup
+	WebElement btntglbypackage;
+	
+	@FindBy(xpath = "//button[normalize-space()='Submit']")
+	@CacheLookup
+	WebElement btnsubmitoutbound;
+	
+	@FindBy(xpath = "//a[normalize-space()='View Summary']")
+	@CacheLookup
+	WebElement lnktextviewsummary;
+	
+	@FindBy(xpath = "(//div[@class='d-flex flex-column justify-content-between']//div//span)[8]")
+	@CacheLookup
+	WebElement lblnettotalonviewsummary;
+	
+	@FindBy(xpath = "(//li//span[@style='text-transform: uppercase !important;'])[1]")
+	@CacheLookup
+	WebElement lblwarehousechargesonviewsummary;
+	
+	@FindBy(xpath = "//p[@class='blue-txt']")
+	@CacheLookup
+	WebElement lbltotalamountinskudetailsgrid;
+	
+	@FindBy(xpath = "//p[@class='blue-txt']")
+	@CacheLookup
+	WebElement lbltotalamountinskudetailsgrid2;
+	
+	@FindBy(xpath = "//img[@alt='close']")
+	@CacheLookup
+	WebElement btncloseviewsummary;
+	
+	@FindBy(xpath = "(//li//span[@style='text-transform: uppercase !important;'])[1]")
+	@CacheLookup
+	WebElement lblemptywoodenpalletsvalueexcludingvat;
+	
+	@FindBy(xpath = "//span[text()='Net Total']/following-sibling::span/text()")
+	@CacheLookup
+	WebElement lblnettotaloninboundshipment;
+	
 	// Identify Action on all Web Elements
 
 	public void clickbookings() {
@@ -435,7 +671,7 @@ public class BookingDetailPage {
 		btnsaveshipperinfo.click();
 
 	}
-	
+
 	public void clicksavemainshipperinfo() {
 		btnsavemainshipperinfo.click();
 
@@ -490,7 +726,7 @@ public class BookingDetailPage {
 		lnktextloadingplan.click();
 
 	}
-	
+
 	public void clickgoodsdeclaration() {
 		lnktextgoodsdeclaration.click();
 
@@ -510,7 +746,7 @@ public class BookingDetailPage {
 		txtboxshipmentdetails.sendKeys(shipmentdetails);
 
 	}
-	
+
 	public void setshipmentdetails2(String shipmentdetails) {
 		txtboxshipmentdetails2.sendKeys(shipmentdetails);
 
@@ -697,7 +933,7 @@ public class BookingDetailPage {
 		Select drop = new Select(ddshipmentstatus);
 		drop.selectByVisibleText(shipmentstatus);
 	}
-	
+
 	public void setshipmentstatus2(String shipmentstatus) {
 		WebElement ddshipmentstatus = ldriver.findElement(By.id("bkStatus"));
 		Select drop = new Select(ddshipmentstatus);
@@ -708,17 +944,17 @@ public class BookingDetailPage {
 		btnsubmitshipmentstatus.click();
 
 	}
-	
+
 	public void clicksubmitshipmentstatus2() {
 		btnsubmitshipmentstatus2.click();
 
 	}
-	
+
 	public void setgoodsdeclarationnumber(String goodsdeclarationnumber) {
 		txtboxgoodsdeclarationnumber.sendKeys(goodsdeclarationnumber);
 
 	}
-	
+
 	public void clickgddate() {
 		datepickergddate.click();
 
@@ -742,21 +978,513 @@ public class BookingDetailPage {
 	}
 
 	public void setgddateday(String gddateday) throws InterruptedException {
-		
-			List<WebElement> allOptions = ldriver
-					.findElements(By.xpath("//div//div//div//div[@class='btn-light ng-star-inserted']"));
-			for (int i = 0; i < allOptions.size(); i++) {
-				if (allOptions.get(i).getText().toString().equals(gddateday)) {
-					System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
-					allOptions.get(i).click();
-					break;
-				}
+
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div//div//div//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().equals(gddateday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
 			}
+		}
+
+	}
+
+	public void clickaddservice() {
+		btnaddservice.click();
+
+	}
+
+	public void clickinboundshipment() {
+		btninboundshipment.click();
+
+	}
+
+	public void setreferencenumber(String referencenumber) {
+		txtboxreferencenumber.sendKeys(referencenumber);
+
+	}
+
+	public void setreferencenumber2(String referencenumber) {
+		txtboxreferencenumber2.sendKeys(referencenumber);
+
+	}
+
+	public void clicktruckcategorydropdown() {
+		ddtruckcategory.click();
+
+	}
+	
+	public void clicktruckcategorydropdown2() {
+		ddtruckcategory2.click();
+
+	}
+
+	public void settruckcategory(String truckcategory) {
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(truckcategory)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	public void settruckcategory2(String truckcategory) {
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div[@aria-labelledby = 'fcl_cont_ddl']//div//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(truckcategory)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
+	public void clicktrucktypedropdown() {
+		ddtrucktype.click();
+
+	}
+	
+	public void clicktrucktypedropdown2() {
+		ddtrucktype2.click();
+
+	}
+
+	public void settrucktype(String trucktype) {
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div[@class = 'dropdown-menu ng-star-inserted show']//div//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(trucktype)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
+	public void settrucktype2(String trucktype) {
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div[@class = 'dropdown-menu ng-star-inserted show']//div//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(trucktype)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+	
+	public void settruckregnumber(String truckregnumber) {
+		txtboxtruckregnumber.sendKeys(truckregnumber);
+
+	}
+
+	public void settruckregnumber2(String truckregnumber) {
+		txtboxtruckregnumber2.sendKeys(truckregnumber);
+
+	}
+
+	public void setremarks(String remarks) {
+		txtboxremarks.sendKeys(remarks);
+
+	}
+	
+	public void setremarks2(String remarks) {
+		txtboxremarks2.sendKeys(remarks);
+
+	}
+
+	public void clickaddsku() {
+		btnaddsku.click();
+
+	}
+	
+	public void clickaddsku2() {
+		btnaddsku2.click();
+
+	}
+
+	public String setyourskucode(String yourskucode) {
+		txtboxyourskucode.sendKeys(yourskucode);
+		txtboxyourskucode.sendKeys(Keys.ENTER);
+		return yourskucode;
+
+	}
+	
+	public void setyourskucode2(String yourskucode) throws InterruptedException {
+		txtboxyourskucode2.sendKeys(yourskucode);
+		Thread.sleep(2000);
+		txtboxyourskucode2.sendKeys(Keys.ENTER);
 		
 
 	}
 
+	public String setskudescription(String skudescription) {
+		txtboxskudescription.sendKeys(skudescription);
+		return skudescription;
 
+	}
+
+	public void sethscode(String hscode) throws InterruptedException {
+		txtboxhscode.sendKeys(hscode);
+		Thread.sleep(1000);
+		txtboxhscode.sendKeys(Keys.ENTER);
+
+	}
+
+	public void clickuomdropdown() {
+		dduom.click();
+
+	}
+
+	public void setuom(String uom) {
+		WebElement dduom = ldriver.findElement(By.xpath("(//div//select)[1]"));
+		Select drop = new Select(dduom);
+		drop.selectByVisibleText(uom);
+	}
+
+	public void clickweightuomdropdown() {
+		ddweightuom.click();
+
+	}
+
+	public void setweightuom(String weightuom) {
+		WebElement ddweightuom = ldriver.findElement(By.xpath("(//div//select)[2]"));
+		Select drop = new Select(ddweightuom);
+		drop.selectByVisibleText(weightuom);
+	}
+
+	public void setgrossweight(String grossweight) {
+		txtboxgrossweight.sendKeys(grossweight);
+
+	}
+
+	public void setnetweight(String netweight) {
+		txtboxnetweight.sendKeys(netweight);
+
+	}
+
+	public void clickpackagetypedropdown() {
+		ddpackagetype.click();
+
+	}
+
+	public void setpackagetype(String packagetype) {
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div[@class = 'dropdown-menu ng-star-inserted show']//div//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(packagetype)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
+	public void setuomperpackage(String uomperpackage) {
+		txtboxuomperpackage.sendKeys(uomperpackage);
+
+	}
+
+	public void clickpallettypedropdown() {
+		ddpallettype.click();
+
+	}
+
+	public void setpallettype(String pallettype) {
+		List<WebElement> allOptions = ldriver
+				.findElements(By.xpath("//div//div[@class='d-flex flex-column justify-content-start']//span"));
+
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().contains(pallettype)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
+	public void setpackageperpallet(String packageperpallet) {
+		txtboxpackageperpallet.sendKeys(packageperpallet);
+
+	}
+
+	public void settotalpalletqty(String totalpalletqty) {
+		txtboxtotalpalletqty.sendKeys(totalpalletqty);
+
+	}
+
+	public void settotalpalletqty2(String totalpalletqty) {
+		txtboxtotalpalletqty2.clear();
+		txtboxtotalpalletqty2.sendKeys(totalpalletqty);
+
+	}
+	
+	public void settotalpackageqty(String totalpackageqty) {
+		txtboxtotalpackageqty2.clear();
+		txtboxtotalpackageqty2.sendKeys(totalpackageqty);
+
+	}
+	
+	public String gettotalpackageqty() {
+		return txtboxtotalpackageqty.getAttribute("value");
+
+	}
+
+	public String gettotaluomqty() {
+		return txtboxtotaluomqty.getAttribute("value");
+
+	}
+	
+	public void selectbatchnumber() {
+		btntglbatchnumber.click();
+
+	}
+	
+	public String setbatchnumber(String batchnumber) {
+		txtboxbatchnumber.sendKeys(batchnumber);
+		return batchnumber;
+
+	}
+	
+	public void clickproductiondate() {
+		datepickerproduction.click();
+
+	}
+
+	public void setproductionmonthyear(String productionmonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver.findElement(By.xpath("//div[@class='ngb-dp-arrow']//following::div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			if (monthyear.equals(productionmonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setproductionday(String productionday) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath("//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().equals(productionday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
+	public void clickexpirydate() {
+		datepickerexpiry.click();
+
+	}
+
+	public void setexpirymonthyear(String expirymonthyear) {
+		while (true) {
+			WebElement monthyeartext = ldriver.findElement(By.xpath("//div[@class='ngb-dp-month-name ng-star-inserted']"));
+			String monthyear = monthyeartext.getText();
+			if (monthyear.equals(expirymonthyear)) {
+				break;
+
+			}
+
+			else {
+				ldriver.findElement(By.xpath("//button[@title='Next month']//span[@class='ngb-dp-navigation-chevron']"))
+						.click();
+			}
+		}
+	}
+
+	public void setexpiryday(String expiryday) {
+		List<WebElement> allOptions = ldriver.findElements(By.xpath("//div[@class='btn-light ng-star-inserted']"));
+		for (int i = 0; i < allOptions.size(); i++) {
+			if (allOptions.get(i).getText().toString().equals(expiryday)) {
+				System.out.println("Compare equal with: " + allOptions.get(i).getText().toString());
+				allOptions.get(i).click();
+				break;
+			}
+
+		}
+	}
+
+	
+	public void clicksubmitsku() {
+		btnsubmitsku.click();
+
+	}
+
+	public void clickservicesdetails() {
+		lnktextinboundservicesdetails.click();
+
+	}
+	
+	public void clickoutboundservicesdetails() {
+		lnktextoutboundservicesdetails.click();
+
+	}
+
+	public void clickinboundsubmitshipment() {
+		btninboundsubmitshipment.click();
+
+	}
+	
+	public void clickoutboundsubmitshipment() {
+		btnoutboundsubmitshipment.click();
+
+	}
+
+	public void clickbookandpay() {
+		btnbookandpay.click();
+
+	}
+	
+	public void clickbookandpay2() {
+		btnbookandpay2.click();
+
+	}
+
+
+	public void clickaddservice2() {
+		btnaddservice2.click();
+
+	}
+
+	public void clickoutboundshipment() {
+		btnoutboundshipment.click();
+
+	}
+	
+	public void clickdeliveryaddresspinlocation() {
+		btndeliveryaddresspinlocation.click();
+
+	}
+	
+	public void setpinaddress(String pinaddress) throws InterruptedException {
+		txtboxpinaddress.sendKeys(pinaddress);
+		Thread.sleep(5000);
+		txtboxpinaddress.sendKeys(Keys.ARROW_DOWN);
+		txtboxpinaddress.sendKeys(Keys.ENTER);
+
+	}
+	
+	public void setmaindeliveryaddress(String maindeliveryaddress)  {
+		txtboxmaindeliveryaddress.sendKeys(maindeliveryaddress);
+
+	}
+	
+	public void selectbypallet() {
+		btntglbypallet.click();
+
+	}
+	
+	public void selectbypackage() {
+		btntglbypackage.click();
+
+	}
+	
+	public void clicksubmitpinaddress() {
+		btnsubmitpinaddress.click();
+
+	}
+	
+	public void clicksubmitoutbound() {
+		btnsubmitoutbound.click();
+
+	}
+	
+	public void clickviewsummary() {
+		lnktextviewsummary.click();
+
+	}
+	
+	public String getnettotalonviewsummary() {
+		return lblnettotalonviewsummary.getText().toString();
+		
+	}
+	
+	public String getwarehousechargesonviewsummary() {
+		return lblwarehousechargesonviewsummary.getText().toString();
+		
+	}
+	
+	public void clickcloseviewsummary() {
+		btncloseviewsummary.click();
+		
+	}
+	
+	public String gettotalamountinskudetailsgrid() {
+		return lbltotalamountinskudetailsgrid.getText().toString();
+		
+	}
+	
+	public String gettotalamountinskudetailsgrid2() {
+		return lbltotalamountinskudetailsgrid2.getText().toString();
+		
+	}
+	
+	public String selectservice(String service) {
+		System.out.println(service);
+		String xpathExpression = String.format("//table//tr[./td/p[text()='%s']]//div[@class='switch-box']//ui-switch[@size ='small']", service);
+		WebElement toggleButton = ldriver.findElement(By.xpath(xpathExpression));
+		toggleButton.click(); // Click on the toggle button
+		return xpathExpression;
+	}
+
+	public String getemptywoodenpalletsvalueexcludingvat(String emptywoodenpalletsvalueexcludingvat) {
+		System.out.println(emptywoodenpalletsvalueexcludingvat);
+		String xpathExpression = String.format("//table//tr[./td/p[text()='%s']]//td[7]", emptywoodenpalletsvalueexcludingvat);
+		String lblemptywoodenpalletsvalueexcludingvat = ldriver.findElement(By.xpath(xpathExpression)).getText().toString();
+		return lblemptywoodenpalletsvalueexcludingvat;
+		
+	}
+	
+	public String getemptywoodenpalletsvalueexcludingvat2(String emptywoodenpalletsvalueexcludingvat2) {
+		System.out.println(emptywoodenpalletsvalueexcludingvat2);
+		String xpathExpression = String.format("//table//tr[./td/p[text()='%s']]//td[7]", emptywoodenpalletsvalueexcludingvat2);
+		String lblemptywoodenpalletsvalueexcludingvat2 = ldriver.findElement(By.xpath(xpathExpression)).getText().toString();
+		return lblemptywoodenpalletsvalueexcludingvat2;
+		
+	}
+	
+	public String getdispatchingbypalletvalueexcludingvat(String getdispatchingbypalletvalueexcludingvat) {
+		System.out.println(getdispatchingbypalletvalueexcludingvat);
+		String xpathExpression = String.format("//table//tr[./td/p[text()='%s']]//td[7]", getdispatchingbypalletvalueexcludingvat);
+		String lbldispatchingbypalletvalueexcludingvat = ldriver.findElement(By.xpath(xpathExpression)).getText().toString();
+		return lbldispatchingbypalletvalueexcludingvat;
+		
+	}
+	
+	public String getnettotaloninboundshipment() {
+		WebElement element = ldriver.findElement(By.xpath("//div//section//div//div//span[text()='Net Total']/following-sibling::span"));
+	    
+	    // Get the text content of the element
+	    String netTotalText = element.getText().toString();
+	    System.out.println("Net Total on inbound shipment: " + netTotalText);
+	    return netTotalText;
+		
+	}
 	public String getSaltString() {
 		String SALTCHARS = "1234567890";
 		StringBuilder salt = new StringBuilder();

@@ -35,6 +35,10 @@ public class PartnerLoginPage {
 	@CacheLookup
 	WebElement btnloginnow;
 	
+	@FindBy(xpath = "//a[normalize-space()='Accept']")
+	@CacheLookup
+	WebElement btnaccept;
+	
 
 	// Identify Action on all Web Elements
 
@@ -55,6 +59,11 @@ public class PartnerLoginPage {
 	public void clickloginnow() {
 		btnloginnow.click();
 		
+	}
+	
+	public void clickaccept() {
+		btnaccept.click();
+
 	}
 	
 	

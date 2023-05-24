@@ -78,6 +78,10 @@ public class BookingProcessPage {
 	@CacheLookup
 	WebElement txboxvalueofgoods;
 	
+	@FindBy(xpath = "(//li//span[@style='text-transform: uppercase !important;'])[1]")
+	@CacheLookup
+	WebElement lblwarehousecharges;
+	
 	@FindBy(xpath = "(//li//span[@class='amount-text ng-star-inserted'])[1]")
 	@CacheLookup
 	WebElement lblcustomclearancerate;
@@ -85,6 +89,18 @@ public class BookingProcessPage {
 	@FindBy(xpath = "(//li//span[@class='amount-text ng-star-inserted'])[2]")
 	@CacheLookup
 	WebElement lblinsurancepremium;
+	
+	@FindBy(xpath = "(//div[@class='d-flex flex-column justify-content-between']//div//span)[2]")
+	@CacheLookup
+	WebElement lblgrosstotal;
+	
+	@FindBy(xpath = "(//div[@class='d-flex flex-column justify-content-between']//div//span)[6]")
+	@CacheLookup
+	WebElement lblvat;
+	
+	@FindBy(xpath = "(//div[@class='d-flex flex-column justify-content-between']//div//span)[8]")
+	@CacheLookup
+	WebElement lblnettotal;
 	
 	@FindBy(xpath = "//button[contains(text(),' BOOK & PAY ')]")
 	@CacheLookup
@@ -169,6 +185,11 @@ public class BookingProcessPage {
 		
 	}
 	
+	public String getwarehousecharges() {
+		return lblwarehousecharges.getText().toString();
+		
+	}
+	
 	public String getcustomclearancerate() {
 		return lblcustomclearancerate.getText().toString();
 		
@@ -176,6 +197,23 @@ public class BookingProcessPage {
 	
 	public String getinsurancepremium() {
 		return lblinsurancepremium.getText().toString();
+		
+	}
+	
+	
+	public String getgrosstotal() {
+		return lblgrosstotal.getText().toString();
+		
+	}
+	
+	
+	public String getvat() {
+		return lblvat.getText().toString();
+		
+	}
+	
+	public String getnettotal() {
+		return lblnettotal.getText().toString();
 		
 	}
 	

@@ -73,6 +73,18 @@ public class ReadConfig {
 
 	}
 	
+	public String getprehubshanfoodsportalurl()
+
+	{
+		String value = properties.getProperty("prehubshanfoodsportalurl");
+		if (value != null)
+			return value;
+
+		else
+			throw new RuntimeException("Pre Hub Customer Shan Foods Portal url is not Specfied in Config file.");
+
+	}
+	
 	public String getqaproviderportalurl()
 
 	{
